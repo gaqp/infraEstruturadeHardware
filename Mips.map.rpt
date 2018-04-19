@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Mips
-Wed Apr 18 10:26:40 2018
+Thu Apr 19 00:55:11 2018
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -13,10 +13,8 @@ Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. State Machine - |Mips|estadoAtual
-  9. Registers Removed During Synthesis
- 10. General Register Statistics
- 11. Analysis & Synthesis Messages
+  8. General Register Statistics
+  9. Analysis & Synthesis Messages
 
 
 
@@ -42,16 +40,16 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +------------------------------------+----------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Apr 18 10:26:40 2018        ;
+; Analysis & Synthesis Status        ; Successful - Thu Apr 19 00:55:11 2018        ;
 ; Quartus II Version                 ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                      ; Mips                                         ;
 ; Top-level Entity Name              ; Mips                                         ;
 ; Family                             ; Cyclone II                                   ;
-; Total logic elements               ; 36                                           ;
-;     Total combinational functions  ; 6                                            ;
-;     Dedicated logic registers      ; 36                                           ;
-; Total registers                    ; 36                                           ;
-; Total pins                         ; 35                                           ;
+; Total logic elements               ; 0                                            ;
+;     Total combinational functions  ; 0                                            ;
+;     Dedicated logic registers      ; 0                                            ;
+; Total registers                    ; 0                                            ;
+; Total pins                         ; 1                                            ;
 ; Total virtual pins                 ; 0                                            ;
 ; Total memory bits                  ; 0                                            ;
 ; Embedded Multiplier 9-bit elements ; 0                                            ;
@@ -149,13 +147,13 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                         ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                               ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------+
-; Mips.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/Gabriel Alves/Documents/InfraHard/Projeto/Mips.sv ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                  ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                        ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------+
+; Mips.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/Gabriel Alves/Documents/InfraHard/Projeto/infraestruturadeHardware/Mips.sv ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -163,27 +161,22 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 36    ;
 ;                                             ;       ;
-; Total combinational functions               ; 6     ;
+; Total combinational functions               ; 0     ;
 ; Logic element usage by number of LUT inputs ;       ;
 ;     -- 4 input functions                    ; 0     ;
 ;     -- 3 input functions                    ; 0     ;
-;     -- <=2 input functions                  ; 6     ;
+;     -- <=2 input functions                  ; 0     ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 6     ;
+;     -- normal mode                          ; 0     ;
 ;     -- arithmetic mode                      ; 0     ;
 ;                                             ;       ;
-; Total registers                             ; 36    ;
-;     -- Dedicated logic registers            ; 36    ;
+; Total registers                             ; 0     ;
+;     -- Dedicated logic registers            ; 0     ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
-; I/O pins                                    ; 35    ;
-; Maximum fan-out node                        ; clock ;
-; Maximum fan-out                             ; 36    ;
-; Total fan-out                               ; 147   ;
-; Average fan-out                             ; 1.91  ;
+; I/O pins                                    ; 1     ;
 +---------------------------------------------+-------+
 
 
@@ -192,34 +185,9 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |Mips                      ; 6 (6)             ; 36 (36)      ; 0           ; 0            ; 0       ; 0         ; 35   ; 0            ; |Mips               ; work         ;
+; |Mips                      ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 1    ; 0            ; |Mips               ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-Encoding Type:  One-Hot
-+-------------------------------------------------------------------------------+
-; State Machine - |Mips|estadoAtual                                             ;
-+---------------+---------------+---------------+---------------+---------------+
-; Name          ; estadoAtual.D ; estadoAtual.C ; estadoAtual.B ; estadoAtual.A ;
-+---------------+---------------+---------------+---------------+---------------+
-; estadoAtual.A ; 0             ; 0             ; 0             ; 0             ;
-; estadoAtual.B ; 0             ; 0             ; 1             ; 1             ;
-; estadoAtual.C ; 0             ; 1             ; 0             ; 1             ;
-; estadoAtual.D ; 1             ; 0             ; 0             ; 1             ;
-+---------------+---------------+---------------+---------------+---------------+
-
-
-+------------------------------------------------------------+
-; Registers Removed During Synthesis                         ;
-+---------------------------------------+--------------------+
-; Register name                         ; Reason for Removal ;
-+---------------------------------------+--------------------+
-; estadoAtual~4                         ; Lost fanout        ;
-; estadoAtual~5                         ; Lost fanout        ;
-; estadoAtual~6                         ; Lost fanout        ;
-; Total Number of Removed Registers = 3 ;                    ;
-+---------------------------------------+--------------------+
 
 
 +------------------------------------------------------+
@@ -227,12 +195,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 36    ;
+; Total registers                              ; 0     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 32    ;
+; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -243,7 +211,7 @@ Encoding Type:  One-Hot
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Wed Apr 18 10:26:38 2018
+    Info: Processing started: Thu Apr 19 00:55:09 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Mips -c Mips
 Info: Found 1 design units, including 1 entities, in source file componentes do projeto/controle.sv
     Info: Found entity 1: Controle
@@ -271,20 +239,15 @@ Info: Found 1 design units, including 1 entities, in source file mips.sv
 Info: Found 1 design units, including 1 entities, in source file componentes do projeto/mux_2_1.sv
     Info: Found entity 1: Mux_2_1
 Info: Elaborating entity "Mips" for the top level hierarchy
-Warning (10034): Output port "CLK" at Mips.sv(1) has no driver
-Warning: Output pins are stuck at VCC or GND
-    Warning (13410): Pin "CLK" is stuck at GND
-Info: 3 registers lost all their fanouts during netlist optimizations. The first 3 are displayed below.
-    Info: Register "estadoAtual~4" lost all its fanouts during netlist optimizations.
-    Info: Register "estadoAtual~5" lost all its fanouts during netlist optimizations.
-    Info: Register "estadoAtual~6" lost all its fanouts during netlist optimizations.
-Info: Implemented 72 device resources after synthesis - the final resource count might be different
-    Info: Implemented 2 input pins
-    Info: Implemented 33 output pins
-    Info: Implemented 37 logic cells
+Warning: Entity "Mips" contains only dangling pins
+Warning: Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "clock"
+Info: Implemented 1 device resources after synthesis - the final resource count might be different
+    Info: Implemented 1 input pins
+    Info: Implemented 0 output pins
 Info: Quartus II Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 296 megabytes
-    Info: Processing ended: Wed Apr 18 10:26:40 2018
+    Info: Peak virtual memory: 292 megabytes
+    Info: Processing ended: Thu Apr 19 00:55:11 2018
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 

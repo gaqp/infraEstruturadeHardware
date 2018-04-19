@@ -1,7 +1,0 @@
-
-State Machine - |Mips|estadoAtual
-Name estadoAtual.D estadoAtual.C estadoAtual.B estadoAtual.A 
-estadoAtual.A 0 0 0 0 
-estadoAtual.B 0 0 1 1 
-estadoAtual.C 0 1 0 1 
-estadoAtual.D 1 0 0 1 

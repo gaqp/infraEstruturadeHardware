@@ -1,4 +1,4 @@
-module Controle(input clock, input reset, input [5:0] Opcode, input [5:0] Funct);
+module Controle(input clock,input reset,input [5:0] Opcode,input [5:0] Funct,output [31:0] RST);
 typedef enum logic [2:0] {A,B,C,D,E,F} Estados;
 Estados estadoAtual;
 initial

@@ -20,39 +20,6 @@ VHSM_ON
 -- Start VHDL Libraries --
 -- End VHDL Libraries --
 # entity
-Controle
-# storage
-db|Mips.(1).cnf
-db|Mips.(1).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-componentes do projeto|controle.sv
-2d615214538d4cdac8a09cfbebdea446
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
 Mips
 # storage
 db|Mips.(0).cnf
@@ -64,7 +31,7 @@ ON
 # case_sensitive
 # source_file
 mips.sv
-245a9346dc89c1ab2ecb1e910d5c6cd
+329215b5f92c4d0549c5a1ddab9b1b6
 9
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
