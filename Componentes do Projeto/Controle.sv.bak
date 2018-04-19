@@ -1,0 +1,2 @@
+module Controle(input clock, input reset, input [5:0] Opcode, input [5:0] Funct);
+endmodule
