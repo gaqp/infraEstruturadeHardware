@@ -1,5 +1,5 @@
 Simulator report for Mips
-Wed Apr 18 10:27:24 2018
+Sat Apr 21 01:11:32 2018
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -45,9 +45,9 @@ applicable agreement for further details.
 +-----------------------------+--------------+
 ; Simulation Start Time       ; 0 ps         ;
 ; Simulation End Time         ; 1.0 us       ;
-; Simulation Netlist Size     ; 86 nodes     ;
-; Simulation Coverage         ;      98.84 % ;
-; Total Number of Transitions ; 25199        ;
+; Simulation Netlist Size     ; 48 nodes     ;
+; Simulation Coverage         ;       0.00 % ;
+; Total Number of Transitions ; 0            ;
 ; Simulation Breakpoints      ; 0            ;
 ; Family                      ; Cyclone II   ;
 +-----------------------------+--------------+
@@ -93,128 +93,136 @@ Please use Quartus II to view the waveform report data.
 +-----------------------------------------------------+--------------+
 ; Type                                                ; Value        ;
 +-----------------------------------------------------+--------------+
-; Total coverage as a percentage                      ;      98.84 % ;
-; Total nodes checked                                 ; 86           ;
-; Total output ports checked                          ; 86           ;
-; Total output ports with complete 1/0-value coverage ; 85           ;
-; Total output ports with no 1/0-value coverage       ; 1            ;
-; Total output ports with no 1-value coverage         ; 1            ;
-; Total output ports with no 0-value coverage         ; 1            ;
+; Total coverage as a percentage                      ;       0.00 % ;
+; Total nodes checked                                 ; 48           ;
+; Total output ports checked                          ; 48           ;
+; Total output ports with complete 1/0-value coverage ; 0            ;
+; Total output ports with no 1/0-value coverage       ; 48           ;
+; Total output ports with no 1-value coverage         ; 48           ;
+; Total output ports with no 0-value coverage         ; 48           ;
 +-----------------------------------------------------+--------------+
 
 
 The following table displays output ports that toggle between 1 and 0 during simulation.
-+------------------------------------------------------------------+
-; Complete 1/0-Value Coverage                                      ;
-+-----------------------+-----------------------+------------------+
-; Node Name             ; Output Port Name      ; Output Port Type ;
-+-----------------------+-----------------------+------------------+
-; |Mips|RST[13]~reg0    ; |Mips|RST[13]~reg0    ; regout           ;
-; |Mips|RST[12]~reg0    ; |Mips|RST[12]~reg0    ; regout           ;
-; |Mips|RST[11]~reg0    ; |Mips|RST[11]~reg0    ; regout           ;
-; |Mips|RST[10]~reg0    ; |Mips|RST[10]~reg0    ; regout           ;
-; |Mips|RST[9]~reg0     ; |Mips|RST[9]~reg0     ; regout           ;
-; |Mips|RST[8]~reg0     ; |Mips|RST[8]~reg0     ; regout           ;
-; |Mips|RST~0           ; |Mips|RST~0           ; out0             ;
-; |Mips|RST[7]~reg0     ; |Mips|RST[7]~reg0     ; regout           ;
-; |Mips|RST[6]~reg0     ; |Mips|RST[6]~reg0     ; regout           ;
-; |Mips|estadoAtual~0   ; |Mips|estadoAtual~0   ; out              ;
-; |Mips|estadoAtual~1   ; |Mips|estadoAtual~1   ; out              ;
-; |Mips|estadoAtual~2   ; |Mips|estadoAtual~2   ; out              ;
-; |Mips|estadoAtual~3   ; |Mips|estadoAtual~3   ; out              ;
-; |Mips|RST[5]~reg0     ; |Mips|RST[5]~reg0     ; regout           ;
-; |Mips|RST[4]~reg0     ; |Mips|RST[4]~reg0     ; regout           ;
-; |Mips|RST[3]~reg0     ; |Mips|RST[3]~reg0     ; regout           ;
-; |Mips|RST[2]~reg0     ; |Mips|RST[2]~reg0     ; regout           ;
-; |Mips|RST[1]~reg0     ; |Mips|RST[1]~reg0     ; regout           ;
-; |Mips|RST[0]~reg0     ; |Mips|RST[0]~reg0     ; regout           ;
-; |Mips|RST[14]~reg0    ; |Mips|RST[14]~reg0    ; regout           ;
-; |Mips|RST[15]~reg0    ; |Mips|RST[15]~reg0    ; regout           ;
-; |Mips|RST[16]~reg0    ; |Mips|RST[16]~reg0    ; regout           ;
-; |Mips|RST[17]~reg0    ; |Mips|RST[17]~reg0    ; regout           ;
-; |Mips|RST[18]~reg0    ; |Mips|RST[18]~reg0    ; regout           ;
-; |Mips|RST[19]~reg0    ; |Mips|RST[19]~reg0    ; regout           ;
-; |Mips|RST[20]~reg0    ; |Mips|RST[20]~reg0    ; regout           ;
-; |Mips|RST[21]~reg0    ; |Mips|RST[21]~reg0    ; regout           ;
-; |Mips|RST[22]~reg0    ; |Mips|RST[22]~reg0    ; regout           ;
-; |Mips|RST[23]~reg0    ; |Mips|RST[23]~reg0    ; regout           ;
-; |Mips|RST[24]~reg0    ; |Mips|RST[24]~reg0    ; regout           ;
-; |Mips|RST[25]~reg0    ; |Mips|RST[25]~reg0    ; regout           ;
-; |Mips|RST[26]~reg0    ; |Mips|RST[26]~reg0    ; regout           ;
-; |Mips|RST[27]~reg0    ; |Mips|RST[27]~reg0    ; regout           ;
-; |Mips|RST[28]~reg0    ; |Mips|RST[28]~reg0    ; regout           ;
-; |Mips|RST[29]~reg0    ; |Mips|RST[29]~reg0    ; regout           ;
-; |Mips|RST[30]~reg0    ; |Mips|RST[30]~reg0    ; regout           ;
-; |Mips|RST[31]~reg0    ; |Mips|RST[31]~reg0    ; regout           ;
-; |Mips|estadoAtual.D   ; |Mips|estadoAtual.D   ; regout           ;
-; |Mips|estadoAtual.C   ; |Mips|estadoAtual.C   ; regout           ;
-; |Mips|estadoAtual.B   ; |Mips|estadoAtual.B   ; regout           ;
-; |Mips|estadoAtual.A   ; |Mips|estadoAtual.A   ; regout           ;
-; |Mips|clock           ; |Mips|clock           ; out              ;
-; |Mips|reset           ; |Mips|reset           ; out              ;
-; |Mips|RST[0]          ; |Mips|RST[0]          ; pin_out          ;
-; |Mips|RST[1]          ; |Mips|RST[1]          ; pin_out          ;
-; |Mips|RST[2]          ; |Mips|RST[2]          ; pin_out          ;
-; |Mips|RST[3]          ; |Mips|RST[3]          ; pin_out          ;
-; |Mips|RST[4]          ; |Mips|RST[4]          ; pin_out          ;
-; |Mips|RST[5]          ; |Mips|RST[5]          ; pin_out          ;
-; |Mips|RST[6]          ; |Mips|RST[6]          ; pin_out          ;
-; |Mips|RST[7]          ; |Mips|RST[7]          ; pin_out          ;
-; |Mips|RST[8]          ; |Mips|RST[8]          ; pin_out          ;
-; |Mips|RST[9]          ; |Mips|RST[9]          ; pin_out          ;
-; |Mips|RST[10]         ; |Mips|RST[10]         ; pin_out          ;
-; |Mips|RST[11]         ; |Mips|RST[11]         ; pin_out          ;
-; |Mips|RST[12]         ; |Mips|RST[12]         ; pin_out          ;
-; |Mips|RST[13]         ; |Mips|RST[13]         ; pin_out          ;
-; |Mips|RST[14]         ; |Mips|RST[14]         ; pin_out          ;
-; |Mips|RST[15]         ; |Mips|RST[15]         ; pin_out          ;
-; |Mips|RST[16]         ; |Mips|RST[16]         ; pin_out          ;
-; |Mips|RST[17]         ; |Mips|RST[17]         ; pin_out          ;
-; |Mips|RST[18]         ; |Mips|RST[18]         ; pin_out          ;
-; |Mips|RST[19]         ; |Mips|RST[19]         ; pin_out          ;
-; |Mips|RST[20]         ; |Mips|RST[20]         ; pin_out          ;
-; |Mips|RST[21]         ; |Mips|RST[21]         ; pin_out          ;
-; |Mips|RST[22]         ; |Mips|RST[22]         ; pin_out          ;
-; |Mips|RST[23]         ; |Mips|RST[23]         ; pin_out          ;
-; |Mips|RST[24]         ; |Mips|RST[24]         ; pin_out          ;
-; |Mips|RST[25]         ; |Mips|RST[25]         ; pin_out          ;
-; |Mips|RST[26]         ; |Mips|RST[26]         ; pin_out          ;
-; |Mips|RST[27]         ; |Mips|RST[27]         ; pin_out          ;
-; |Mips|RST[28]         ; |Mips|RST[28]         ; pin_out          ;
-; |Mips|RST[29]         ; |Mips|RST[29]         ; pin_out          ;
-; |Mips|RST[30]         ; |Mips|RST[30]         ; pin_out          ;
-; |Mips|RST[31]         ; |Mips|RST[31]         ; pin_out          ;
-; |Mips|estadoAtual~4   ; |Mips|estadoAtual~4   ; out0             ;
-; |Mips|estadoAtual.A~0 ; |Mips|estadoAtual.A~0 ; out0             ;
-; |Mips|RST~2           ; |Mips|RST~2           ; out0             ;
-; |Mips|estadoAtual.B~0 ; |Mips|estadoAtual.B~0 ; out0             ;
-; |Mips|estadoAtual~6   ; |Mips|estadoAtual~6   ; out0             ;
-; |Mips|estadoAtual.C~0 ; |Mips|estadoAtual.C~0 ; out0             ;
-; |Mips|RST~4           ; |Mips|RST~4           ; out0             ;
-; |Mips|estadoAtual.D~0 ; |Mips|estadoAtual.D~0 ; out0             ;
-; |Mips|estadoAtual~8   ; |Mips|estadoAtual~8   ; out0             ;
-; |Mips|estadoAtual~12  ; |Mips|estadoAtual~12  ; out0             ;
-+-----------------------+-----------------------+------------------+
++-------------------------------------------------+
+; Complete 1/0-Value Coverage                     ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 1 during simulation.
-+-------------------------------------------------+
-; Missing 1-Value Coverage                        ;
-+-----------+------------------+------------------+
-; Node Name ; Output Port Name ; Output Port Type ;
-+-----------+------------------+------------------+
-; |Mips|CLK ; |Mips|CLK        ; pin_out          ;
-+-----------+------------------+------------------+
++------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                     ;
++-----------------------------+-----------------------------+------------------+
+; Node Name                   ; Output Port Name            ; Output Port Type ;
++-----------------------------+-----------------------------+------------------+
+; |Extensor_Sinal|entrada[0]  ; |Extensor_Sinal|entrada[0]  ; out              ;
+; |Extensor_Sinal|entrada[1]  ; |Extensor_Sinal|entrada[1]  ; out              ;
+; |Extensor_Sinal|entrada[2]  ; |Extensor_Sinal|entrada[2]  ; out              ;
+; |Extensor_Sinal|entrada[3]  ; |Extensor_Sinal|entrada[3]  ; out              ;
+; |Extensor_Sinal|entrada[4]  ; |Extensor_Sinal|entrada[4]  ; out              ;
+; |Extensor_Sinal|entrada[5]  ; |Extensor_Sinal|entrada[5]  ; out              ;
+; |Extensor_Sinal|entrada[6]  ; |Extensor_Sinal|entrada[6]  ; out              ;
+; |Extensor_Sinal|entrada[7]  ; |Extensor_Sinal|entrada[7]  ; out              ;
+; |Extensor_Sinal|entrada[8]  ; |Extensor_Sinal|entrada[8]  ; out              ;
+; |Extensor_Sinal|entrada[9]  ; |Extensor_Sinal|entrada[9]  ; out              ;
+; |Extensor_Sinal|entrada[10] ; |Extensor_Sinal|entrada[10] ; out              ;
+; |Extensor_Sinal|entrada[11] ; |Extensor_Sinal|entrada[11] ; out              ;
+; |Extensor_Sinal|entrada[12] ; |Extensor_Sinal|entrada[12] ; out              ;
+; |Extensor_Sinal|entrada[13] ; |Extensor_Sinal|entrada[13] ; out              ;
+; |Extensor_Sinal|entrada[14] ; |Extensor_Sinal|entrada[14] ; out              ;
+; |Extensor_Sinal|entrada[15] ; |Extensor_Sinal|entrada[15] ; out              ;
+; |Extensor_Sinal|saida[0]    ; |Extensor_Sinal|saida[0]    ; pin_out          ;
+; |Extensor_Sinal|saida[1]    ; |Extensor_Sinal|saida[1]    ; pin_out          ;
+; |Extensor_Sinal|saida[2]    ; |Extensor_Sinal|saida[2]    ; pin_out          ;
+; |Extensor_Sinal|saida[3]    ; |Extensor_Sinal|saida[3]    ; pin_out          ;
+; |Extensor_Sinal|saida[4]    ; |Extensor_Sinal|saida[4]    ; pin_out          ;
+; |Extensor_Sinal|saida[5]    ; |Extensor_Sinal|saida[5]    ; pin_out          ;
+; |Extensor_Sinal|saida[6]    ; |Extensor_Sinal|saida[6]    ; pin_out          ;
+; |Extensor_Sinal|saida[7]    ; |Extensor_Sinal|saida[7]    ; pin_out          ;
+; |Extensor_Sinal|saida[8]    ; |Extensor_Sinal|saida[8]    ; pin_out          ;
+; |Extensor_Sinal|saida[9]    ; |Extensor_Sinal|saida[9]    ; pin_out          ;
+; |Extensor_Sinal|saida[10]   ; |Extensor_Sinal|saida[10]   ; pin_out          ;
+; |Extensor_Sinal|saida[11]   ; |Extensor_Sinal|saida[11]   ; pin_out          ;
+; |Extensor_Sinal|saida[12]   ; |Extensor_Sinal|saida[12]   ; pin_out          ;
+; |Extensor_Sinal|saida[13]   ; |Extensor_Sinal|saida[13]   ; pin_out          ;
+; |Extensor_Sinal|saida[14]   ; |Extensor_Sinal|saida[14]   ; pin_out          ;
+; |Extensor_Sinal|saida[15]   ; |Extensor_Sinal|saida[15]   ; pin_out          ;
+; |Extensor_Sinal|saida[16]   ; |Extensor_Sinal|saida[16]   ; pin_out          ;
+; |Extensor_Sinal|saida[17]   ; |Extensor_Sinal|saida[17]   ; pin_out          ;
+; |Extensor_Sinal|saida[18]   ; |Extensor_Sinal|saida[18]   ; pin_out          ;
+; |Extensor_Sinal|saida[19]   ; |Extensor_Sinal|saida[19]   ; pin_out          ;
+; |Extensor_Sinal|saida[20]   ; |Extensor_Sinal|saida[20]   ; pin_out          ;
+; |Extensor_Sinal|saida[21]   ; |Extensor_Sinal|saida[21]   ; pin_out          ;
+; |Extensor_Sinal|saida[22]   ; |Extensor_Sinal|saida[22]   ; pin_out          ;
+; |Extensor_Sinal|saida[23]   ; |Extensor_Sinal|saida[23]   ; pin_out          ;
+; |Extensor_Sinal|saida[24]   ; |Extensor_Sinal|saida[24]   ; pin_out          ;
+; |Extensor_Sinal|saida[25]   ; |Extensor_Sinal|saida[25]   ; pin_out          ;
+; |Extensor_Sinal|saida[26]   ; |Extensor_Sinal|saida[26]   ; pin_out          ;
+; |Extensor_Sinal|saida[27]   ; |Extensor_Sinal|saida[27]   ; pin_out          ;
+; |Extensor_Sinal|saida[28]   ; |Extensor_Sinal|saida[28]   ; pin_out          ;
+; |Extensor_Sinal|saida[29]   ; |Extensor_Sinal|saida[29]   ; pin_out          ;
+; |Extensor_Sinal|saida[30]   ; |Extensor_Sinal|saida[30]   ; pin_out          ;
+; |Extensor_Sinal|saida[31]   ; |Extensor_Sinal|saida[31]   ; pin_out          ;
++-----------------------------+-----------------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 0 during simulation.
-+-------------------------------------------------+
-; Missing 0-Value Coverage                        ;
-+-----------+------------------+------------------+
-; Node Name ; Output Port Name ; Output Port Type ;
-+-----------+------------------+------------------+
-; |Mips|CLK ; |Mips|CLK        ; pin_out          ;
-+-----------+------------------+------------------+
++------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                     ;
++-----------------------------+-----------------------------+------------------+
+; Node Name                   ; Output Port Name            ; Output Port Type ;
++-----------------------------+-----------------------------+------------------+
+; |Extensor_Sinal|entrada[0]  ; |Extensor_Sinal|entrada[0]  ; out              ;
+; |Extensor_Sinal|entrada[1]  ; |Extensor_Sinal|entrada[1]  ; out              ;
+; |Extensor_Sinal|entrada[2]  ; |Extensor_Sinal|entrada[2]  ; out              ;
+; |Extensor_Sinal|entrada[3]  ; |Extensor_Sinal|entrada[3]  ; out              ;
+; |Extensor_Sinal|entrada[4]  ; |Extensor_Sinal|entrada[4]  ; out              ;
+; |Extensor_Sinal|entrada[5]  ; |Extensor_Sinal|entrada[5]  ; out              ;
+; |Extensor_Sinal|entrada[6]  ; |Extensor_Sinal|entrada[6]  ; out              ;
+; |Extensor_Sinal|entrada[7]  ; |Extensor_Sinal|entrada[7]  ; out              ;
+; |Extensor_Sinal|entrada[8]  ; |Extensor_Sinal|entrada[8]  ; out              ;
+; |Extensor_Sinal|entrada[9]  ; |Extensor_Sinal|entrada[9]  ; out              ;
+; |Extensor_Sinal|entrada[10] ; |Extensor_Sinal|entrada[10] ; out              ;
+; |Extensor_Sinal|entrada[11] ; |Extensor_Sinal|entrada[11] ; out              ;
+; |Extensor_Sinal|entrada[12] ; |Extensor_Sinal|entrada[12] ; out              ;
+; |Extensor_Sinal|entrada[13] ; |Extensor_Sinal|entrada[13] ; out              ;
+; |Extensor_Sinal|entrada[14] ; |Extensor_Sinal|entrada[14] ; out              ;
+; |Extensor_Sinal|entrada[15] ; |Extensor_Sinal|entrada[15] ; out              ;
+; |Extensor_Sinal|saida[0]    ; |Extensor_Sinal|saida[0]    ; pin_out          ;
+; |Extensor_Sinal|saida[1]    ; |Extensor_Sinal|saida[1]    ; pin_out          ;
+; |Extensor_Sinal|saida[2]    ; |Extensor_Sinal|saida[2]    ; pin_out          ;
+; |Extensor_Sinal|saida[3]    ; |Extensor_Sinal|saida[3]    ; pin_out          ;
+; |Extensor_Sinal|saida[4]    ; |Extensor_Sinal|saida[4]    ; pin_out          ;
+; |Extensor_Sinal|saida[5]    ; |Extensor_Sinal|saida[5]    ; pin_out          ;
+; |Extensor_Sinal|saida[6]    ; |Extensor_Sinal|saida[6]    ; pin_out          ;
+; |Extensor_Sinal|saida[7]    ; |Extensor_Sinal|saida[7]    ; pin_out          ;
+; |Extensor_Sinal|saida[8]    ; |Extensor_Sinal|saida[8]    ; pin_out          ;
+; |Extensor_Sinal|saida[9]    ; |Extensor_Sinal|saida[9]    ; pin_out          ;
+; |Extensor_Sinal|saida[10]   ; |Extensor_Sinal|saida[10]   ; pin_out          ;
+; |Extensor_Sinal|saida[11]   ; |Extensor_Sinal|saida[11]   ; pin_out          ;
+; |Extensor_Sinal|saida[12]   ; |Extensor_Sinal|saida[12]   ; pin_out          ;
+; |Extensor_Sinal|saida[13]   ; |Extensor_Sinal|saida[13]   ; pin_out          ;
+; |Extensor_Sinal|saida[14]   ; |Extensor_Sinal|saida[14]   ; pin_out          ;
+; |Extensor_Sinal|saida[15]   ; |Extensor_Sinal|saida[15]   ; pin_out          ;
+; |Extensor_Sinal|saida[16]   ; |Extensor_Sinal|saida[16]   ; pin_out          ;
+; |Extensor_Sinal|saida[17]   ; |Extensor_Sinal|saida[17]   ; pin_out          ;
+; |Extensor_Sinal|saida[18]   ; |Extensor_Sinal|saida[18]   ; pin_out          ;
+; |Extensor_Sinal|saida[19]   ; |Extensor_Sinal|saida[19]   ; pin_out          ;
+; |Extensor_Sinal|saida[20]   ; |Extensor_Sinal|saida[20]   ; pin_out          ;
+; |Extensor_Sinal|saida[21]   ; |Extensor_Sinal|saida[21]   ; pin_out          ;
+; |Extensor_Sinal|saida[22]   ; |Extensor_Sinal|saida[22]   ; pin_out          ;
+; |Extensor_Sinal|saida[23]   ; |Extensor_Sinal|saida[23]   ; pin_out          ;
+; |Extensor_Sinal|saida[24]   ; |Extensor_Sinal|saida[24]   ; pin_out          ;
+; |Extensor_Sinal|saida[25]   ; |Extensor_Sinal|saida[25]   ; pin_out          ;
+; |Extensor_Sinal|saida[26]   ; |Extensor_Sinal|saida[26]   ; pin_out          ;
+; |Extensor_Sinal|saida[27]   ; |Extensor_Sinal|saida[27]   ; pin_out          ;
+; |Extensor_Sinal|saida[28]   ; |Extensor_Sinal|saida[28]   ; pin_out          ;
+; |Extensor_Sinal|saida[29]   ; |Extensor_Sinal|saida[29]   ; pin_out          ;
+; |Extensor_Sinal|saida[30]   ; |Extensor_Sinal|saida[30]   ; pin_out          ;
+; |Extensor_Sinal|saida[31]   ; |Extensor_Sinal|saida[31]   ; pin_out          ;
++-----------------------------+-----------------------------+------------------+
 
 
 +---------------------+
@@ -230,18 +238,18 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II Simulator
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Wed Apr 18 10:27:24 2018
+    Info: Processing started: Sat Apr 21 01:11:31 2018
 Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off Mips -c Mips
-Info: Using vector source file "C:/Users/Gabriel Alves/Documents/InfraHard/Projeto/Mips.vwf"
+Info: Using vector source file "C:/Users/Gabriel Alves/Documents/InfraHard/Projeto/infraestruturadeHardware/Mips.vwf"
 Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Info: Simulation partitioned into 1 sub-simulations
-Info: Simulation coverage is      98.84 %
-Info: Number of transitions in simulation is 25199
+Info: Simulation coverage is       0.00 %
+Info: Number of transitions in simulation is 0
 Info: Quartus II Simulator was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 195 megabytes
-    Info: Processing ended: Wed Apr 18 10:27:24 2018
-    Info: Elapsed time: 00:00:00
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Processing ended: Sat Apr 21 01:11:32 2018
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
 
 
