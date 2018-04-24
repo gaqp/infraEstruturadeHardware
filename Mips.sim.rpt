@@ -1,5 +1,5 @@
 Simulator report for Mips
-Sat Apr 21 01:11:32 2018
+Tue Apr 24 16:33:59 2018
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -45,7 +45,7 @@ applicable agreement for further details.
 +-----------------------------+--------------+
 ; Simulation Start Time       ; 0 ps         ;
 ; Simulation End Time         ; 1.0 us       ;
-; Simulation Netlist Size     ; 48 nodes     ;
+; Simulation Netlist Size     ; 64 nodes     ;
 ; Simulation Coverage         ;       0.00 % ;
 ; Total Number of Transitions ; 0            ;
 ; Simulation Breakpoints      ; 0            ;
@@ -94,12 +94,12 @@ Please use Quartus II to view the waveform report data.
 ; Type                                                ; Value        ;
 +-----------------------------------------------------+--------------+
 ; Total coverage as a percentage                      ;       0.00 % ;
-; Total nodes checked                                 ; 48           ;
-; Total output ports checked                          ; 48           ;
+; Total nodes checked                                 ; 64           ;
+; Total output ports checked                          ; 62           ;
 ; Total output ports with complete 1/0-value coverage ; 0            ;
-; Total output ports with no 1/0-value coverage       ; 48           ;
-; Total output ports with no 1-value coverage         ; 48           ;
-; Total output ports with no 0-value coverage         ; 48           ;
+; Total output ports with no 1/0-value coverage       ; 62           ;
+; Total output ports with no 1-value coverage         ; 62           ;
+; Total output ports with no 0-value coverage         ; 62           ;
 +-----------------------------------------------------+--------------+
 
 
@@ -112,117 +112,145 @@ The following table displays output ports that toggle between 1 and 0 during sim
 
 
 The following table displays output ports that do not toggle to 1 during simulation.
-+------------------------------------------------------------------------------+
-; Missing 1-Value Coverage                                                     ;
-+-----------------------------+-----------------------------+------------------+
-; Node Name                   ; Output Port Name            ; Output Port Type ;
-+-----------------------------+-----------------------------+------------------+
-; |Extensor_Sinal|entrada[0]  ; |Extensor_Sinal|entrada[0]  ; out              ;
-; |Extensor_Sinal|entrada[1]  ; |Extensor_Sinal|entrada[1]  ; out              ;
-; |Extensor_Sinal|entrada[2]  ; |Extensor_Sinal|entrada[2]  ; out              ;
-; |Extensor_Sinal|entrada[3]  ; |Extensor_Sinal|entrada[3]  ; out              ;
-; |Extensor_Sinal|entrada[4]  ; |Extensor_Sinal|entrada[4]  ; out              ;
-; |Extensor_Sinal|entrada[5]  ; |Extensor_Sinal|entrada[5]  ; out              ;
-; |Extensor_Sinal|entrada[6]  ; |Extensor_Sinal|entrada[6]  ; out              ;
-; |Extensor_Sinal|entrada[7]  ; |Extensor_Sinal|entrada[7]  ; out              ;
-; |Extensor_Sinal|entrada[8]  ; |Extensor_Sinal|entrada[8]  ; out              ;
-; |Extensor_Sinal|entrada[9]  ; |Extensor_Sinal|entrada[9]  ; out              ;
-; |Extensor_Sinal|entrada[10] ; |Extensor_Sinal|entrada[10] ; out              ;
-; |Extensor_Sinal|entrada[11] ; |Extensor_Sinal|entrada[11] ; out              ;
-; |Extensor_Sinal|entrada[12] ; |Extensor_Sinal|entrada[12] ; out              ;
-; |Extensor_Sinal|entrada[13] ; |Extensor_Sinal|entrada[13] ; out              ;
-; |Extensor_Sinal|entrada[14] ; |Extensor_Sinal|entrada[14] ; out              ;
-; |Extensor_Sinal|entrada[15] ; |Extensor_Sinal|entrada[15] ; out              ;
-; |Extensor_Sinal|saida[0]    ; |Extensor_Sinal|saida[0]    ; pin_out          ;
-; |Extensor_Sinal|saida[1]    ; |Extensor_Sinal|saida[1]    ; pin_out          ;
-; |Extensor_Sinal|saida[2]    ; |Extensor_Sinal|saida[2]    ; pin_out          ;
-; |Extensor_Sinal|saida[3]    ; |Extensor_Sinal|saida[3]    ; pin_out          ;
-; |Extensor_Sinal|saida[4]    ; |Extensor_Sinal|saida[4]    ; pin_out          ;
-; |Extensor_Sinal|saida[5]    ; |Extensor_Sinal|saida[5]    ; pin_out          ;
-; |Extensor_Sinal|saida[6]    ; |Extensor_Sinal|saida[6]    ; pin_out          ;
-; |Extensor_Sinal|saida[7]    ; |Extensor_Sinal|saida[7]    ; pin_out          ;
-; |Extensor_Sinal|saida[8]    ; |Extensor_Sinal|saida[8]    ; pin_out          ;
-; |Extensor_Sinal|saida[9]    ; |Extensor_Sinal|saida[9]    ; pin_out          ;
-; |Extensor_Sinal|saida[10]   ; |Extensor_Sinal|saida[10]   ; pin_out          ;
-; |Extensor_Sinal|saida[11]   ; |Extensor_Sinal|saida[11]   ; pin_out          ;
-; |Extensor_Sinal|saida[12]   ; |Extensor_Sinal|saida[12]   ; pin_out          ;
-; |Extensor_Sinal|saida[13]   ; |Extensor_Sinal|saida[13]   ; pin_out          ;
-; |Extensor_Sinal|saida[14]   ; |Extensor_Sinal|saida[14]   ; pin_out          ;
-; |Extensor_Sinal|saida[15]   ; |Extensor_Sinal|saida[15]   ; pin_out          ;
-; |Extensor_Sinal|saida[16]   ; |Extensor_Sinal|saida[16]   ; pin_out          ;
-; |Extensor_Sinal|saida[17]   ; |Extensor_Sinal|saida[17]   ; pin_out          ;
-; |Extensor_Sinal|saida[18]   ; |Extensor_Sinal|saida[18]   ; pin_out          ;
-; |Extensor_Sinal|saida[19]   ; |Extensor_Sinal|saida[19]   ; pin_out          ;
-; |Extensor_Sinal|saida[20]   ; |Extensor_Sinal|saida[20]   ; pin_out          ;
-; |Extensor_Sinal|saida[21]   ; |Extensor_Sinal|saida[21]   ; pin_out          ;
-; |Extensor_Sinal|saida[22]   ; |Extensor_Sinal|saida[22]   ; pin_out          ;
-; |Extensor_Sinal|saida[23]   ; |Extensor_Sinal|saida[23]   ; pin_out          ;
-; |Extensor_Sinal|saida[24]   ; |Extensor_Sinal|saida[24]   ; pin_out          ;
-; |Extensor_Sinal|saida[25]   ; |Extensor_Sinal|saida[25]   ; pin_out          ;
-; |Extensor_Sinal|saida[26]   ; |Extensor_Sinal|saida[26]   ; pin_out          ;
-; |Extensor_Sinal|saida[27]   ; |Extensor_Sinal|saida[27]   ; pin_out          ;
-; |Extensor_Sinal|saida[28]   ; |Extensor_Sinal|saida[28]   ; pin_out          ;
-; |Extensor_Sinal|saida[29]   ; |Extensor_Sinal|saida[29]   ; pin_out          ;
-; |Extensor_Sinal|saida[30]   ; |Extensor_Sinal|saida[30]   ; pin_out          ;
-; |Extensor_Sinal|saida[31]   ; |Extensor_Sinal|saida[31]   ; pin_out          ;
-+-----------------------------+-----------------------------+------------------+
++----------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                         ;
++-------------------------------+-------------------------------+------------------+
+; Node Name                     ; Output Port Name              ; Output Port Type ;
++-------------------------------+-------------------------------+------------------+
+; |Shift_Left_32_32|entrada[0]  ; |Shift_Left_32_32|entrada[0]  ; out              ;
+; |Shift_Left_32_32|entrada[1]  ; |Shift_Left_32_32|entrada[1]  ; out              ;
+; |Shift_Left_32_32|entrada[2]  ; |Shift_Left_32_32|entrada[2]  ; out              ;
+; |Shift_Left_32_32|entrada[3]  ; |Shift_Left_32_32|entrada[3]  ; out              ;
+; |Shift_Left_32_32|entrada[4]  ; |Shift_Left_32_32|entrada[4]  ; out              ;
+; |Shift_Left_32_32|entrada[5]  ; |Shift_Left_32_32|entrada[5]  ; out              ;
+; |Shift_Left_32_32|entrada[6]  ; |Shift_Left_32_32|entrada[6]  ; out              ;
+; |Shift_Left_32_32|entrada[7]  ; |Shift_Left_32_32|entrada[7]  ; out              ;
+; |Shift_Left_32_32|entrada[8]  ; |Shift_Left_32_32|entrada[8]  ; out              ;
+; |Shift_Left_32_32|entrada[9]  ; |Shift_Left_32_32|entrada[9]  ; out              ;
+; |Shift_Left_32_32|entrada[10] ; |Shift_Left_32_32|entrada[10] ; out              ;
+; |Shift_Left_32_32|entrada[11] ; |Shift_Left_32_32|entrada[11] ; out              ;
+; |Shift_Left_32_32|entrada[12] ; |Shift_Left_32_32|entrada[12] ; out              ;
+; |Shift_Left_32_32|entrada[13] ; |Shift_Left_32_32|entrada[13] ; out              ;
+; |Shift_Left_32_32|entrada[14] ; |Shift_Left_32_32|entrada[14] ; out              ;
+; |Shift_Left_32_32|entrada[15] ; |Shift_Left_32_32|entrada[15] ; out              ;
+; |Shift_Left_32_32|entrada[16] ; |Shift_Left_32_32|entrada[16] ; out              ;
+; |Shift_Left_32_32|entrada[17] ; |Shift_Left_32_32|entrada[17] ; out              ;
+; |Shift_Left_32_32|entrada[18] ; |Shift_Left_32_32|entrada[18] ; out              ;
+; |Shift_Left_32_32|entrada[19] ; |Shift_Left_32_32|entrada[19] ; out              ;
+; |Shift_Left_32_32|entrada[20] ; |Shift_Left_32_32|entrada[20] ; out              ;
+; |Shift_Left_32_32|entrada[21] ; |Shift_Left_32_32|entrada[21] ; out              ;
+; |Shift_Left_32_32|entrada[22] ; |Shift_Left_32_32|entrada[22] ; out              ;
+; |Shift_Left_32_32|entrada[23] ; |Shift_Left_32_32|entrada[23] ; out              ;
+; |Shift_Left_32_32|entrada[24] ; |Shift_Left_32_32|entrada[24] ; out              ;
+; |Shift_Left_32_32|entrada[25] ; |Shift_Left_32_32|entrada[25] ; out              ;
+; |Shift_Left_32_32|entrada[26] ; |Shift_Left_32_32|entrada[26] ; out              ;
+; |Shift_Left_32_32|entrada[27] ; |Shift_Left_32_32|entrada[27] ; out              ;
+; |Shift_Left_32_32|entrada[28] ; |Shift_Left_32_32|entrada[28] ; out              ;
+; |Shift_Left_32_32|entrada[29] ; |Shift_Left_32_32|entrada[29] ; out              ;
+; |Shift_Left_32_32|saida[0]    ; |Shift_Left_32_32|saida[0]    ; pin_out          ;
+; |Shift_Left_32_32|saida[1]    ; |Shift_Left_32_32|saida[1]    ; pin_out          ;
+; |Shift_Left_32_32|saida[2]    ; |Shift_Left_32_32|saida[2]    ; pin_out          ;
+; |Shift_Left_32_32|saida[3]    ; |Shift_Left_32_32|saida[3]    ; pin_out          ;
+; |Shift_Left_32_32|saida[4]    ; |Shift_Left_32_32|saida[4]    ; pin_out          ;
+; |Shift_Left_32_32|saida[5]    ; |Shift_Left_32_32|saida[5]    ; pin_out          ;
+; |Shift_Left_32_32|saida[6]    ; |Shift_Left_32_32|saida[6]    ; pin_out          ;
+; |Shift_Left_32_32|saida[7]    ; |Shift_Left_32_32|saida[7]    ; pin_out          ;
+; |Shift_Left_32_32|saida[8]    ; |Shift_Left_32_32|saida[8]    ; pin_out          ;
+; |Shift_Left_32_32|saida[9]    ; |Shift_Left_32_32|saida[9]    ; pin_out          ;
+; |Shift_Left_32_32|saida[10]   ; |Shift_Left_32_32|saida[10]   ; pin_out          ;
+; |Shift_Left_32_32|saida[11]   ; |Shift_Left_32_32|saida[11]   ; pin_out          ;
+; |Shift_Left_32_32|saida[12]   ; |Shift_Left_32_32|saida[12]   ; pin_out          ;
+; |Shift_Left_32_32|saida[13]   ; |Shift_Left_32_32|saida[13]   ; pin_out          ;
+; |Shift_Left_32_32|saida[14]   ; |Shift_Left_32_32|saida[14]   ; pin_out          ;
+; |Shift_Left_32_32|saida[15]   ; |Shift_Left_32_32|saida[15]   ; pin_out          ;
+; |Shift_Left_32_32|saida[16]   ; |Shift_Left_32_32|saida[16]   ; pin_out          ;
+; |Shift_Left_32_32|saida[17]   ; |Shift_Left_32_32|saida[17]   ; pin_out          ;
+; |Shift_Left_32_32|saida[18]   ; |Shift_Left_32_32|saida[18]   ; pin_out          ;
+; |Shift_Left_32_32|saida[19]   ; |Shift_Left_32_32|saida[19]   ; pin_out          ;
+; |Shift_Left_32_32|saida[20]   ; |Shift_Left_32_32|saida[20]   ; pin_out          ;
+; |Shift_Left_32_32|saida[21]   ; |Shift_Left_32_32|saida[21]   ; pin_out          ;
+; |Shift_Left_32_32|saida[22]   ; |Shift_Left_32_32|saida[22]   ; pin_out          ;
+; |Shift_Left_32_32|saida[23]   ; |Shift_Left_32_32|saida[23]   ; pin_out          ;
+; |Shift_Left_32_32|saida[24]   ; |Shift_Left_32_32|saida[24]   ; pin_out          ;
+; |Shift_Left_32_32|saida[25]   ; |Shift_Left_32_32|saida[25]   ; pin_out          ;
+; |Shift_Left_32_32|saida[26]   ; |Shift_Left_32_32|saida[26]   ; pin_out          ;
+; |Shift_Left_32_32|saida[27]   ; |Shift_Left_32_32|saida[27]   ; pin_out          ;
+; |Shift_Left_32_32|saida[28]   ; |Shift_Left_32_32|saida[28]   ; pin_out          ;
+; |Shift_Left_32_32|saida[29]   ; |Shift_Left_32_32|saida[29]   ; pin_out          ;
+; |Shift_Left_32_32|saida[30]   ; |Shift_Left_32_32|saida[30]   ; pin_out          ;
+; |Shift_Left_32_32|saida[31]   ; |Shift_Left_32_32|saida[31]   ; pin_out          ;
++-------------------------------+-------------------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 0 during simulation.
-+------------------------------------------------------------------------------+
-; Missing 0-Value Coverage                                                     ;
-+-----------------------------+-----------------------------+------------------+
-; Node Name                   ; Output Port Name            ; Output Port Type ;
-+-----------------------------+-----------------------------+------------------+
-; |Extensor_Sinal|entrada[0]  ; |Extensor_Sinal|entrada[0]  ; out              ;
-; |Extensor_Sinal|entrada[1]  ; |Extensor_Sinal|entrada[1]  ; out              ;
-; |Extensor_Sinal|entrada[2]  ; |Extensor_Sinal|entrada[2]  ; out              ;
-; |Extensor_Sinal|entrada[3]  ; |Extensor_Sinal|entrada[3]  ; out              ;
-; |Extensor_Sinal|entrada[4]  ; |Extensor_Sinal|entrada[4]  ; out              ;
-; |Extensor_Sinal|entrada[5]  ; |Extensor_Sinal|entrada[5]  ; out              ;
-; |Extensor_Sinal|entrada[6]  ; |Extensor_Sinal|entrada[6]  ; out              ;
-; |Extensor_Sinal|entrada[7]  ; |Extensor_Sinal|entrada[7]  ; out              ;
-; |Extensor_Sinal|entrada[8]  ; |Extensor_Sinal|entrada[8]  ; out              ;
-; |Extensor_Sinal|entrada[9]  ; |Extensor_Sinal|entrada[9]  ; out              ;
-; |Extensor_Sinal|entrada[10] ; |Extensor_Sinal|entrada[10] ; out              ;
-; |Extensor_Sinal|entrada[11] ; |Extensor_Sinal|entrada[11] ; out              ;
-; |Extensor_Sinal|entrada[12] ; |Extensor_Sinal|entrada[12] ; out              ;
-; |Extensor_Sinal|entrada[13] ; |Extensor_Sinal|entrada[13] ; out              ;
-; |Extensor_Sinal|entrada[14] ; |Extensor_Sinal|entrada[14] ; out              ;
-; |Extensor_Sinal|entrada[15] ; |Extensor_Sinal|entrada[15] ; out              ;
-; |Extensor_Sinal|saida[0]    ; |Extensor_Sinal|saida[0]    ; pin_out          ;
-; |Extensor_Sinal|saida[1]    ; |Extensor_Sinal|saida[1]    ; pin_out          ;
-; |Extensor_Sinal|saida[2]    ; |Extensor_Sinal|saida[2]    ; pin_out          ;
-; |Extensor_Sinal|saida[3]    ; |Extensor_Sinal|saida[3]    ; pin_out          ;
-; |Extensor_Sinal|saida[4]    ; |Extensor_Sinal|saida[4]    ; pin_out          ;
-; |Extensor_Sinal|saida[5]    ; |Extensor_Sinal|saida[5]    ; pin_out          ;
-; |Extensor_Sinal|saida[6]    ; |Extensor_Sinal|saida[6]    ; pin_out          ;
-; |Extensor_Sinal|saida[7]    ; |Extensor_Sinal|saida[7]    ; pin_out          ;
-; |Extensor_Sinal|saida[8]    ; |Extensor_Sinal|saida[8]    ; pin_out          ;
-; |Extensor_Sinal|saida[9]    ; |Extensor_Sinal|saida[9]    ; pin_out          ;
-; |Extensor_Sinal|saida[10]   ; |Extensor_Sinal|saida[10]   ; pin_out          ;
-; |Extensor_Sinal|saida[11]   ; |Extensor_Sinal|saida[11]   ; pin_out          ;
-; |Extensor_Sinal|saida[12]   ; |Extensor_Sinal|saida[12]   ; pin_out          ;
-; |Extensor_Sinal|saida[13]   ; |Extensor_Sinal|saida[13]   ; pin_out          ;
-; |Extensor_Sinal|saida[14]   ; |Extensor_Sinal|saida[14]   ; pin_out          ;
-; |Extensor_Sinal|saida[15]   ; |Extensor_Sinal|saida[15]   ; pin_out          ;
-; |Extensor_Sinal|saida[16]   ; |Extensor_Sinal|saida[16]   ; pin_out          ;
-; |Extensor_Sinal|saida[17]   ; |Extensor_Sinal|saida[17]   ; pin_out          ;
-; |Extensor_Sinal|saida[18]   ; |Extensor_Sinal|saida[18]   ; pin_out          ;
-; |Extensor_Sinal|saida[19]   ; |Extensor_Sinal|saida[19]   ; pin_out          ;
-; |Extensor_Sinal|saida[20]   ; |Extensor_Sinal|saida[20]   ; pin_out          ;
-; |Extensor_Sinal|saida[21]   ; |Extensor_Sinal|saida[21]   ; pin_out          ;
-; |Extensor_Sinal|saida[22]   ; |Extensor_Sinal|saida[22]   ; pin_out          ;
-; |Extensor_Sinal|saida[23]   ; |Extensor_Sinal|saida[23]   ; pin_out          ;
-; |Extensor_Sinal|saida[24]   ; |Extensor_Sinal|saida[24]   ; pin_out          ;
-; |Extensor_Sinal|saida[25]   ; |Extensor_Sinal|saida[25]   ; pin_out          ;
-; |Extensor_Sinal|saida[26]   ; |Extensor_Sinal|saida[26]   ; pin_out          ;
-; |Extensor_Sinal|saida[27]   ; |Extensor_Sinal|saida[27]   ; pin_out          ;
-; |Extensor_Sinal|saida[28]   ; |Extensor_Sinal|saida[28]   ; pin_out          ;
-; |Extensor_Sinal|saida[29]   ; |Extensor_Sinal|saida[29]   ; pin_out          ;
-; |Extensor_Sinal|saida[30]   ; |Extensor_Sinal|saida[30]   ; pin_out          ;
-; |Extensor_Sinal|saida[31]   ; |Extensor_Sinal|saida[31]   ; pin_out          ;
-+-----------------------------+-----------------------------+------------------+
++----------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                         ;
++-------------------------------+-------------------------------+------------------+
+; Node Name                     ; Output Port Name              ; Output Port Type ;
++-------------------------------+-------------------------------+------------------+
+; |Shift_Left_32_32|entrada[0]  ; |Shift_Left_32_32|entrada[0]  ; out              ;
+; |Shift_Left_32_32|entrada[1]  ; |Shift_Left_32_32|entrada[1]  ; out              ;
+; |Shift_Left_32_32|entrada[2]  ; |Shift_Left_32_32|entrada[2]  ; out              ;
+; |Shift_Left_32_32|entrada[3]  ; |Shift_Left_32_32|entrada[3]  ; out              ;
+; |Shift_Left_32_32|entrada[4]  ; |Shift_Left_32_32|entrada[4]  ; out              ;
+; |Shift_Left_32_32|entrada[5]  ; |Shift_Left_32_32|entrada[5]  ; out              ;
+; |Shift_Left_32_32|entrada[6]  ; |Shift_Left_32_32|entrada[6]  ; out              ;
+; |Shift_Left_32_32|entrada[7]  ; |Shift_Left_32_32|entrada[7]  ; out              ;
+; |Shift_Left_32_32|entrada[8]  ; |Shift_Left_32_32|entrada[8]  ; out              ;
+; |Shift_Left_32_32|entrada[9]  ; |Shift_Left_32_32|entrada[9]  ; out              ;
+; |Shift_Left_32_32|entrada[10] ; |Shift_Left_32_32|entrada[10] ; out              ;
+; |Shift_Left_32_32|entrada[11] ; |Shift_Left_32_32|entrada[11] ; out              ;
+; |Shift_Left_32_32|entrada[12] ; |Shift_Left_32_32|entrada[12] ; out              ;
+; |Shift_Left_32_32|entrada[13] ; |Shift_Left_32_32|entrada[13] ; out              ;
+; |Shift_Left_32_32|entrada[14] ; |Shift_Left_32_32|entrada[14] ; out              ;
+; |Shift_Left_32_32|entrada[15] ; |Shift_Left_32_32|entrada[15] ; out              ;
+; |Shift_Left_32_32|entrada[16] ; |Shift_Left_32_32|entrada[16] ; out              ;
+; |Shift_Left_32_32|entrada[17] ; |Shift_Left_32_32|entrada[17] ; out              ;
+; |Shift_Left_32_32|entrada[18] ; |Shift_Left_32_32|entrada[18] ; out              ;
+; |Shift_Left_32_32|entrada[19] ; |Shift_Left_32_32|entrada[19] ; out              ;
+; |Shift_Left_32_32|entrada[20] ; |Shift_Left_32_32|entrada[20] ; out              ;
+; |Shift_Left_32_32|entrada[21] ; |Shift_Left_32_32|entrada[21] ; out              ;
+; |Shift_Left_32_32|entrada[22] ; |Shift_Left_32_32|entrada[22] ; out              ;
+; |Shift_Left_32_32|entrada[23] ; |Shift_Left_32_32|entrada[23] ; out              ;
+; |Shift_Left_32_32|entrada[24] ; |Shift_Left_32_32|entrada[24] ; out              ;
+; |Shift_Left_32_32|entrada[25] ; |Shift_Left_32_32|entrada[25] ; out              ;
+; |Shift_Left_32_32|entrada[26] ; |Shift_Left_32_32|entrada[26] ; out              ;
+; |Shift_Left_32_32|entrada[27] ; |Shift_Left_32_32|entrada[27] ; out              ;
+; |Shift_Left_32_32|entrada[28] ; |Shift_Left_32_32|entrada[28] ; out              ;
+; |Shift_Left_32_32|entrada[29] ; |Shift_Left_32_32|entrada[29] ; out              ;
+; |Shift_Left_32_32|saida[0]    ; |Shift_Left_32_32|saida[0]    ; pin_out          ;
+; |Shift_Left_32_32|saida[1]    ; |Shift_Left_32_32|saida[1]    ; pin_out          ;
+; |Shift_Left_32_32|saida[2]    ; |Shift_Left_32_32|saida[2]    ; pin_out          ;
+; |Shift_Left_32_32|saida[3]    ; |Shift_Left_32_32|saida[3]    ; pin_out          ;
+; |Shift_Left_32_32|saida[4]    ; |Shift_Left_32_32|saida[4]    ; pin_out          ;
+; |Shift_Left_32_32|saida[5]    ; |Shift_Left_32_32|saida[5]    ; pin_out          ;
+; |Shift_Left_32_32|saida[6]    ; |Shift_Left_32_32|saida[6]    ; pin_out          ;
+; |Shift_Left_32_32|saida[7]    ; |Shift_Left_32_32|saida[7]    ; pin_out          ;
+; |Shift_Left_32_32|saida[8]    ; |Shift_Left_32_32|saida[8]    ; pin_out          ;
+; |Shift_Left_32_32|saida[9]    ; |Shift_Left_32_32|saida[9]    ; pin_out          ;
+; |Shift_Left_32_32|saida[10]   ; |Shift_Left_32_32|saida[10]   ; pin_out          ;
+; |Shift_Left_32_32|saida[11]   ; |Shift_Left_32_32|saida[11]   ; pin_out          ;
+; |Shift_Left_32_32|saida[12]   ; |Shift_Left_32_32|saida[12]   ; pin_out          ;
+; |Shift_Left_32_32|saida[13]   ; |Shift_Left_32_32|saida[13]   ; pin_out          ;
+; |Shift_Left_32_32|saida[14]   ; |Shift_Left_32_32|saida[14]   ; pin_out          ;
+; |Shift_Left_32_32|saida[15]   ; |Shift_Left_32_32|saida[15]   ; pin_out          ;
+; |Shift_Left_32_32|saida[16]   ; |Shift_Left_32_32|saida[16]   ; pin_out          ;
+; |Shift_Left_32_32|saida[17]   ; |Shift_Left_32_32|saida[17]   ; pin_out          ;
+; |Shift_Left_32_32|saida[18]   ; |Shift_Left_32_32|saida[18]   ; pin_out          ;
+; |Shift_Left_32_32|saida[19]   ; |Shift_Left_32_32|saida[19]   ; pin_out          ;
+; |Shift_Left_32_32|saida[20]   ; |Shift_Left_32_32|saida[20]   ; pin_out          ;
+; |Shift_Left_32_32|saida[21]   ; |Shift_Left_32_32|saida[21]   ; pin_out          ;
+; |Shift_Left_32_32|saida[22]   ; |Shift_Left_32_32|saida[22]   ; pin_out          ;
+; |Shift_Left_32_32|saida[23]   ; |Shift_Left_32_32|saida[23]   ; pin_out          ;
+; |Shift_Left_32_32|saida[24]   ; |Shift_Left_32_32|saida[24]   ; pin_out          ;
+; |Shift_Left_32_32|saida[25]   ; |Shift_Left_32_32|saida[25]   ; pin_out          ;
+; |Shift_Left_32_32|saida[26]   ; |Shift_Left_32_32|saida[26]   ; pin_out          ;
+; |Shift_Left_32_32|saida[27]   ; |Shift_Left_32_32|saida[27]   ; pin_out          ;
+; |Shift_Left_32_32|saida[28]   ; |Shift_Left_32_32|saida[28]   ; pin_out          ;
+; |Shift_Left_32_32|saida[29]   ; |Shift_Left_32_32|saida[29]   ; pin_out          ;
+; |Shift_Left_32_32|saida[30]   ; |Shift_Left_32_32|saida[30]   ; pin_out          ;
+; |Shift_Left_32_32|saida[31]   ; |Shift_Left_32_32|saida[31]   ; pin_out          ;
++-------------------------------+-------------------------------+------------------+
 
 
 +---------------------+
@@ -238,18 +266,18 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II Simulator
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Sat Apr 21 01:11:31 2018
+    Info: Processing started: Tue Apr 24 16:33:59 2018
 Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off Mips -c Mips
-Info: Using vector source file "C:/Users/Gabriel Alves/Documents/InfraHard/Projeto/infraestruturadeHardware/Mips.vwf"
+Info: Using vector source file "C:/Users/gaqp/Downloads/infraestruturadeHardware-20180424T185915Z-001/infraestruturadeHardware/Mips.vwf"
 Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Info: Simulation partitioned into 1 sub-simulations
 Info: Simulation coverage is       0.00 %
 Info: Number of transitions in simulation is 0
 Info: Quartus II Simulator was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 195 megabytes
-    Info: Processing ended: Sat Apr 21 01:11:32 2018
-    Info: Elapsed time: 00:00:01
+    Info: Peak virtual memory: 153 megabytes
+    Info: Processing ended: Tue Apr 24 16:34:01 2018
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:00
 
 

@@ -1,5 +1,5 @@
 Assembler report for Mips
-Sat Apr 21 01:08:12 2018
+Tue Apr 24 16:33:27 2018
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -10,8 +10,8 @@ Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/Gabriel Alves/Documents/InfraHard/Projeto/infraestruturadeHardware/Mips.sof
-  6. Assembler Device Options: C:/Users/Gabriel Alves/Documents/InfraHard/Projeto/infraestruturadeHardware/Mips.pof
+  5. Assembler Device Options: C:/Users/gaqp/Downloads/infraestruturadeHardware-20180424T185915Z-001/infraestruturadeHardware/Mips.sof
+  6. Assembler Device Options: C:/Users/gaqp/Downloads/infraestruturadeHardware-20180424T185915Z-001/infraestruturadeHardware/Mips.pof
   7. Assembler Messages
 
 
@@ -38,9 +38,9 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Sat Apr 21 01:08:12 2018 ;
+; Assembler Status      ; Successful - Tue Apr 24 16:33:27 2018 ;
 ; Revision Name         ; Mips                                  ;
-; Top-level Entity Name ; Extensor_Sinal                        ;
+; Top-level Entity Name ; Shift_Left_32_32                      ;
 ; Family                ; Cyclone II                            ;
 ; Device                ; EP2C70F672C6                          ;
 +-----------------------+---------------------------------------+
@@ -78,37 +78,37 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+----------+---------------+
 
 
-+--------------------------------------------------------------------------------------+
-; Assembler Generated Files                                                            ;
-+--------------------------------------------------------------------------------------+
-; File Name                                                                            ;
-+--------------------------------------------------------------------------------------+
-; C:/Users/Gabriel Alves/Documents/InfraHard/Projeto/infraestruturadeHardware/Mips.sof ;
-; C:/Users/Gabriel Alves/Documents/InfraHard/Projeto/infraestruturadeHardware/Mips.pof ;
-+--------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------+
+; Assembler Generated Files                                                                               ;
++---------------------------------------------------------------------------------------------------------+
+; File Name                                                                                               ;
++---------------------------------------------------------------------------------------------------------+
+; C:/Users/gaqp/Downloads/infraestruturadeHardware-20180424T185915Z-001/infraestruturadeHardware/Mips.sof ;
+; C:/Users/gaqp/Downloads/infraestruturadeHardware-20180424T185915Z-001/infraestruturadeHardware/Mips.pof ;
++---------------------------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/Gabriel Alves/Documents/InfraHard/Projeto/infraestruturadeHardware/Mips.sof ;
-+----------------+-----------------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                                       ;
-+----------------+-----------------------------------------------------------------------------------------------+
-; Device         ; EP2C70F672C6                                                                                  ;
-; JTAG usercode  ; 0xFFFFFFFF                                                                                    ;
-; Checksum       ; 0x00607D57                                                                                    ;
-+----------------+-----------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/gaqp/Downloads/infraestruturadeHardware-20180424T185915Z-001/infraestruturadeHardware/Mips.sof ;
++----------------+------------------------------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                                          ;
++----------------+------------------------------------------------------------------------------------------------------------------+
+; Device         ; EP2C70F672C6                                                                                                     ;
+; JTAG usercode  ; 0xFFFFFFFF                                                                                                       ;
+; Checksum       ; 0x006082E3                                                                                                       ;
++----------------+------------------------------------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/Gabriel Alves/Documents/InfraHard/Projeto/infraestruturadeHardware/Mips.pof ;
-+--------------------+-------------------------------------------------------------------------------------------+
-; Option             ; Setting                                                                                   ;
-+--------------------+-------------------------------------------------------------------------------------------+
-; Device             ; EPCS16                                                                                    ;
-; JTAG usercode      ; 0x00000000                                                                                ;
-; Checksum           ; 0x187F05A2                                                                                ;
-; Compression Ratio  ; 3                                                                                         ;
-+--------------------+-------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/gaqp/Downloads/infraestruturadeHardware-20180424T185915Z-001/infraestruturadeHardware/Mips.pof ;
++--------------------+--------------------------------------------------------------------------------------------------------------+
+; Option             ; Setting                                                                                                      ;
++--------------------+--------------------------------------------------------------------------------------------------------------+
+; Device             ; EPCS16                                                                                                       ;
+; JTAG usercode      ; 0x00000000                                                                                                   ;
+; Checksum           ; 0x187EC4F1                                                                                                   ;
+; Compression Ratio  ; 3                                                                                                            ;
++--------------------+--------------------------------------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -117,13 +117,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II Assembler
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Sat Apr 21 01:08:08 2018
+    Info: Processing started: Tue Apr 24 16:33:23 2018
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off Mips -c Mips
 Info: Writing out detailed assembly data for power analysis
 Info: Assembler is generating device programming files
 Info: Quartus II Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 385 megabytes
-    Info: Processing ended: Sat Apr 21 01:08:12 2018
+    Info: Peak virtual memory: 336 megabytes
+    Info: Processing ended: Tue Apr 24 16:33:27 2018
     Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:04
 

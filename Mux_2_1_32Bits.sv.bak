@@ -1,0 +1,15 @@
+module Mux_2_1_32Bits(input [32:0] zero, input [32:0] um, input seletor, output [32:0] saida);
+always@*
+begin
+	case(seletor)
+	1'b0:
+	begin
+		saida = zero;
+	end
+	1'b1:
+	begin
+		saida = um;
+	end
+	endcase
+end
+endmodule

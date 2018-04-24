@@ -53,7 +53,7 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 
 # end
 # entity
-Extensor_Sinal
+Mux_4_1_32Bits
 # storage
 db|Mips.(1).cnf
 db|Mips.(1).cnf
@@ -63,8 +63,107 @@ ON
 }
 # case_sensitive
 # source_file
-componentes do projeto|extensor_sinal.sv
-c7d772e32fc7113de55967f31085c55
+componentes do projeto|mux_4_1_32bits.sv
+14d5854d1325269575abdb0e6f96fcc
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+Mux_2_1_5Bits
+# storage
+db|Mips.(2).cnf
+db|Mips.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+componentes do projeto|mux_2_1_5bits.sv
+3f142dd35e26aec828d11bd6e32d37
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+Shift_Left_26_28
+# storage
+db|Mips.(3).cnf
+db|Mips.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+componentes do projeto|shift_left_26_28.sv
+bbe4e7fe4bc996d48f4e0b310114e
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+Shift_Left_32_32
+# storage
+db|Mips.(4).cnf
+db|Mips.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+componentes do projeto|shift_left_32_32.sv
+9b4a67f7874c4e31ceaa49fab79f6a1
 9
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT

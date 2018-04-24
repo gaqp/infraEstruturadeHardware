@@ -1,5 +1,5 @@
 Flow report for Mips
-Sat Apr 21 01:08:13 2018
+Tue Apr 24 16:33:29 2018
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -38,10 +38,10 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Flow Summary                                                                      ;
 +------------------------------------+----------------------------------------------+
-; Flow Status                        ; Successful - Sat Apr 21 01:08:13 2018        ;
+; Flow Status                        ; Successful - Tue Apr 24 16:33:29 2018        ;
 ; Quartus II Version                 ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                      ; Mips                                         ;
-; Top-level Entity Name              ; Extensor_Sinal                               ;
+; Top-level Entity Name              ; Shift_Left_32_32                             ;
 ; Family                             ; Cyclone II                                   ;
 ; Device                             ; EP2C70F672C6                                 ;
 ; Timing Models                      ; Final                                        ;
@@ -50,7 +50,7 @@ applicable agreement for further details.
 ;     Total combinational functions  ; 0 / 68,416 ( 0 % )                           ;
 ;     Dedicated logic registers      ; 0 / 68,416 ( 0 % )                           ;
 ; Total registers                    ; 0                                            ;
-; Total pins                         ; 48 / 422 ( 11 % )                            ;
+; Total pins                         ; 64 / 422 ( 15 % )                            ;
 ; Total virtual pins                 ; 0                                            ;
 ; Total memory bits                  ; 0 / 1,152,000 ( 0 % )                        ;
 ; Embedded Multiplier 9-bit elements ; 0 / 300 ( 0 % )                              ;
@@ -63,25 +63,25 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/21/2018 01:07:54 ;
+; Start date & time ; 04/24/2018 16:33:09 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Mips                ;
 +-------------------+---------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                       ;
-+------------------------------------+---------------------------------+---------------+----------------+----------------+
-; Assignment Name                    ; Value                           ; Default Value ; Entity Name    ; Section Id     ;
-+------------------------------------+---------------------------------+---------------+----------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 150119987578760.152428367405628 ; --            ; --             ; --             ;
-; MAX_CORE_JUNCTION_TEMP             ; 85                              ; --            ; --             ; --             ;
-; MIN_CORE_JUNCTION_TEMP             ; 0                               ; --            ; --             ; --             ;
-; PARTITION_COLOR                    ; 16764057                        ; --            ; Extensor_Sinal ; Top            ;
-; PARTITION_NETLIST_TYPE             ; SOURCE                          ; --            ; Extensor_Sinal ; Top            ;
-; TOP_LEVEL_ENTITY                   ; Extensor_Sinal                  ; Mips          ; --             ; --             ;
-; USE_GENERATED_PHYSICAL_CONSTRAINTS ; Off                             ; --            ; --             ; eda_blast_fpga ;
-+------------------------------------+---------------------------------+---------------+----------------+----------------+
++-------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                        ;
++------------------------------------+--------------------------------+---------------+------------------+----------------+
+; Assignment Name                    ; Value                          ; Default Value ; Entity Name      ; Section Id     ;
++------------------------------------+--------------------------------+---------------+------------------+----------------+
+; COMPILER_SIGNATURE_ID              ; 57606936861224.152459838910760 ; --            ; --               ; --             ;
+; MAX_CORE_JUNCTION_TEMP             ; 85                             ; --            ; --               ; --             ;
+; MIN_CORE_JUNCTION_TEMP             ; 0                              ; --            ; --               ; --             ;
+; PARTITION_COLOR                    ; 16764057                       ; --            ; Shift_Left_32_32 ; Top            ;
+; PARTITION_NETLIST_TYPE             ; SOURCE                         ; --            ; Shift_Left_32_32 ; Top            ;
+; TOP_LEVEL_ENTITY                   ; Shift_Left_32_32               ; Mips          ; --               ; --             ;
+; USE_GENERATED_PHYSICAL_CONSTRAINTS ; Off                            ; --            ; --               ; eda_blast_fpga ;
++------------------------------------+--------------------------------+---------------+------------------+----------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------+
@@ -89,11 +89,11 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:00:01     ; 1.0                     ; 292 MB              ; 00:00:02                           ;
-; Fitter                  ; 00:00:10     ; 1.0                     ; 415 MB              ; 00:00:10                           ;
-; Assembler               ; 00:00:04     ; 1.0                     ; 385 MB              ; 00:00:04                           ;
-; Classic Timing Analyzer ; 00:00:00     ; 1.0                     ; 216 MB              ; 00:00:00                           ;
-; Total                   ; 00:00:15     ; --                      ; --                  ; 00:00:16                           ;
+; Analysis & Synthesis    ; 00:00:02     ; 1.0                     ; 233 MB              ; 00:00:05                           ;
+; Fitter                  ; 00:00:10     ; 2.6                     ; 366 MB              ; 00:00:12                           ;
+; Assembler               ; 00:00:05     ; 1.0                     ; 336 MB              ; 00:00:04                           ;
+; Classic Timing Analyzer ; 00:00:01     ; 1.0                     ; 167 MB              ; 00:00:00                           ;
+; Total                   ; 00:00:18     ; --                      ; --                  ; 00:00:21                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -102,10 +102,10 @@ applicable agreement for further details.
 +-------------------------+------------------+---------------+------------+----------------+
 ; Module Name             ; Machine Hostname ; OS Name       ; OS Version ; Processor type ;
 +-------------------------+------------------+---------------+------------+----------------+
-; Analysis & Synthesis    ; DESKTOP-2MSH45I  ; Windows Vista ; 6.2        ; x86_64         ;
-; Fitter                  ; DESKTOP-2MSH45I  ; Windows Vista ; 6.2        ; x86_64         ;
-; Assembler               ; DESKTOP-2MSH45I  ; Windows Vista ; 6.2        ; x86_64         ;
-; Classic Timing Analyzer ; DESKTOP-2MSH45I  ; Windows Vista ; 6.2        ; x86_64         ;
+; Analysis & Synthesis    ; g2c44            ; Windows Vista ; 6.1        ; x86_64         ;
+; Fitter                  ; g2c44            ; Windows Vista ; 6.1        ; x86_64         ;
+; Assembler               ; g2c44            ; Windows Vista ; 6.1        ; x86_64         ;
+; Classic Timing Analyzer ; g2c44            ; Windows Vista ; 6.1        ; x86_64         ;
 +-------------------------+------------------+---------------+------------+----------------+
 
 

@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone II"
 set_global_assignment -name DEVICE EP2C70F672C6
-set_global_assignment -name TOP_LEVEL_ENTITY Extensor_Sinal
+set_global_assignment -name TOP_LEVEL_ENTITY Shift_Left_32_32
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "9.1 SP2"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "09:54:04  APRIL 18, 2018"
 set_global_assignment -name LAST_QUARTUS_VERSION "9.1 SP2"
@@ -46,6 +46,7 @@ set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id e
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name SYSTEMVERILOG_FILE "Componentes do Projeto/Mux_2_1_32Bits.sv"
 set_global_assignment -name SYSTEMVERILOG_FILE "Componentes do Projeto/Controle.sv"
 set_global_assignment -name VHDL_FILE "Componentes do Projeto/Banco_reg.vhd"
 set_global_assignment -name VHDL_FILE "Componentes do Projeto/Instr_Reg.vhd"
@@ -55,8 +56,11 @@ set_global_assignment -name VHDL_FILE "Componentes do Projeto/Registrador.vhd"
 set_global_assignment -name VHDL_FILE "Componentes do Projeto/ula32.vhd"
 set_global_assignment -name SYSTEMVERILOG_FILE Mips.sv
 set_global_assignment -name VECTOR_WAVEFORM_FILE Mips.vwf
-set_global_assignment -name SYSTEMVERILOG_FILE "Componentes do Projeto/Mux_2_1.sv"
 set_global_assignment -name SYSTEMVERILOG_FILE "Componentes do Projeto/Extensor_Sinal.sv"
+set_global_assignment -name SYSTEMVERILOG_FILE "Componentes do Projeto/Mux_4_1_32Bits.sv"
+set_global_assignment -name SYSTEMVERILOG_FILE "Componentes do Projeto/Mux_2_1_5Bits.sv"
+set_global_assignment -name SYSTEMVERILOG_FILE "Componentes do Projeto/Shift_Left_26_28.sv"
+set_global_assignment -name SYSTEMVERILOG_FILE "Componentes do Projeto/Shift_Left_32_32.sv"
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
