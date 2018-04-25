@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Mips
-Tue Apr 24 16:33:11 2018
+Wed Apr 25 14:51:50 2018
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -13,8 +13,21 @@ Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Analysis & Synthesis Messages
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Source assignments for Memoria:MEMORIA|LPM_RAM_DQ:MEM|altram:sram|altsyncram:ram_block|altsyncram_e1a1:auto_generated
+ 11. Source assignments for Memoria:MEMORIA|LPM_RAM_DQ:MEM_plus_One|altram:sram|altsyncram:ram_block|altsyncram_e1a1:auto_generated
+ 12. Source assignments for Memoria:MEMORIA|LPM_RAM_DQ:MEM_plus_Two|altram:sram|altsyncram:ram_block|altsyncram_e1a1:auto_generated
+ 13. Source assignments for Memoria:MEMORIA|LPM_RAM_DQ:MEM_plus_Three|altram:sram|altsyncram:ram_block|altsyncram_e1a1:auto_generated
+ 14. Parameter Settings for User Entity Instance: Memoria:MEMORIA|LPM_RAM_DQ:MEM
+ 15. Parameter Settings for User Entity Instance: Memoria:MEMORIA|LPM_RAM_DQ:MEM_plus_One
+ 16. Parameter Settings for User Entity Instance: Memoria:MEMORIA|LPM_RAM_DQ:MEM_plus_Two
+ 17. Parameter Settings for User Entity Instance: Memoria:MEMORIA|LPM_RAM_DQ:MEM_plus_Three
+ 18. Port Connectivity Checks: "Instr_Reg:REG_INST"
+ 19. Port Connectivity Checks: "Memoria:MEMORIA"
+ 20. Port Connectivity Checks: "Mux_2_1_32Bits:MUX_MEMORIA"
+ 21. Port Connectivity Checks: "Registrador:PC"
+ 22. Analysis & Synthesis Messages
 
 
 
@@ -40,16 +53,16 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +------------------------------------+----------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Apr 24 16:33:11 2018        ;
+; Analysis & Synthesis Status        ; Successful - Wed Apr 25 14:51:50 2018        ;
 ; Quartus II Version                 ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                      ; Mips                                         ;
-; Top-level Entity Name              ; Shift_Left_32_32                             ;
+; Top-level Entity Name              ; Mips                                         ;
 ; Family                             ; Cyclone II                                   ;
 ; Total logic elements               ; 0                                            ;
 ;     Total combinational functions  ; 0                                            ;
 ;     Dedicated logic registers      ; 0                                            ;
 ; Total registers                    ; 0                                            ;
-; Total pins                         ; 64                                           ;
+; Total pins                         ; 1                                            ;
 ; Total virtual pins                 ; 0                                            ;
 ; Total memory bits                  ; 0                                            ;
 ; Embedded Multiplier 9-bit elements ; 0                                            ;
@@ -63,7 +76,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP2C70F672C6       ;                    ;
-; Top-level entity name                                                      ; Shift_Left_32_32   ; Mips               ;
+; Top-level entity name                                                      ; Mips               ; Mips               ;
 ; Family name                                                                ; Cyclone II         ; Stratix II         ;
 ; Use Generated Physical Constraints File                                    ; Off                ;                    ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
@@ -136,58 +149,56 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 4           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     1 processor            ; 100.0%      ;
-;     2-4 processors         ;   0.0%      ;
-+----------------------------+-------------+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 2      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                                  ;
-+--------------------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
-; File Name with User-Entered Path           ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                                              ;
-+--------------------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
-; Componentes do Projeto/Shift_Left_32_32.sv ; yes             ; User SystemVerilog HDL File  ; C:/Users/gaqp/Downloads/infraestruturadeHardware-20180424T185915Z-001/infraestruturadeHardware/Componentes do Projeto/Shift_Left_32_32.sv ;
-+--------------------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                        ;
++------------------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------+
+; File Name with User-Entered Path         ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                      ;
++------------------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------+
+; Componentes do Projeto/Mux_2_1_32Bits.sv ; yes             ; User SystemVerilog HDL File  ; C:/Users/Gabriel Alves/Documents/InfraHard/projeto/Componentes do Projeto/Mux_2_1_32Bits.sv       ;
+; Componentes do Projeto/Instr_Reg.vhd     ; yes             ; User VHDL File               ; C:/Users/Gabriel Alves/Documents/InfraHard/projeto/Componentes do Projeto/Instr_Reg.vhd           ;
+; Componentes do Projeto/Memoria.vhd       ; yes             ; User VHDL File               ; C:/Users/Gabriel Alves/Documents/InfraHard/projeto/Componentes do Projeto/Memoria.vhd             ;
+; Componentes do Projeto/Registrador.vhd   ; yes             ; User VHDL File               ; C:/Users/Gabriel Alves/Documents/InfraHard/projeto/Componentes do Projeto/Registrador.vhd         ;
+; Mips.sv                                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/Gabriel Alves/Documents/InfraHard/projeto/Mips.sv                                        ;
+; lpm_ram_dq.tdf                           ; yes             ; Megafunction                 ; c:/users/gabriel alves/documents/infrahard/quartus/quartus/libraries/megafunctions/lpm_ram_dq.tdf ;
+; altram.tdf                               ; yes             ; Megafunction                 ; c:/users/gabriel alves/documents/infrahard/quartus/quartus/libraries/megafunctions/altram.tdf     ;
+; altsyncram.tdf                           ; yes             ; Megafunction                 ; c:/users/gabriel alves/documents/infrahard/quartus/quartus/libraries/megafunctions/altsyncram.tdf ;
+; db/altsyncram_e1a1.tdf                   ; yes             ; Auto-Generated Megafunction  ; C:/Users/Gabriel Alves/Documents/InfraHard/projeto/db/altsyncram_e1a1.tdf                         ;
++------------------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary              ;
-+---------------------------------------------+------------+
-; Resource                                    ; Usage      ;
-+---------------------------------------------+------------+
-;                                             ;            ;
-; Total combinational functions               ; 0          ;
-; Logic element usage by number of LUT inputs ;            ;
-;     -- 4 input functions                    ; 0          ;
-;     -- 3 input functions                    ; 0          ;
-;     -- <=2 input functions                  ; 0          ;
-;                                             ;            ;
-; Logic elements by mode                      ;            ;
-;     -- normal mode                          ; 0          ;
-;     -- arithmetic mode                      ; 0          ;
-;                                             ;            ;
-; Total registers                             ; 0          ;
-;     -- Dedicated logic registers            ; 0          ;
-;     -- I/O registers                        ; 0          ;
-;                                             ;            ;
-; I/O pins                                    ; 64         ;
-; Maximum fan-out node                        ; entrada[0] ;
-; Maximum fan-out                             ; 1          ;
-; Total fan-out                               ; 30         ;
-; Average fan-out                             ; 0.47       ;
-+---------------------------------------------+------------+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+;                                             ;       ;
+; Total combinational functions               ; 0     ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 0     ;
+;     -- 3 input functions                    ; 0     ;
+;     -- <=2 input functions                  ; 0     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 0     ;
+;     -- arithmetic mode                      ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 0     ;
+;     -- Dedicated logic registers            ; 0     ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 1     ;
++---------------------------------------------+-------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -195,9 +206,19 @@ applicable agreement for further details.
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |Shift_Left_32_32          ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 64   ; 0            ; |Shift_Left_32_32   ; work         ;
+; |Mips                      ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 1    ; 0            ; |Mips               ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-------------------------------------------------------------+
+; Registers Removed During Synthesis                          ;
++----------------------------------------+--------------------+
+; Register name                          ; Reason for Removal ;
++----------------------------------------+--------------------+
+; Registrador:PC|Saida[0..31]            ; Lost fanout        ;
+; Total Number of Removed Registers = 32 ;                    ;
++----------------------------------------+--------------------+
 
 
 +------------------------------------------------------+
@@ -215,15 +236,188 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
++-----------------------------------------------------------------------------------------------------------------------+
+; Source assignments for Memoria:MEMORIA|LPM_RAM_DQ:MEM|altram:sram|altsyncram:ram_block|altsyncram_e1a1:auto_generated ;
++---------------------------------+--------------------+------+---------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                      ;
++---------------------------------+--------------------+------+---------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                       ;
++---------------------------------+--------------------+------+---------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for Memoria:MEMORIA|LPM_RAM_DQ:MEM_plus_One|altram:sram|altsyncram:ram_block|altsyncram_e1a1:auto_generated ;
++---------------------------------+--------------------+------+------------------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                               ;
++---------------------------------+--------------------+------+------------------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                ;
++---------------------------------+--------------------+------+------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for Memoria:MEMORIA|LPM_RAM_DQ:MEM_plus_Two|altram:sram|altsyncram:ram_block|altsyncram_e1a1:auto_generated ;
++---------------------------------+--------------------+------+------------------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                               ;
++---------------------------------+--------------------+------+------------------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                ;
++---------------------------------+--------------------+------+------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for Memoria:MEMORIA|LPM_RAM_DQ:MEM_plus_Three|altram:sram|altsyncram:ram_block|altsyncram_e1a1:auto_generated ;
++---------------------------------+--------------------+------+--------------------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                                 ;
++---------------------------------+--------------------+------+--------------------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                  ;
++---------------------------------+--------------------+------+--------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Memoria:MEMORIA|LPM_RAM_DQ:MEM ;
++------------------------+----------------+-----------------------------------+
+; Parameter Name         ; Value          ; Type                              ;
++------------------------+----------------+-----------------------------------+
+; LPM_WIDTH              ; 8              ; Signed Integer                    ;
+; LPM_WIDTHAD            ; 8              ; Signed Integer                    ;
+; LPM_NUMWORDS           ; 0              ; Signed Integer                    ;
+; LPM_INDATA             ; REGISTERED     ; Untyped                           ;
+; LPM_ADDRESS_CONTROL    ; REGISTERED     ; Untyped                           ;
+; LPM_OUTDATA            ; REGISTERED     ; Untyped                           ;
+; LPM_FILE               ; instrucoes.mif ; Untyped                           ;
+; USE_EAB                ; ON             ; Untyped                           ;
+; DEVICE_FAMILY          ; Cyclone II     ; Untyped                           ;
+; CBXI_PARAMETER         ; NOTHING        ; Untyped                           ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                      ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                    ;
++------------------------+----------------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Memoria:MEMORIA|LPM_RAM_DQ:MEM_plus_One ;
++------------------------+----------------+--------------------------------------------+
+; Parameter Name         ; Value          ; Type                                       ;
++------------------------+----------------+--------------------------------------------+
+; LPM_WIDTH              ; 8              ; Signed Integer                             ;
+; LPM_WIDTHAD            ; 8              ; Signed Integer                             ;
+; LPM_NUMWORDS           ; 0              ; Signed Integer                             ;
+; LPM_INDATA             ; REGISTERED     ; Untyped                                    ;
+; LPM_ADDRESS_CONTROL    ; REGISTERED     ; Untyped                                    ;
+; LPM_OUTDATA            ; REGISTERED     ; Untyped                                    ;
+; LPM_FILE               ; instrucoes.mif ; Untyped                                    ;
+; USE_EAB                ; ON             ; Untyped                                    ;
+; DEVICE_FAMILY          ; Cyclone II     ; Untyped                                    ;
+; CBXI_PARAMETER         ; NOTHING        ; Untyped                                    ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                 ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                               ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                               ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                             ;
++------------------------+----------------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Memoria:MEMORIA|LPM_RAM_DQ:MEM_plus_Two ;
++------------------------+----------------+--------------------------------------------+
+; Parameter Name         ; Value          ; Type                                       ;
++------------------------+----------------+--------------------------------------------+
+; LPM_WIDTH              ; 8              ; Signed Integer                             ;
+; LPM_WIDTHAD            ; 8              ; Signed Integer                             ;
+; LPM_NUMWORDS           ; 0              ; Signed Integer                             ;
+; LPM_INDATA             ; REGISTERED     ; Untyped                                    ;
+; LPM_ADDRESS_CONTROL    ; REGISTERED     ; Untyped                                    ;
+; LPM_OUTDATA            ; REGISTERED     ; Untyped                                    ;
+; LPM_FILE               ; instrucoes.mif ; Untyped                                    ;
+; USE_EAB                ; ON             ; Untyped                                    ;
+; DEVICE_FAMILY          ; Cyclone II     ; Untyped                                    ;
+; CBXI_PARAMETER         ; NOTHING        ; Untyped                                    ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                 ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                               ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                               ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                             ;
++------------------------+----------------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Memoria:MEMORIA|LPM_RAM_DQ:MEM_plus_Three ;
++------------------------+----------------+----------------------------------------------+
+; Parameter Name         ; Value          ; Type                                         ;
++------------------------+----------------+----------------------------------------------+
+; LPM_WIDTH              ; 8              ; Signed Integer                               ;
+; LPM_WIDTHAD            ; 8              ; Signed Integer                               ;
+; LPM_NUMWORDS           ; 0              ; Signed Integer                               ;
+; LPM_INDATA             ; REGISTERED     ; Untyped                                      ;
+; LPM_ADDRESS_CONTROL    ; REGISTERED     ; Untyped                                      ;
+; LPM_OUTDATA            ; REGISTERED     ; Untyped                                      ;
+; LPM_FILE               ; instrucoes.mif ; Untyped                                      ;
+; USE_EAB                ; ON             ; Untyped                                      ;
+; DEVICE_FAMILY          ; Cyclone II     ; Untyped                                      ;
+; CBXI_PARAMETER         ; NOTHING        ; Untyped                                      ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                   ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                 ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                 ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                               ;
++------------------------+----------------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Instr_Reg:REG_INST"                                                                               ;
++------------+--------+------------------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity         ; Details                                                                             ;
++------------+--------+------------------+-------------------------------------------------------------------------------------+
+; reset      ; Input  ; Info             ; Explicitly unconnected                                                              ;
+; load_ir    ; Input  ; Info             ; Explicitly unconnected                                                              ;
+; entrada    ; Input  ; Critical Warning ; Types are incompatible                                                              ;
+; instr15_0  ; Output ; Info             ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; instr20_16 ; Output ; Info             ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; instr25_21 ; Output ; Info             ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; instr31_26 ; Output ; Info             ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+------------------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Memoria:MEMORIA"                                                                                                                                           ;
++-----------+---------+------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type    ; Severity         ; Details                                                                                                                                      ;
++-----------+---------+------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; wr        ; Input   ; Info             ; Explicitly unconnected                                                                                                                       ;
+; WritaData ; Unknown ; Critical Warning ; Named port was not declared by the instantiated entity                                                                                       ;
+; dataout   ; Output  ; Critical Warning ; Types are incompatible                                                                                                                       ;
+; address   ; Input   ; Warning          ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++-----------+---------+------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------+
+; Port Connectivity Checks: "Mux_2_1_32Bits:MUX_MEMORIA" ;
++---------+-------+----------+---------------------------+
+; Port    ; Type  ; Severity ; Details                   ;
++---------+-------+----------+---------------------------+
+; um      ; Input ; Info     ; Explicitly unconnected    ;
+; seletor ; Input ; Info     ; Explicitly unconnected    ;
++---------+-------+----------+---------------------------+
+
+
++---------------------------------------------------+
+; Port Connectivity Checks: "Registrador:PC"        ;
++-------+-------+----------+------------------------+
+; Port  ; Type  ; Severity ; Details                ;
++-------+-------+----------+------------------------+
+; reset ; Input ; Info     ; Explicitly unconnected ;
++-------+-------+----------+------------------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Tue Apr 24 16:33:09 2018
+    Info: Processing started: Wed Apr 25 14:51:48 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Mips -c Mips
-Info: Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info: Found 1 design units, including 1 entities, in source file componentes do projeto/mux_2_1_32bits.sv
     Info: Found entity 1: Mux_2_1_32Bits
 Info: Found 1 design units, including 1 entities, in source file componentes do projeto/controle.sv
@@ -259,20 +453,112 @@ Info: Found 1 design units, including 1 entities, in source file componentes do 
     Info: Found entity 1: Shift_Left_26_28
 Info: Found 1 design units, including 1 entities, in source file componentes do projeto/shift_left_32_32.sv
     Info: Found entity 1: Shift_Left_32_32
-Info: Elaborating entity "Shift_Left_32_32" for the top level hierarchy
-Warning: Output pins are stuck at VCC or GND
-    Warning (13410): Pin "saida[0]" is stuck at GND
-    Warning (13410): Pin "saida[1]" is stuck at GND
-Warning: Design contains 2 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "entrada[30]"
-    Warning (15610): No output dependent on input pin "entrada[31]"
-Info: Implemented 64 device resources after synthesis - the final resource count might be different
-    Info: Implemented 32 input pins
-    Info: Implemented 32 output pins
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 233 megabytes
-    Info: Processing ended: Tue Apr 24 16:33:11 2018
+Info: Elaborating entity "Mips" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at Mips.sv(28): object "Instr25_0_S" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at Mips.sv(30): object "Instr15_11_S" assigned a value but never read
+Info: Elaborating entity "Registrador" for hierarchy "Registrador:PC"
+Info: Elaborating entity "Mux_2_1_32Bits" for hierarchy "Mux_2_1_32Bits:MUX_MEMORIA"
+Info: Elaborating entity "Memoria" for hierarchy "Memoria:MEMORIA"
+Info: Elaborating entity "LPM_RAM_DQ" for hierarchy "Memoria:MEMORIA|LPM_RAM_DQ:MEM"
+Info: Elaborated megafunction instantiation "Memoria:MEMORIA|LPM_RAM_DQ:MEM"
+Info: Instantiated megafunction "Memoria:MEMORIA|LPM_RAM_DQ:MEM" with the following parameter:
+    Info: Parameter "LPM_WIDTH" = "8"
+    Info: Parameter "LPM_WIDTHAD" = "8"
+    Info: Parameter "LPM_NUMWORDS" = "0"
+    Info: Parameter "LPM_INDATA" = "REGISTERED"
+    Info: Parameter "LPM_ADDRESS_CONTROL" = "REGISTERED"
+    Info: Parameter "LPM_OUTDATA" = "REGISTERED"
+    Info: Parameter "LPM_FILE" = "instrucoes.mif"
+    Info: Parameter "LPM_TYPE" = "LPM_RAM_DQ"
+    Info: Parameter "USE_EAB" = "ON"
+    Info: Parameter "INTENDED_DEVICE_FAMILY" = "UNUSED"
+    Info: Parameter "LPM_HINT" = "UNUSED"
+Info: Elaborating entity "altram" for hierarchy "Memoria:MEMORIA|LPM_RAM_DQ:MEM|altram:sram"
+Warning: Assertion warning: altram does not support Cyclone II device family -- attempting best-case memory conversions, but power-up states and read during write behavior will be different for Cyclone II devices
+Info: Elaborated megafunction instantiation "Memoria:MEMORIA|LPM_RAM_DQ:MEM|altram:sram", which is child of megafunction instantiation "Memoria:MEMORIA|LPM_RAM_DQ:MEM"
+Info: Elaborating entity "altsyncram" for hierarchy "Memoria:MEMORIA|LPM_RAM_DQ:MEM|altram:sram|altsyncram:ram_block"
+Info: Elaborated megafunction instantiation "Memoria:MEMORIA|LPM_RAM_DQ:MEM|altram:sram|altsyncram:ram_block", which is child of megafunction instantiation "Memoria:MEMORIA|LPM_RAM_DQ:MEM"
+Info: Found 1 design units, including 1 entities, in source file db/altsyncram_e1a1.tdf
+    Info: Found entity 1: altsyncram_e1a1
+Info: Elaborating entity "altsyncram_e1a1" for hierarchy "Memoria:MEMORIA|LPM_RAM_DQ:MEM|altram:sram|altsyncram:ram_block|altsyncram_e1a1:auto_generated"
+Info: Elaborating entity "Instr_Reg" for hierarchy "Instr_Reg:REG_INST"
+Warning: Synthesized away the following node(s):
+    Warning: Synthesized away the following RAM node(s):
+        Warning (14320): Synthesized away node "Memoria:MEMORIA|lpm_ram_dq:MEM_plus_Three|altram:sram|altsyncram:ram_block|altsyncram_e1a1:auto_generated|q_a[0]"
+        Warning (14320): Synthesized away node "Memoria:MEMORIA|lpm_ram_dq:MEM_plus_Three|altram:sram|altsyncram:ram_block|altsyncram_e1a1:auto_generated|q_a[1]"
+        Warning (14320): Synthesized away node "Memoria:MEMORIA|lpm_ram_dq:MEM_plus_Three|altram:sram|altsyncram:ram_block|altsyncram_e1a1:auto_generated|q_a[2]"
+        Warning (14320): Synthesized away node "Memoria:MEMORIA|lpm_ram_dq:MEM_plus_Three|altram:sram|altsyncram:ram_block|altsyncram_e1a1:auto_generated|q_a[3]"
+        Warning (14320): Synthesized away node "Memoria:MEMORIA|lpm_ram_dq:MEM_plus_Three|altram:sram|altsyncram:ram_block|altsyncram_e1a1:auto_generated|q_a[4]"
+        Warning (14320): Synthesized away node "Memoria:MEMORIA|lpm_ram_dq:MEM_plus_Three|altram:sram|altsyncram:ram_block|altsyncram_e1a1:auto_generated|q_a[5]"
+        Warning (14320): Synthesized away node "Memoria:MEMORIA|lpm_ram_dq:MEM_plus_Three|altram:sram|altsyncram:ram_block|altsyncram_e1a1:auto_generated|q_a[6]"
+        Warning (14320): Synthesized away node "Memoria:MEMORIA|lpm_ram_dq:MEM_plus_Three|altram:sram|altsyncram:ram_block|altsyncram_e1a1:auto_generated|q_a[7]"
+        Warning (14320): Synthesized away node "Memoria:MEMORIA|lpm_ram_dq:MEM_plus_Two|altram:sram|altsyncram:ram_block|altsyncram_e1a1:auto_generated|q_a[0]"
+        Warning (14320): Synthesized away node "Memoria:MEMORIA|lpm_ram_dq:MEM_plus_Two|altram:sram|altsyncram:ram_block|altsyncram_e1a1:auto_generated|q_a[1]"
+        Warning (14320): Synthesized away node "Memoria:MEMORIA|lpm_ram_dq:MEM_plus_Two|altram:sram|altsyncram:ram_block|altsyncram_e1a1:auto_generated|q_a[2]"
+        Warning (14320): Synthesized away node "Memoria:MEMORIA|lpm_ram_dq:MEM_plus_Two|altram:sram|altsyncram:ram_block|altsyncram_e1a1:auto_generated|q_a[3]"
+        Warning (14320): Synthesized away node "Memoria:MEMORIA|lpm_ram_dq:MEM_plus_Two|altram:sram|altsyncram:ram_block|altsyncram_e1a1:auto_generated|q_a[4]"
+        Warning (14320): Synthesized away node "Memoria:MEMORIA|lpm_ram_dq:MEM_plus_Two|altram:sram|altsyncram:ram_block|altsyncram_e1a1:auto_generated|q_a[5]"
+        Warning (14320): Synthesized away node "Memoria:MEMORIA|lpm_ram_dq:MEM_plus_Two|altram:sram|altsyncram:ram_block|altsyncram_e1a1:auto_generated|q_a[6]"
+        Warning (14320): Synthesized away node "Memoria:MEMORIA|lpm_ram_dq:MEM_plus_Two|altram:sram|altsyncram:ram_block|altsyncram_e1a1:auto_generated|q_a[7]"
+        Warning (14320): Synthesized away node "Memoria:MEMORIA|lpm_ram_dq:MEM_plus_One|altram:sram|altsyncram:ram_block|altsyncram_e1a1:auto_generated|q_a[0]"
+        Warning (14320): Synthesized away node "Memoria:MEMORIA|lpm_ram_dq:MEM_plus_One|altram:sram|altsyncram:ram_block|altsyncram_e1a1:auto_generated|q_a[1]"
+        Warning (14320): Synthesized away node "Memoria:MEMORIA|lpm_ram_dq:MEM_plus_One|altram:sram|altsyncram:ram_block|altsyncram_e1a1:auto_generated|q_a[2]"
+        Warning (14320): Synthesized away node "Memoria:MEMORIA|lpm_ram_dq:MEM_plus_One|altram:sram|altsyncram:ram_block|altsyncram_e1a1:auto_generated|q_a[3]"
+        Warning (14320): Synthesized away node "Memoria:MEMORIA|lpm_ram_dq:MEM_plus_One|altram:sram|altsyncram:ram_block|altsyncram_e1a1:auto_generated|q_a[4]"
+        Warning (14320): Synthesized away node "Memoria:MEMORIA|lpm_ram_dq:MEM_plus_One|altram:sram|altsyncram:ram_block|altsyncram_e1a1:auto_generated|q_a[5]"
+        Warning (14320): Synthesized away node "Memoria:MEMORIA|lpm_ram_dq:MEM_plus_One|altram:sram|altsyncram:ram_block|altsyncram_e1a1:auto_generated|q_a[6]"
+        Warning (14320): Synthesized away node "Memoria:MEMORIA|lpm_ram_dq:MEM_plus_One|altram:sram|altsyncram:ram_block|altsyncram_e1a1:auto_generated|q_a[7]"
+        Warning (14320): Synthesized away node "Memoria:MEMORIA|lpm_ram_dq:MEM|altram:sram|altsyncram:ram_block|altsyncram_e1a1:auto_generated|q_a[0]"
+        Warning (14320): Synthesized away node "Memoria:MEMORIA|lpm_ram_dq:MEM|altram:sram|altsyncram:ram_block|altsyncram_e1a1:auto_generated|q_a[1]"
+        Warning (14320): Synthesized away node "Memoria:MEMORIA|lpm_ram_dq:MEM|altram:sram|altsyncram:ram_block|altsyncram_e1a1:auto_generated|q_a[2]"
+        Warning (14320): Synthesized away node "Memoria:MEMORIA|lpm_ram_dq:MEM|altram:sram|altsyncram:ram_block|altsyncram_e1a1:auto_generated|q_a[3]"
+        Warning (14320): Synthesized away node "Memoria:MEMORIA|lpm_ram_dq:MEM|altram:sram|altsyncram:ram_block|altsyncram_e1a1:auto_generated|q_a[4]"
+        Warning (14320): Synthesized away node "Memoria:MEMORIA|lpm_ram_dq:MEM|altram:sram|altsyncram:ram_block|altsyncram_e1a1:auto_generated|q_a[5]"
+        Warning (14320): Synthesized away node "Memoria:MEMORIA|lpm_ram_dq:MEM|altram:sram|altsyncram:ram_block|altsyncram_e1a1:auto_generated|q_a[6]"
+        Warning (14320): Synthesized away node "Memoria:MEMORIA|lpm_ram_dq:MEM|altram:sram|altsyncram:ram_block|altsyncram_e1a1:auto_generated|q_a[7]"
+Warning: 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info: 32 registers lost all their fanouts during netlist optimizations. The first 32 are displayed below.
+    Info: Register "Registrador:PC|Saida[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "Registrador:PC|Saida[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "Registrador:PC|Saida[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "Registrador:PC|Saida[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "Registrador:PC|Saida[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "Registrador:PC|Saida[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "Registrador:PC|Saida[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "Registrador:PC|Saida[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "Registrador:PC|Saida[8]" lost all its fanouts during netlist optimizations.
+    Info: Register "Registrador:PC|Saida[9]" lost all its fanouts during netlist optimizations.
+    Info: Register "Registrador:PC|Saida[10]" lost all its fanouts during netlist optimizations.
+    Info: Register "Registrador:PC|Saida[11]" lost all its fanouts during netlist optimizations.
+    Info: Register "Registrador:PC|Saida[12]" lost all its fanouts during netlist optimizations.
+    Info: Register "Registrador:PC|Saida[13]" lost all its fanouts during netlist optimizations.
+    Info: Register "Registrador:PC|Saida[14]" lost all its fanouts during netlist optimizations.
+    Info: Register "Registrador:PC|Saida[15]" lost all its fanouts during netlist optimizations.
+    Info: Register "Registrador:PC|Saida[16]" lost all its fanouts during netlist optimizations.
+    Info: Register "Registrador:PC|Saida[17]" lost all its fanouts during netlist optimizations.
+    Info: Register "Registrador:PC|Saida[18]" lost all its fanouts during netlist optimizations.
+    Info: Register "Registrador:PC|Saida[19]" lost all its fanouts during netlist optimizations.
+    Info: Register "Registrador:PC|Saida[20]" lost all its fanouts during netlist optimizations.
+    Info: Register "Registrador:PC|Saida[21]" lost all its fanouts during netlist optimizations.
+    Info: Register "Registrador:PC|Saida[22]" lost all its fanouts during netlist optimizations.
+    Info: Register "Registrador:PC|Saida[23]" lost all its fanouts during netlist optimizations.
+    Info: Register "Registrador:PC|Saida[24]" lost all its fanouts during netlist optimizations.
+    Info: Register "Registrador:PC|Saida[25]" lost all its fanouts during netlist optimizations.
+    Info: Register "Registrador:PC|Saida[26]" lost all its fanouts during netlist optimizations.
+    Info: Register "Registrador:PC|Saida[27]" lost all its fanouts during netlist optimizations.
+    Info: Register "Registrador:PC|Saida[28]" lost all its fanouts during netlist optimizations.
+    Info: Register "Registrador:PC|Saida[29]" lost all its fanouts during netlist optimizations.
+    Info: Register "Registrador:PC|Saida[30]" lost all its fanouts during netlist optimizations.
+    Info: Register "Registrador:PC|Saida[31]" lost all its fanouts during netlist optimizations.
+Warning: Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "clk"
+Info: Implemented 1 device resources after synthesis - the final resource count might be different
+    Info: Implemented 1 input pins
+    Info: Implemented 0 output pins
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 40 warnings
+    Info: Peak virtual memory: 300 megabytes
+    Info: Processing ended: Wed Apr 25 14:51:50 2018
     Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:04
+    Info: Total CPU time (on all processors): 00:00:02
 
 
