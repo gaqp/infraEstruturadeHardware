@@ -46,21 +46,23 @@ set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id e
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name SYSTEMVERILOG_FILE Mips.sv
+set_global_assignment -name VHDL_FILE "Componentes do Projeto/Memoria.vhd"
+set_global_assignment -name VHDL_FILE "Componentes do Projeto/Registrador.vhd"
+set_global_assignment -name VHDL_FILE "Componentes do Projeto/Instr_Reg.vhd"
+set_global_assignment -name VHDL_FILE "Componentes do Projeto/RegDesloc.vhd"
+set_global_assignment -name VHDL_FILE "Componentes do Projeto/ula32.vhd"
 set_global_assignment -name SYSTEMVERILOG_FILE "Componentes do Projeto/Mux_2_1_32Bits.sv"
+set_global_assignment -name SYSTEMVERILOG_FILE "Componentes do Projeto/Extensor_Sinal.sv"
 set_global_assignment -name SYSTEMVERILOG_FILE "Componentes do Projeto/Controle.sv"
 set_global_assignment -name VHDL_FILE "Componentes do Projeto/Banco_reg.vhd"
-set_global_assignment -name VHDL_FILE "Componentes do Projeto/Instr_Reg.vhd"
-set_global_assignment -name VHDL_FILE "Componentes do Projeto/Memoria.vhd"
-set_global_assignment -name VHDL_FILE "Componentes do Projeto/RegDesloc.vhd"
-set_global_assignment -name VHDL_FILE "Componentes do Projeto/Registrador.vhd"
-set_global_assignment -name VHDL_FILE "Componentes do Projeto/ula32.vhd"
-set_global_assignment -name SYSTEMVERILOG_FILE Mips.sv
 set_global_assignment -name VECTOR_WAVEFORM_FILE Mips.vwf
-set_global_assignment -name SYSTEMVERILOG_FILE "Componentes do Projeto/Extensor_Sinal.sv"
 set_global_assignment -name SYSTEMVERILOG_FILE "Componentes do Projeto/Mux_4_1_32Bits.sv"
 set_global_assignment -name SYSTEMVERILOG_FILE "Componentes do Projeto/Mux_2_1_5Bits.sv"
 set_global_assignment -name SYSTEMVERILOG_FILE "Componentes do Projeto/Shift_Left_26_28.sv"
 set_global_assignment -name SYSTEMVERILOG_FILE "Componentes do Projeto/Shift_Left_32_32.sv"
+set_global_assignment -name SYNTH_TIMING_DRIVEN_SYNTHESIS OFF
+set_global_assignment -name HDL_MESSAGE_LEVEL LEVEL1
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"

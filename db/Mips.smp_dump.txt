@@ -1,0 +1,7 @@
+
+State Machine - |Mips|Controle:CONTROLE|estadoAtual
+Name estadoAtual.Jump estadoAtual.Decodifica estadoAtual.Busca estadoAtual.RST 
+estadoAtual.RST 0 0 0 0 
+estadoAtual.Busca 0 0 1 1 
+estadoAtual.Decodifica 0 1 0 1 
+estadoAtual.Jump 1 0 0 1 

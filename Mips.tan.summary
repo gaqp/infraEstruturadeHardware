@@ -2,14 +2,24 @@
 Timing Analyzer Summary
 --------------------------------------------------------------------------------------
 
-Type           : Worst-case tpd
+Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 8.915 ns
-From           : entrada[16]
-To             : saida[18]
-From Clock     : --
+Actual Time    : 11.428 ns
+From           : Registrador:PC|Saida[5]
+To             : ULA_O[30]
+From Clock     : clk
 To Clock       : --
+Failed Paths   : 0
+
+Type           : Clock Setup: 'clk'
+Slack          : N/A
+Required Time  : None
+Actual Time    : Restricted to 200.00 MHz ( period = 5.000 ns )
+From           : Registrador:PC|Saida[2]
+To             : Memoria:MEMORIA|lpm_ram_dq:MEM|altram:sram|altsyncram:ram_block|altsyncram_e1a1:auto_generated|ram_block1a0~porta_address_reg2
+From Clock     : clk
+To Clock       : clk
 Failed Paths   : 0
 
 Type           : Total number of failed paths

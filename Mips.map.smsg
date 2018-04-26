@@ -1,0 +1,4 @@
+Info (10281): Verilog HDL Declaration information at Mips.sv(4): object "reset" differs only in case from object "Reset" in the same scope
+Warning (10236): Verilog HDL Implicit Net warning at Mips.sv(16): created implicit net for "AND_S"
+Warning (10236): Verilog HDL Implicit Net warning at Mips.sv(17): created implicit net for "OR_S"
+Warning (10236): Verilog HDL Implicit Net warning at Mips.sv(29): created implicit net for "reeset"
