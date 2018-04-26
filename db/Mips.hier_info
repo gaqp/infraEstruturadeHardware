@@ -172,8 +172,9 @@ OpCode_O[2] <= Instr31_26_S[2].DB_MAX_OUTPUT_PORT_TYPE
 OpCode_O[3] <= Instr31_26_S[3].DB_MAX_OUTPUT_PORT_TYPE
 OpCode_O[4] <= Instr31_26_S[4].DB_MAX_OUTPUT_PORT_TYPE
 OpCode_O[5] <= Instr31_26_S[5].DB_MAX_OUTPUT_PORT_TYPE
-PCSouce_O[0] <= <GND>
-PCSouce_O[1] <= <GND>
+PCSource_O[0] <= PCSource[0].DB_MAX_OUTPUT_PORT_TYPE
+PCSource_O[1] <= PCSource[1].DB_MAX_OUTPUT_PORT_TYPE
+PCWrite_O <= OR_S.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Mips|Controle:CONTROLE
@@ -236,9 +237,9 @@ ULASrcB[1] <= ULASrcB[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 RegWrite <= <GND>
 RegDst <= <GND>
 RESET <= RESET~reg0.DB_MAX_OUTPUT_PORT_TYPE
-estadoControle[0] <= PCSource~0.DB_MAX_OUTPUT_PORT_TYPE
-estadoControle[1] <= estadoControle~0.DB_MAX_OUTPUT_PORT_TYPE
-estadoControle[2] <= <GND>
+estadoControle[0] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+estadoControle[1] <= estadoControle~1.DB_MAX_OUTPUT_PORT_TYPE
+estadoControle[2] <= estadoControle~0.DB_MAX_OUTPUT_PORT_TYPE
 estadoControle[3] <= <GND>
 estadoControle[4] <= <GND>
 

@@ -1,5 +1,5 @@
 Classic Timing Analyzer report for Mips
-Thu Apr 26 09:54:36 2018
+Thu Apr 26 11:41:58 2018
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -43,9 +43,9 @@ applicable agreement for further details.
 +------------------------------+-------+---------------+------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+------------+----------+--------------+
 ; Type                         ; Slack ; Required Time ; Actual Time                                    ; From                                                                                                                                      ; To                                                                                                               ; From Clock ; To Clock ; Failed Paths ;
 +------------------------------+-------+---------------+------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+------------+----------+--------------+
-; Worst-case tsu               ; N/A   ; None          ; -0.288 ns                                      ; reset                                                                                                                                     ; Controle:CONTROLE|IRWrite                                                                                        ; --         ; clk      ; 0            ;
-; Worst-case tco               ; N/A   ; None          ; 12.263 ns                                      ; Registrador:PC|Saida[6]                                                                                                                   ; ULA_O[30]                                                                                                        ; clk        ; --       ; 0            ;
-; Worst-case th                ; N/A   ; None          ; 0.518 ns                                       ; reset                                                                                                                                     ; Controle:CONTROLE|IRWrite                                                                                        ; --         ; clk      ; 0            ;
+; Worst-case tsu               ; N/A   ; None          ; 0.511 ns                                       ; reset                                                                                                                                     ; Controle:CONTROLE|IRWrite                                                                                        ; --         ; clk      ; 0            ;
+; Worst-case tco               ; N/A   ; None          ; 13.002 ns                                      ; Registrador:PC|Saida[7]                                                                                                                   ; ULA_O[31]                                                                                                        ; clk        ; --       ; 0            ;
+; Worst-case th                ; N/A   ; None          ; -0.281 ns                                      ; reset                                                                                                                                     ; Controle:CONTROLE|IRWrite                                                                                        ; --         ; clk      ; 0            ;
 ; Clock Setup: 'clk'           ; N/A   ; None          ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; Memoria:MEMORIA|lpm_ram_dq:MEM_plus_Three|altram:sram|altsyncram:ram_block|altsyncram_e1a1:auto_generated|ram_block1a0~porta_address_reg7 ; Memoria:MEMORIA|lpm_ram_dq:MEM_plus_Three|altram:sram|altsyncram:ram_block|altsyncram_e1a1:auto_generated|q_a[3] ; clk        ; clk      ; 0            ;
 ; Total number of failed paths ;       ;               ;                                                ;                                                                                                                                           ;                                                                                                                  ;            ;          ; 0            ;
 +------------------------------+-------+---------------+------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+------------+----------+--------------+
@@ -325,220 +325,220 @@ applicable agreement for further details.
 +-------+--------------+------------+-------+-------------------------------+----------+
 ; Slack ; Required tsu ; Actual tsu ; From  ; To                            ; To Clock ;
 +-------+--------------+------------+-------+-------------------------------+----------+
-; N/A   ; None         ; -0.288 ns  ; reset ; Controle:CONTROLE|PCSource[1] ; clk      ;
-; N/A   ; None         ; -0.288 ns  ; reset ; Controle:CONTROLE|PCWrite     ; clk      ;
-; N/A   ; None         ; -0.288 ns  ; reset ; Controle:CONTROLE|RESET       ; clk      ;
-; N/A   ; None         ; -0.288 ns  ; reset ; Controle:CONTROLE|IRWrite     ; clk      ;
+; N/A   ; None         ; 0.511 ns   ; reset ; Controle:CONTROLE|PCSource[1] ; clk      ;
+; N/A   ; None         ; 0.511 ns   ; reset ; Controle:CONTROLE|PCWrite     ; clk      ;
+; N/A   ; None         ; 0.511 ns   ; reset ; Controle:CONTROLE|RESET       ; clk      ;
+; N/A   ; None         ; 0.511 ns   ; reset ; Controle:CONTROLE|IRWrite     ; clk      ;
 +-------+--------------+------------+-------+-------------------------------+----------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; tco                                                                                                                                                                                                                                                  ;
-+-----------------------------------------+-----------------------------------------------------+------------+----------------------------------------------------------------------------------------------------------------+-----------+------------+
-; Slack                                   ; Required tco                                        ; Actual tco ; From                                                                                                           ; To        ; From Clock ;
-+-----------------------------------------+-----------------------------------------------------+------------+----------------------------------------------------------------------------------------------------------------+-----------+------------+
-; N/A                                     ; None                                                ; 12.263 ns  ; Registrador:PC|Saida[6]                                                                                        ; ULA_O[30] ; clk        ;
-; N/A                                     ; None                                                ; 12.226 ns  ; Registrador:PC|Saida[7]                                                                                        ; ULA_O[30] ; clk        ;
-; N/A                                     ; None                                                ; 12.160 ns  ; Registrador:PC|Saida[2]                                                                                        ; ULA_O[30] ; clk        ;
-; N/A                                     ; None                                                ; 12.142 ns  ; Registrador:PC|Saida[6]                                                                                        ; ULA_O[31] ; clk        ;
-; N/A                                     ; None                                                ; 12.109 ns  ; Registrador:PC|Saida[11]                                                                                       ; ULA_O[30] ; clk        ;
-; N/A                                     ; None                                                ; 12.105 ns  ; Registrador:PC|Saida[7]                                                                                        ; ULA_O[31] ; clk        ;
-; N/A                                     ; None                                                ; 12.039 ns  ; Registrador:PC|Saida[2]                                                                                        ; ULA_O[31] ; clk        ;
-; N/A                                     ; None                                                ; 12.014 ns  ; Registrador:PC|Saida[4]                                                                                        ; ULA_O[30] ; clk        ;
-; N/A                                     ; None                                                ; 11.991 ns  ; Registrador:PC|Saida[8]                                                                                        ; ULA_O[30] ; clk        ;
-; N/A                                     ; None                                                ; 11.988 ns  ; Registrador:PC|Saida[11]                                                                                       ; ULA_O[31] ; clk        ;
-; N/A                                     ; None                                                ; 11.927 ns  ; Registrador:PC|Saida[3]                                                                                        ; ULA_O[30] ; clk        ;
-; N/A                                     ; None                                                ; 11.893 ns  ; Registrador:PC|Saida[4]                                                                                        ; ULA_O[31] ; clk        ;
-; N/A                                     ; None                                                ; 11.871 ns  ; Registrador:PC|Saida[6]                                                                                        ; ULA_O[17] ; clk        ;
-; N/A                                     ; None                                                ; 11.870 ns  ; Registrador:PC|Saida[8]                                                                                        ; ULA_O[31] ; clk        ;
-; N/A                                     ; None                                                ; 11.867 ns  ; Registrador:PC|Saida[5]                                                                                        ; ULA_O[30] ; clk        ;
-; N/A                                     ; None                                                ; 11.834 ns  ; Registrador:PC|Saida[7]                                                                                        ; ULA_O[17] ; clk        ;
-; N/A                                     ; None                                                ; 11.806 ns  ; Registrador:PC|Saida[3]                                                                                        ; ULA_O[31] ; clk        ;
-; N/A                                     ; None                                                ; 11.768 ns  ; Registrador:PC|Saida[2]                                                                                        ; ULA_O[17] ; clk        ;
-; N/A                                     ; None                                                ; 11.746 ns  ; Registrador:PC|Saida[5]                                                                                        ; ULA_O[31] ; clk        ;
-; N/A                                     ; None                                                ; 11.717 ns  ; Registrador:PC|Saida[11]                                                                                       ; ULA_O[17] ; clk        ;
-; N/A                                     ; None                                                ; 11.709 ns  ; Registrador:PC|Saida[9]                                                                                        ; ULA_O[30] ; clk        ;
-; N/A                                     ; None                                                ; 11.697 ns  ; Registrador:PC|Saida[10]                                                                                       ; ULA_O[30] ; clk        ;
-; N/A                                     ; None                                                ; 11.622 ns  ; Registrador:PC|Saida[4]                                                                                        ; ULA_O[17] ; clk        ;
-; N/A                                     ; None                                                ; 11.599 ns  ; Registrador:PC|Saida[8]                                                                                        ; ULA_O[17] ; clk        ;
-; N/A                                     ; None                                                ; 11.588 ns  ; Registrador:PC|Saida[9]                                                                                        ; ULA_O[31] ; clk        ;
-; N/A                                     ; None                                                ; 11.586 ns  ; Registrador:PC|Saida[6]                                                                                        ; ULA_O[27] ; clk        ;
-; N/A                                     ; None                                                ; 11.576 ns  ; Registrador:PC|Saida[10]                                                                                       ; ULA_O[31] ; clk        ;
-; N/A                                     ; None                                                ; 11.551 ns  ; Registrador:PC|Saida[13]                                                                                       ; ULA_O[30] ; clk        ;
-; N/A                                     ; None                                                ; 11.549 ns  ; Registrador:PC|Saida[7]                                                                                        ; ULA_O[27] ; clk        ;
-; N/A                                     ; None                                                ; 11.535 ns  ; Registrador:PC|Saida[3]                                                                                        ; ULA_O[17] ; clk        ;
-; N/A                                     ; None                                                ; 11.483 ns  ; Registrador:PC|Saida[2]                                                                                        ; ULA_O[27] ; clk        ;
-; N/A                                     ; None                                                ; 11.475 ns  ; Registrador:PC|Saida[5]                                                                                        ; ULA_O[17] ; clk        ;
-; N/A                                     ; None                                                ; 11.432 ns  ; Registrador:PC|Saida[11]                                                                                       ; ULA_O[27] ; clk        ;
-; N/A                                     ; None                                                ; 11.430 ns  ; Registrador:PC|Saida[13]                                                                                       ; ULA_O[31] ; clk        ;
-; N/A                                     ; None                                                ; 11.401 ns  ; Registrador:PC|Saida[14]                                                                                       ; ULA_O[30] ; clk        ;
-; N/A                                     ; None                                                ; 11.349 ns  ; Registrador:PC|Saida[6]                                                                                        ; ULA_O[29] ; clk        ;
-; N/A                                     ; None                                                ; 11.345 ns  ; Registrador:PC|Saida[6]                                                                                        ; ULA_O[21] ; clk        ;
-; N/A                                     ; None                                                ; 11.337 ns  ; Registrador:PC|Saida[4]                                                                                        ; ULA_O[27] ; clk        ;
-; N/A                                     ; None                                                ; 11.336 ns  ; Registrador:PC|Saida[6]                                                                                        ; ULA_O[18] ; clk        ;
-; N/A                                     ; None                                                ; 11.333 ns  ; Registrador:PC|Saida[12]                                                                                       ; ULA_O[30] ; clk        ;
-; N/A                                     ; None                                                ; 11.317 ns  ; Registrador:PC|Saida[9]                                                                                        ; ULA_O[17] ; clk        ;
-; N/A                                     ; None                                                ; 11.314 ns  ; Registrador:PC|Saida[8]                                                                                        ; ULA_O[27] ; clk        ;
-; N/A                                     ; None                                                ; 11.312 ns  ; Registrador:PC|Saida[7]                                                                                        ; ULA_O[29] ; clk        ;
-; N/A                                     ; None                                                ; 11.308 ns  ; Registrador:PC|Saida[7]                                                                                        ; ULA_O[21] ; clk        ;
-; N/A                                     ; None                                                ; 11.305 ns  ; Registrador:PC|Saida[10]                                                                                       ; ULA_O[17] ; clk        ;
-; N/A                                     ; None                                                ; 11.299 ns  ; Registrador:PC|Saida[7]                                                                                        ; ULA_O[18] ; clk        ;
-; N/A                                     ; None                                                ; 11.280 ns  ; Registrador:PC|Saida[14]                                                                                       ; ULA_O[31] ; clk        ;
-; N/A                                     ; None                                                ; 11.250 ns  ; Registrador:PC|Saida[3]                                                                                        ; ULA_O[27] ; clk        ;
-; N/A                                     ; None                                                ; 11.246 ns  ; Registrador:PC|Saida[2]                                                                                        ; ULA_O[29] ; clk        ;
-; N/A                                     ; None                                                ; 11.242 ns  ; Registrador:PC|Saida[2]                                                                                        ; ULA_O[21] ; clk        ;
-; N/A                                     ; None                                                ; 11.233 ns  ; Registrador:PC|Saida[2]                                                                                        ; ULA_O[18] ; clk        ;
-; N/A                                     ; None                                                ; 11.229 ns  ; Registrador:PC|Saida[6]                                                                                        ; ULA_O[22] ; clk        ;
-; N/A                                     ; None                                                ; 11.212 ns  ; Registrador:PC|Saida[12]                                                                                       ; ULA_O[31] ; clk        ;
-; N/A                                     ; None                                                ; 11.195 ns  ; Registrador:PC|Saida[11]                                                                                       ; ULA_O[29] ; clk        ;
-; N/A                                     ; None                                                ; 11.192 ns  ; Registrador:PC|Saida[7]                                                                                        ; ULA_O[22] ; clk        ;
-; N/A                                     ; None                                                ; 11.191 ns  ; Registrador:PC|Saida[11]                                                                                       ; ULA_O[21] ; clk        ;
-; N/A                                     ; None                                                ; 11.190 ns  ; Registrador:PC|Saida[5]                                                                                        ; ULA_O[27] ; clk        ;
-; N/A                                     ; None                                                ; 11.182 ns  ; Registrador:PC|Saida[11]                                                                                       ; ULA_O[18] ; clk        ;
-; N/A                                     ; None                                                ; 11.159 ns  ; Registrador:PC|Saida[13]                                                                                       ; ULA_O[17] ; clk        ;
-; N/A                                     ; None                                                ; 11.143 ns  ; Registrador:PC|Saida[16]                                                                                       ; ULA_O[30] ; clk        ;
-; N/A                                     ; None                                                ; 11.126 ns  ; Registrador:PC|Saida[2]                                                                                        ; ULA_O[22] ; clk        ;
-; N/A                                     ; None                                                ; 11.116 ns  ; Registrador:PC|Saida[15]                                                                                       ; ULA_O[30] ; clk        ;
-; N/A                                     ; None                                                ; 11.111 ns  ; Registrador:PC|Saida[6]                                                                                        ; ULA_O[28] ; clk        ;
-; N/A                                     ; None                                                ; 11.100 ns  ; Registrador:PC|Saida[4]                                                                                        ; ULA_O[29] ; clk        ;
-; N/A                                     ; None                                                ; 11.096 ns  ; Registrador:PC|Saida[4]                                                                                        ; ULA_O[21] ; clk        ;
-; N/A                                     ; None                                                ; 11.090 ns  ; Registrador:PC|Saida[23]                                                                                       ; ULA_O[30] ; clk        ;
-; N/A                                     ; None                                                ; 11.087 ns  ; Registrador:PC|Saida[4]                                                                                        ; ULA_O[18] ; clk        ;
-; N/A                                     ; None                                                ; 11.077 ns  ; Registrador:PC|Saida[8]                                                                                        ; ULA_O[29] ; clk        ;
-; N/A                                     ; None                                                ; 11.075 ns  ; Memoria:MEMORIA|lpm_ram_dq:MEM_plus_One|altram:sram|altsyncram:ram_block|altsyncram_e1a1:auto_generated|q_a[1] ; MEM_O[17] ; clk        ;
-; N/A                                     ; None                                                ; 11.075 ns  ; Registrador:PC|Saida[11]                                                                                       ; ULA_O[22] ; clk        ;
-; N/A                                     ; None                                                ; 11.074 ns  ; Registrador:PC|Saida[7]                                                                                        ; ULA_O[28] ; clk        ;
-; N/A                                     ; None                                                ; 11.073 ns  ; Registrador:PC|Saida[8]                                                                                        ; ULA_O[21] ; clk        ;
-; N/A                                     ; None                                                ; 11.064 ns  ; Registrador:PC|Saida[8]                                                                                        ; ULA_O[18] ; clk        ;
-; N/A                                     ; None                                                ; 11.032 ns  ; Registrador:PC|Saida[9]                                                                                        ; ULA_O[27] ; clk        ;
-; N/A                                     ; None                                                ; 11.022 ns  ; Registrador:PC|Saida[16]                                                                                       ; ULA_O[31] ; clk        ;
-; N/A                                     ; None                                                ; 11.020 ns  ; Registrador:PC|Saida[10]                                                                                       ; ULA_O[27] ; clk        ;
-; N/A                                     ; None                                                ; 11.013 ns  ; Registrador:PC|Saida[3]                                                                                        ; ULA_O[29] ; clk        ;
-; N/A                                     ; None                                                ; 11.009 ns  ; Registrador:PC|Saida[3]                                                                                        ; ULA_O[21] ; clk        ;
-; N/A                                     ; None                                                ; 11.009 ns  ; Registrador:PC|Saida[14]                                                                                       ; ULA_O[17] ; clk        ;
-; N/A                                     ; None                                                ; 11.008 ns  ; Registrador:PC|Saida[2]                                                                                        ; ULA_O[28] ; clk        ;
-; N/A                                     ; None                                                ; 11.003 ns  ; Registrador:PC|Saida[17]                                                                                       ; ULA_O[30] ; clk        ;
-; N/A                                     ; None                                                ; 11.000 ns  ; Registrador:PC|Saida[3]                                                                                        ; ULA_O[18] ; clk        ;
-; N/A                                     ; None                                                ; 10.995 ns  ; Registrador:PC|Saida[15]                                                                                       ; ULA_O[31] ; clk        ;
-; N/A                                     ; None                                                ; 10.980 ns  ; Registrador:PC|Saida[4]                                                                                        ; ULA_O[22] ; clk        ;
-; N/A                                     ; None                                                ; 10.969 ns  ; Registrador:PC|Saida[23]                                                                                       ; ULA_O[31] ; clk        ;
-; N/A                                     ; None                                                ; 10.968 ns  ; Registrador:PC|Saida[2]                                                                                        ; ULA_O[11] ; clk        ;
-; N/A                                     ; None                                                ; 10.957 ns  ; Registrador:PC|Saida[11]                                                                                       ; ULA_O[28] ; clk        ;
-; N/A                                     ; None                                                ; 10.957 ns  ; Registrador:PC|Saida[8]                                                                                        ; ULA_O[22] ; clk        ;
-; N/A                                     ; None                                                ; 10.953 ns  ; Registrador:PC|Saida[5]                                                                                        ; ULA_O[29] ; clk        ;
-; N/A                                     ; None                                                ; 10.949 ns  ; Registrador:PC|Saida[5]                                                                                        ; ULA_O[21] ; clk        ;
-; N/A                                     ; None                                                ; 10.944 ns  ; Registrador:PC|Saida[6]                                                                                        ; ULA_O[23] ; clk        ;
-; N/A                                     ; None                                                ; 10.941 ns  ; Registrador:PC|Saida[12]                                                                                       ; ULA_O[17] ; clk        ;
-; N/A                                     ; None                                                ; 10.940 ns  ; Registrador:PC|Saida[5]                                                                                        ; ULA_O[18] ; clk        ;
-; N/A                                     ; None                                                ; 10.907 ns  ; Registrador:PC|Saida[7]                                                                                        ; ULA_O[23] ; clk        ;
-; N/A                                     ; None                                                ; 10.893 ns  ; Registrador:PC|Saida[3]                                                                                        ; ULA_O[22] ; clk        ;
-; N/A                                     ; None                                                ; 10.882 ns  ; Registrador:PC|Saida[17]                                                                                       ; ULA_O[31] ; clk        ;
-; N/A                                     ; None                                                ; 10.874 ns  ; Registrador:PC|Saida[13]                                                                                       ; ULA_O[27] ; clk        ;
-; N/A                                     ; None                                                ; 10.862 ns  ; Registrador:PC|Saida[4]                                                                                        ; ULA_O[28] ; clk        ;
-; N/A                                     ; None                                                ; 10.841 ns  ; Registrador:PC|Saida[2]                                                                                        ; ULA_O[23] ; clk        ;
-; N/A                                     ; None                                                ; 10.839 ns  ; Registrador:PC|Saida[8]                                                                                        ; ULA_O[28] ; clk        ;
-; N/A                                     ; None                                                ; 10.836 ns  ; Registrador:PC|Saida[6]                                                                                        ; ULA_O[25] ; clk        ;
-; N/A                                     ; None                                                ; 10.833 ns  ; Registrador:PC|Saida[5]                                                                                        ; ULA_O[22] ; clk        ;
-; N/A                                     ; None                                                ; 10.822 ns  ; Registrador:PC|Saida[4]                                                                                        ; ULA_O[11] ; clk        ;
-; N/A                                     ; None                                                ; 10.814 ns  ; Registrador:PC|Saida[6]                                                                                        ; ULA_O[26] ; clk        ;
-; N/A                                     ; None                                                ; 10.799 ns  ; Registrador:PC|Saida[7]                                                                                        ; ULA_O[25] ; clk        ;
-; N/A                                     ; None                                                ; 10.795 ns  ; Registrador:PC|Saida[9]                                                                                        ; ULA_O[29] ; clk        ;
-; N/A                                     ; None                                                ; 10.791 ns  ; Registrador:PC|Saida[9]                                                                                        ; ULA_O[21] ; clk        ;
-; N/A                                     ; None                                                ; 10.790 ns  ; Registrador:PC|Saida[11]                                                                                       ; ULA_O[23] ; clk        ;
-; N/A                                     ; None                                                ; 10.783 ns  ; Registrador:PC|Saida[10]                                                                                       ; ULA_O[29] ; clk        ;
-; N/A                                     ; None                                                ; 10.782 ns  ; Registrador:PC|Saida[9]                                                                                        ; ULA_O[18] ; clk        ;
-; N/A                                     ; None                                                ; 10.779 ns  ; Registrador:PC|Saida[10]                                                                                       ; ULA_O[21] ; clk        ;
-; N/A                                     ; None                                                ; 10.777 ns  ; Registrador:PC|Saida[7]                                                                                        ; ULA_O[26] ; clk        ;
-; N/A                                     ; None                                                ; 10.775 ns  ; Registrador:PC|Saida[3]                                                                                        ; ULA_O[28] ; clk        ;
-; N/A                                     ; None                                                ; 10.770 ns  ; Registrador:PC|Saida[10]                                                                                       ; ULA_O[18] ; clk        ;
-; N/A                                     ; None                                                ; 10.759 ns  ; Registrador:PC|Saida[18]                                                                                       ; ULA_O[30] ; clk        ;
-; N/A                                     ; None                                                ; 10.759 ns  ; Registrador:PC|Saida[19]                                                                                       ; ULA_O[30] ; clk        ;
-; N/A                                     ; None                                                ; 10.735 ns  ; Registrador:PC|Saida[3]                                                                                        ; ULA_O[11] ; clk        ;
-; N/A                                     ; None                                                ; 10.733 ns  ; Registrador:PC|Saida[2]                                                                                        ; ULA_O[25] ; clk        ;
-; N/A                                     ; None                                                ; 10.724 ns  ; Registrador:PC|Saida[14]                                                                                       ; ULA_O[27] ; clk        ;
-; N/A                                     ; None                                                ; 10.715 ns  ; Registrador:PC|Saida[5]                                                                                        ; ULA_O[28] ; clk        ;
-; N/A                                     ; None                                                ; 10.711 ns  ; Registrador:PC|Saida[2]                                                                                        ; ULA_O[26] ; clk        ;
-; N/A                                     ; None                                                ; 10.700 ns  ; Registrador:PC|Saida[6]                                                                                        ; ULA_O[24] ; clk        ;
-; N/A                                     ; None                                                ; 10.695 ns  ; Registrador:PC|Saida[4]                                                                                        ; ULA_O[23] ; clk        ;
-; N/A                                     ; None                                                ; 10.684 ns  ; Registrador:PC|Saida[6]                                                                                        ; ULA_O[16] ; clk        ;
-; N/A                                     ; None                                                ; 10.682 ns  ; Registrador:PC|Saida[11]                                                                                       ; ULA_O[25] ; clk        ;
-; N/A                                     ; None                                                ; 10.675 ns  ; Registrador:PC|Saida[9]                                                                                        ; ULA_O[22] ; clk        ;
-; N/A                                     ; None                                                ; 10.675 ns  ; Registrador:PC|Saida[5]                                                                                        ; ULA_O[11] ; clk        ;
-; N/A                                     ; None                                                ; 10.672 ns  ; Registrador:PC|Saida[8]                                                                                        ; ULA_O[23] ; clk        ;
-; N/A                                     ; None                                                ; 10.663 ns  ; Registrador:PC|Saida[7]                                                                                        ; ULA_O[24] ; clk        ;
-; N/A                                     ; None                                                ; 10.663 ns  ; Registrador:PC|Saida[10]                                                                                       ; ULA_O[22] ; clk        ;
-; N/A                                     ; None                                                ; 10.660 ns  ; Registrador:PC|Saida[11]                                                                                       ; ULA_O[26] ; clk        ;
-; N/A                                     ; None                                                ; 10.656 ns  ; Registrador:PC|Saida[12]                                                                                       ; ULA_O[27] ; clk        ;
-; N/A                                     ; None                                                ; 10.647 ns  ; Registrador:PC|Saida[7]                                                                                        ; ULA_O[16] ; clk        ;
-; N/A                                     ; None                                                ; 10.638 ns  ; Registrador:PC|Saida[18]                                                                                       ; ULA_O[31] ; clk        ;
-; N/A                                     ; None                                                ; 10.638 ns  ; Registrador:PC|Saida[19]                                                                                       ; ULA_O[31] ; clk        ;
-; N/A                                     ; None                                                ; 10.637 ns  ; Registrador:PC|Saida[13]                                                                                       ; ULA_O[29] ; clk        ;
-; N/A                                     ; None                                                ; 10.633 ns  ; Registrador:PC|Saida[13]                                                                                       ; ULA_O[21] ; clk        ;
-; N/A                                     ; None                                                ; 10.624 ns  ; Registrador:PC|Saida[13]                                                                                       ; ULA_O[18] ; clk        ;
-; N/A                                     ; None                                                ; 10.608 ns  ; Registrador:PC|Saida[3]                                                                                        ; ULA_O[23] ; clk        ;
-; N/A                                     ; None                                                ; 10.597 ns  ; Registrador:PC|Saida[2]                                                                                        ; ULA_O[24] ; clk        ;
-; N/A                                     ; None                                                ; 10.593 ns  ; Registrador:PC|Saida[20]                                                                                       ; ULA_O[30] ; clk        ;
-; N/A                                     ; None                                                ; 10.587 ns  ; Registrador:PC|Saida[4]                                                                                        ; ULA_O[25] ; clk        ;
-; N/A                                     ; None                                                ; 10.581 ns  ; Registrador:PC|Saida[2]                                                                                        ; ULA_O[16] ; clk        ;
-; N/A                                     ; None                                                ; 10.565 ns  ; Registrador:PC|Saida[4]                                                                                        ; ULA_O[26] ; clk        ;
-; N/A                                     ; None                                                ; 10.564 ns  ; Registrador:PC|Saida[8]                                                                                        ; ULA_O[25] ; clk        ;
-; N/A                                     ; None                                                ; 10.559 ns  ; Registrador:PC|Saida[6]                                                                                        ; ULA_O[20] ; clk        ;
-; N/A                                     ; None                                                ; 10.557 ns  ; Registrador:PC|Saida[9]                                                                                        ; ULA_O[28] ; clk        ;
-; N/A                                     ; None                                                ; 10.548 ns  ; Registrador:PC|Saida[5]                                                                                        ; ULA_O[23] ; clk        ;
-; N/A                                     ; None                                                ; 10.546 ns  ; Registrador:PC|Saida[11]                                                                                       ; ULA_O[24] ; clk        ;
-; N/A                                     ; None                                                ; 10.545 ns  ; Registrador:PC|Saida[10]                                                                                       ; ULA_O[28] ; clk        ;
-; N/A                                     ; None                                                ; 10.542 ns  ; Registrador:PC|Saida[8]                                                                                        ; ULA_O[26] ; clk        ;
-; N/A                                     ; None                                                ; 10.530 ns  ; Registrador:PC|Saida[11]                                                                                       ; ULA_O[16] ; clk        ;
-; N/A                                     ; None                                                ; 10.522 ns  ; Registrador:PC|Saida[7]                                                                                        ; ULA_O[20] ; clk        ;
-; N/A                                     ; None                                                ; 10.517 ns  ; Registrador:PC|Saida[13]                                                                                       ; ULA_O[22] ; clk        ;
-; N/A                                     ; None                                                ; 10.500 ns  ; Registrador:PC|Saida[3]                                                                                        ; ULA_O[25] ; clk        ;
-; N/A                                     ; None                                                ; 10.487 ns  ; Registrador:PC|Saida[14]                                                                                       ; ULA_O[29] ; clk        ;
-; N/A                                     ; None                                                ; 10.483 ns  ; Registrador:PC|Saida[14]                                                                                       ; ULA_O[21] ; clk        ;
-; N/A                                     ; None                                                ; 10.478 ns  ; Registrador:PC|Saida[3]                                                                                        ; ULA_O[26] ; clk        ;
-; N/A                                     ; None                                                ; 10.474 ns  ; Registrador:PC|Saida[14]                                                                                       ; ULA_O[18] ; clk        ;
-; N/A                                     ; None                                                ; 10.472 ns  ; Registrador:PC|Saida[20]                                                                                       ; ULA_O[31] ; clk        ;
-; N/A                                     ; None                                                ; 10.466 ns  ; Registrador:PC|Saida[16]                                                                                       ; ULA_O[27] ; clk        ;
-; N/A                                     ; None                                                ; 10.456 ns  ; Registrador:PC|Saida[2]                                                                                        ; ULA_O[20] ; clk        ;
-; N/A                                     ; None                                                ; 10.451 ns  ; Registrador:PC|Saida[4]                                                                                        ; ULA_O[24] ; clk        ;
-; N/A                                     ; None                                                ; 10.440 ns  ; Registrador:PC|Saida[5]                                                                                        ; ULA_O[25] ; clk        ;
-; N/A                                     ; None                                                ; 10.439 ns  ; Registrador:PC|Saida[15]                                                                                       ; ULA_O[27] ; clk        ;
-; N/A                                     ; None                                                ; 10.435 ns  ; Registrador:PC|Saida[4]                                                                                        ; ULA_O[16] ; clk        ;
-; N/A                                     ; None                                                ; 10.428 ns  ; Registrador:PC|Saida[8]                                                                                        ; ULA_O[24] ; clk        ;
-; N/A                                     ; None                                                ; 10.419 ns  ; Registrador:PC|Saida[12]                                                                                       ; ULA_O[29] ; clk        ;
-; N/A                                     ; None                                                ; 10.418 ns  ; Registrador:PC|Saida[5]                                                                                        ; ULA_O[26] ; clk        ;
-; N/A                                     ; None                                                ; 10.415 ns  ; Registrador:PC|Saida[12]                                                                                       ; ULA_O[21] ; clk        ;
-; N/A                                     ; None                                                ; 10.413 ns  ; Registrador:PC|Saida[23]                                                                                       ; ULA_O[27] ; clk        ;
-; N/A                                     ; None                                                ; 10.412 ns  ; Registrador:PC|Saida[8]                                                                                        ; ULA_O[16] ; clk        ;
-; N/A                                     ; None                                                ; 10.406 ns  ; Registrador:PC|Saida[12]                                                                                       ; ULA_O[18] ; clk        ;
-; N/A                                     ; None                                                ; 10.405 ns  ; Registrador:PC|Saida[11]                                                                                       ; ULA_O[20] ; clk        ;
-; N/A                                     ; None                                                ; 10.399 ns  ; Registrador:PC|Saida[13]                                                                                       ; ULA_O[28] ; clk        ;
-; N/A                                     ; None                                                ; 10.390 ns  ; Registrador:PC|Saida[9]                                                                                        ; ULA_O[23] ; clk        ;
-; N/A                                     ; None                                                ; 10.378 ns  ; Registrador:PC|Saida[10]                                                                                       ; ULA_O[23] ; clk        ;
-; N/A                                     ; None                                                ; 10.367 ns  ; Registrador:PC|Saida[14]                                                                                       ; ULA_O[22] ; clk        ;
-; N/A                                     ; None                                                ; 10.364 ns  ; Registrador:PC|Saida[3]                                                                                        ; ULA_O[24] ; clk        ;
-; N/A                                     ; None                                                ; 10.348 ns  ; Registrador:PC|Saida[3]                                                                                        ; ULA_O[16] ; clk        ;
-; N/A                                     ; None                                                ; 10.345 ns  ; Registrador:PC|Saida[22]                                                                                       ; ULA_O[30] ; clk        ;
-; N/A                                     ; None                                                ; 10.326 ns  ; Registrador:PC|Saida[17]                                                                                       ; ULA_O[27] ; clk        ;
-; N/A                                     ; None                                                ; 10.310 ns  ; Registrador:PC|Saida[4]                                                                                        ; ULA_O[20] ; clk        ;
-; N/A                                     ; None                                                ; 10.304 ns  ; Registrador:PC|Saida[5]                                                                                        ; ULA_O[24] ; clk        ;
-; N/A                                     ; None                                                ; 10.299 ns  ; Registrador:PC|Saida[12]                                                                                       ; ULA_O[22] ; clk        ;
-; N/A                                     ; None                                                ; 10.288 ns  ; Registrador:PC|Saida[5]                                                                                        ; ULA_O[16] ; clk        ;
-; N/A                                     ; None                                                ; 10.287 ns  ; Registrador:PC|Saida[8]                                                                                        ; ULA_O[20] ; clk        ;
-; N/A                                     ; None                                                ; 10.282 ns  ; Registrador:PC|Saida[9]                                                                                        ; ULA_O[25] ; clk        ;
-; N/A                                     ; None                                                ; 10.280 ns  ; Registrador:PC|Saida[21]                                                                                       ; ULA_O[30] ; clk        ;
-; N/A                                     ; None                                                ; 10.270 ns  ; Registrador:PC|Saida[10]                                                                                       ; ULA_O[25] ; clk        ;
-; N/A                                     ; None                                                ; 10.260 ns  ; Registrador:PC|Saida[9]                                                                                        ; ULA_O[26] ; clk        ;
-; N/A                                     ; None                                                ; 10.249 ns  ; Registrador:PC|Saida[14]                                                                                       ; ULA_O[28] ; clk        ;
-; N/A                                     ; None                                                ; 10.248 ns  ; Registrador:PC|Saida[10]                                                                                       ; ULA_O[26] ; clk        ;
-; N/A                                     ; None                                                ; 10.244 ns  ; Registrador:PC|Saida[6]                                                                                        ; ULA_O[19] ; clk        ;
-; N/A                                     ; None                                                ; 10.232 ns  ; Registrador:PC|Saida[13]                                                                                       ; ULA_O[23] ; clk        ;
-; N/A                                     ; None                                                ; 10.231 ns  ; Registrador:PC|Saida[6]                                                                                        ; ULA_O[11] ; clk        ;
-; N/A                                     ; None                                                ; 10.229 ns  ; Registrador:PC|Saida[16]                                                                                       ; ULA_O[29] ; clk        ;
-; N/A                                     ; None                                                ; 10.225 ns  ; Registrador:PC|Saida[16]                                                                                       ; ULA_O[21] ; clk        ;
-; N/A                                     ; None                                                ; 10.224 ns  ; Registrador:PC|Saida[22]                                                                                       ; ULA_O[31] ; clk        ;
-; N/A                                     ; None                                                ; 10.223 ns  ; Registrador:PC|Saida[3]                                                                                        ; ULA_O[20] ; clk        ;
-; Timing analysis restricted to 200 rows. ; To change the limit use Settings (Assignments menu) ;            ;                                                                                                                ;           ;            ;
-+-----------------------------------------+-----------------------------------------------------+------------+----------------------------------------------------------------------------------------------------------------+-----------+------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; tco                                                                                                                                                                     ;
++-----------------------------------------+-----------------------------------------------------+------------+----------------------------------+------------+------------+
+; Slack                                   ; Required tco                                        ; Actual tco ; From                             ; To         ; From Clock ;
++-----------------------------------------+-----------------------------------------------------+------------+----------------------------------+------------+------------+
+; N/A                                     ; None                                                ; 13.002 ns  ; Registrador:PC|Saida[7]          ; ULA_O[31]  ; clk        ;
+; N/A                                     ; None                                                ; 12.903 ns  ; Registrador:PC|Saida[7]          ; ULA_O[27]  ; clk        ;
+; N/A                                     ; None                                                ; 12.901 ns  ; Registrador:PC|Saida[2]          ; ULA_O[31]  ; clk        ;
+; N/A                                     ; None                                                ; 12.882 ns  ; Registrador:PC|Saida[11]         ; ULA_O[31]  ; clk        ;
+; N/A                                     ; None                                                ; 12.840 ns  ; Registrador:PC|Saida[6]          ; ULA_O[31]  ; clk        ;
+; N/A                                     ; None                                                ; 12.819 ns  ; Registrador:PC|Saida[10]         ; ULA_O[31]  ; clk        ;
+; N/A                                     ; None                                                ; 12.802 ns  ; Registrador:PC|Saida[2]          ; ULA_O[27]  ; clk        ;
+; N/A                                     ; None                                                ; 12.783 ns  ; Registrador:PC|Saida[11]         ; ULA_O[27]  ; clk        ;
+; N/A                                     ; None                                                ; 12.782 ns  ; Registrador:PC|Saida[7]          ; ULA_O[29]  ; clk        ;
+; N/A                                     ; None                                                ; 12.758 ns  ; Registrador:PC|Saida[8]          ; ULA_O[31]  ; clk        ;
+; N/A                                     ; None                                                ; 12.756 ns  ; Registrador:PC|Saida[5]          ; ULA_O[31]  ; clk        ;
+; N/A                                     ; None                                                ; 12.741 ns  ; Registrador:PC|Saida[6]          ; ULA_O[27]  ; clk        ;
+; N/A                                     ; None                                                ; 12.736 ns  ; Registrador:PC|Saida[7]          ; ULA_O[30]  ; clk        ;
+; N/A                                     ; None                                                ; 12.720 ns  ; Registrador:PC|Saida[10]         ; ULA_O[27]  ; clk        ;
+; N/A                                     ; None                                                ; 12.682 ns  ; Registrador:PC|Saida[3]          ; ULA_O[31]  ; clk        ;
+; N/A                                     ; None                                                ; 12.681 ns  ; Registrador:PC|Saida[2]          ; ULA_O[29]  ; clk        ;
+; N/A                                     ; None                                                ; 12.662 ns  ; Registrador:PC|Saida[11]         ; ULA_O[29]  ; clk        ;
+; N/A                                     ; None                                                ; 12.659 ns  ; Registrador:PC|Saida[8]          ; ULA_O[27]  ; clk        ;
+; N/A                                     ; None                                                ; 12.657 ns  ; Registrador:PC|Saida[5]          ; ULA_O[27]  ; clk        ;
+; N/A                                     ; None                                                ; 12.635 ns  ; Registrador:PC|Saida[2]          ; ULA_O[30]  ; clk        ;
+; N/A                                     ; None                                                ; 12.630 ns  ; Registrador:PC|Saida[4]          ; ULA_O[31]  ; clk        ;
+; N/A                                     ; None                                                ; 12.620 ns  ; Registrador:PC|Saida[6]          ; ULA_O[29]  ; clk        ;
+; N/A                                     ; None                                                ; 12.616 ns  ; Registrador:PC|Saida[11]         ; ULA_O[30]  ; clk        ;
+; N/A                                     ; None                                                ; 12.599 ns  ; Registrador:PC|Saida[10]         ; ULA_O[29]  ; clk        ;
+; N/A                                     ; None                                                ; 12.583 ns  ; Registrador:PC|Saida[3]          ; ULA_O[27]  ; clk        ;
+; N/A                                     ; None                                                ; 12.574 ns  ; Registrador:PC|Saida[6]          ; ULA_O[30]  ; clk        ;
+; N/A                                     ; None                                                ; 12.553 ns  ; Registrador:PC|Saida[10]         ; ULA_O[30]  ; clk        ;
+; N/A                                     ; None                                                ; 12.538 ns  ; Registrador:PC|Saida[8]          ; ULA_O[29]  ; clk        ;
+; N/A                                     ; None                                                ; 12.536 ns  ; Registrador:PC|Saida[5]          ; ULA_O[29]  ; clk        ;
+; N/A                                     ; None                                                ; 12.531 ns  ; Registrador:PC|Saida[4]          ; ULA_O[27]  ; clk        ;
+; N/A                                     ; None                                                ; 12.492 ns  ; Registrador:PC|Saida[8]          ; ULA_O[30]  ; clk        ;
+; N/A                                     ; None                                                ; 12.490 ns  ; Registrador:PC|Saida[5]          ; ULA_O[30]  ; clk        ;
+; N/A                                     ; None                                                ; 12.483 ns  ; Registrador:PC|Saida[9]          ; ULA_O[31]  ; clk        ;
+; N/A                                     ; None                                                ; 12.462 ns  ; Registrador:PC|Saida[3]          ; ULA_O[29]  ; clk        ;
+; N/A                                     ; None                                                ; 12.416 ns  ; Registrador:PC|Saida[3]          ; ULA_O[30]  ; clk        ;
+; N/A                                     ; None                                                ; 12.410 ns  ; Registrador:PC|Saida[4]          ; ULA_O[29]  ; clk        ;
+; N/A                                     ; None                                                ; 12.384 ns  ; Registrador:PC|Saida[9]          ; ULA_O[27]  ; clk        ;
+; N/A                                     ; None                                                ; 12.364 ns  ; Registrador:PC|Saida[4]          ; ULA_O[30]  ; clk        ;
+; N/A                                     ; None                                                ; 12.324 ns  ; Registrador:PC|Saida[13]         ; ULA_O[31]  ; clk        ;
+; N/A                                     ; None                                                ; 12.317 ns  ; Registrador:PC|Saida[7]          ; ULA_O[21]  ; clk        ;
+; N/A                                     ; None                                                ; 12.263 ns  ; Registrador:PC|Saida[9]          ; ULA_O[29]  ; clk        ;
+; N/A                                     ; None                                                ; 12.225 ns  ; Registrador:PC|Saida[13]         ; ULA_O[27]  ; clk        ;
+; N/A                                     ; None                                                ; 12.222 ns  ; Registrador:PC|Saida[7]          ; ULA_O[23]  ; clk        ;
+; N/A                                     ; None                                                ; 12.217 ns  ; Registrador:PC|Saida[9]          ; ULA_O[30]  ; clk        ;
+; N/A                                     ; None                                                ; 12.216 ns  ; Registrador:PC|Saida[2]          ; ULA_O[21]  ; clk        ;
+; N/A                                     ; None                                                ; 12.203 ns  ; Registrador:PC|Saida[14]         ; ULA_O[31]  ; clk        ;
+; N/A                                     ; None                                                ; 12.197 ns  ; Registrador:PC|Saida[11]         ; ULA_O[21]  ; clk        ;
+; N/A                                     ; None                                                ; 12.191 ns  ; Registrador:PC|Saida[15]         ; ULA_O[31]  ; clk        ;
+; N/A                                     ; None                                                ; 12.155 ns  ; Registrador:PC|Saida[6]          ; ULA_O[21]  ; clk        ;
+; N/A                                     ; None                                                ; 12.134 ns  ; Registrador:PC|Saida[10]         ; ULA_O[21]  ; clk        ;
+; N/A                                     ; None                                                ; 12.121 ns  ; Registrador:PC|Saida[2]          ; ULA_O[23]  ; clk        ;
+; N/A                                     ; None                                                ; 12.104 ns  ; Registrador:PC|Saida[13]         ; ULA_O[29]  ; clk        ;
+; N/A                                     ; None                                                ; 12.104 ns  ; Registrador:PC|Saida[14]         ; ULA_O[27]  ; clk        ;
+; N/A                                     ; None                                                ; 12.102 ns  ; Registrador:PC|Saida[11]         ; ULA_O[23]  ; clk        ;
+; N/A                                     ; None                                                ; 12.092 ns  ; Registrador:PC|Saida[15]         ; ULA_O[27]  ; clk        ;
+; N/A                                     ; None                                                ; 12.073 ns  ; Registrador:PC|Saida[8]          ; ULA_O[21]  ; clk        ;
+; N/A                                     ; None                                                ; 12.071 ns  ; Registrador:PC|Saida[5]          ; ULA_O[21]  ; clk        ;
+; N/A                                     ; None                                                ; 12.063 ns  ; Registrador:PC|Saida[12]         ; ULA_O[31]  ; clk        ;
+; N/A                                     ; None                                                ; 12.060 ns  ; Registrador:PC|Saida[6]          ; ULA_O[23]  ; clk        ;
+; N/A                                     ; None                                                ; 12.058 ns  ; Registrador:PC|Saida[13]         ; ULA_O[30]  ; clk        ;
+; N/A                                     ; None                                                ; 12.047 ns  ; Registrador:PC|Saida[7]          ; ULA_O[28]  ; clk        ;
+; N/A                                     ; None                                                ; 12.039 ns  ; Registrador:PC|Saida[10]         ; ULA_O[23]  ; clk        ;
+; N/A                                     ; None                                                ; 11.997 ns  ; Registrador:PC|Saida[3]          ; ULA_O[21]  ; clk        ;
+; N/A                                     ; None                                                ; 11.983 ns  ; Registrador:PC|Saida[14]         ; ULA_O[29]  ; clk        ;
+; N/A                                     ; None                                                ; 11.978 ns  ; Registrador:PC|Saida[8]          ; ULA_O[23]  ; clk        ;
+; N/A                                     ; None                                                ; 11.976 ns  ; Registrador:PC|Saida[5]          ; ULA_O[23]  ; clk        ;
+; N/A                                     ; None                                                ; 11.971 ns  ; Registrador:PC|Saida[15]         ; ULA_O[29]  ; clk        ;
+; N/A                                     ; None                                                ; 11.964 ns  ; Registrador:PC|Saida[12]         ; ULA_O[27]  ; clk        ;
+; N/A                                     ; None                                                ; 11.946 ns  ; Registrador:PC|Saida[2]          ; ULA_O[28]  ; clk        ;
+; N/A                                     ; None                                                ; 11.945 ns  ; Registrador:PC|Saida[4]          ; ULA_O[21]  ; clk        ;
+; N/A                                     ; None                                                ; 11.945 ns  ; Registrador:PC|Saida[7]          ; ULA_O[20]  ; clk        ;
+; N/A                                     ; None                                                ; 11.937 ns  ; Registrador:PC|Saida[14]         ; ULA_O[30]  ; clk        ;
+; N/A                                     ; None                                                ; 11.927 ns  ; Registrador:PC|Saida[11]         ; ULA_O[28]  ; clk        ;
+; N/A                                     ; None                                                ; 11.925 ns  ; Registrador:PC|Saida[15]         ; ULA_O[30]  ; clk        ;
+; N/A                                     ; None                                                ; 11.902 ns  ; Registrador:PC|Saida[3]          ; ULA_O[23]  ; clk        ;
+; N/A                                     ; None                                                ; 11.888 ns  ; Registrador:PC|Saida[17]         ; ULA_O[31]  ; clk        ;
+; N/A                                     ; None                                                ; 11.885 ns  ; Registrador:PC|Saida[6]          ; ULA_O[28]  ; clk        ;
+; N/A                                     ; None                                                ; 11.882 ns  ; Registrador:PC|Saida[7]          ; ULA_O[25]  ; clk        ;
+; N/A                                     ; None                                                ; 11.864 ns  ; Registrador:PC|Saida[10]         ; ULA_O[28]  ; clk        ;
+; N/A                                     ; None                                                ; 11.850 ns  ; Registrador:PC|Saida[4]          ; ULA_O[23]  ; clk        ;
+; N/A                                     ; None                                                ; 11.844 ns  ; Registrador:PC|Saida[2]          ; ULA_O[20]  ; clk        ;
+; N/A                                     ; None                                                ; 11.843 ns  ; Registrador:PC|Saida[12]         ; ULA_O[29]  ; clk        ;
+; N/A                                     ; None                                                ; 11.825 ns  ; Registrador:PC|Saida[11]         ; ULA_O[20]  ; clk        ;
+; N/A                                     ; None                                                ; 11.803 ns  ; Registrador:PC|Saida[8]          ; ULA_O[28]  ; clk        ;
+; N/A                                     ; None                                                ; 11.801 ns  ; Registrador:PC|Saida[5]          ; ULA_O[28]  ; clk        ;
+; N/A                                     ; None                                                ; 11.798 ns  ; Registrador:PC|Saida[9]          ; ULA_O[21]  ; clk        ;
+; N/A                                     ; None                                                ; 11.797 ns  ; Registrador:PC|Saida[12]         ; ULA_O[30]  ; clk        ;
+; N/A                                     ; None                                                ; 11.789 ns  ; Registrador:PC|Saida[17]         ; ULA_O[27]  ; clk        ;
+; N/A                                     ; None                                                ; 11.783 ns  ; Registrador:PC|Saida[6]          ; ULA_O[20]  ; clk        ;
+; N/A                                     ; None                                                ; 11.781 ns  ; Registrador:PC|Saida[2]          ; ULA_O[25]  ; clk        ;
+; N/A                                     ; None                                                ; 11.773 ns  ; Registrador:PC|Saida[16]         ; ULA_O[31]  ; clk        ;
+; N/A                                     ; None                                                ; 11.762 ns  ; Registrador:PC|Saida[11]         ; ULA_O[25]  ; clk        ;
+; N/A                                     ; None                                                ; 11.762 ns  ; Registrador:PC|Saida[10]         ; ULA_O[20]  ; clk        ;
+; N/A                                     ; None                                                ; 11.727 ns  ; Registrador:PC|Saida[3]          ; ULA_O[28]  ; clk        ;
+; N/A                                     ; None                                                ; 11.720 ns  ; Registrador:PC|Saida[6]          ; ULA_O[25]  ; clk        ;
+; N/A                                     ; None                                                ; 11.703 ns  ; Registrador:PC|Saida[9]          ; ULA_O[23]  ; clk        ;
+; N/A                                     ; None                                                ; 11.701 ns  ; Registrador:PC|Saida[8]          ; ULA_O[20]  ; clk        ;
+; N/A                                     ; None                                                ; 11.699 ns  ; Registrador:PC|Saida[10]         ; ULA_O[25]  ; clk        ;
+; N/A                                     ; None                                                ; 11.699 ns  ; Registrador:PC|Saida[5]          ; ULA_O[20]  ; clk        ;
+; N/A                                     ; None                                                ; 11.675 ns  ; Registrador:PC|Saida[4]          ; ULA_O[28]  ; clk        ;
+; N/A                                     ; None                                                ; 11.674 ns  ; Registrador:PC|Saida[16]         ; ULA_O[27]  ; clk        ;
+; N/A                                     ; None                                                ; 11.668 ns  ; Registrador:PC|Saida[17]         ; ULA_O[29]  ; clk        ;
+; N/A                                     ; None                                                ; 11.639 ns  ; Registrador:PC|Saida[13]         ; ULA_O[21]  ; clk        ;
+; N/A                                     ; None                                                ; 11.638 ns  ; Registrador:PC|Saida[8]          ; ULA_O[25]  ; clk        ;
+; N/A                                     ; None                                                ; 11.636 ns  ; Registrador:PC|Saida[5]          ; ULA_O[25]  ; clk        ;
+; N/A                                     ; None                                                ; 11.635 ns  ; Registrador:PC|Saida[7]          ; ULA_O[22]  ; clk        ;
+; N/A                                     ; None                                                ; 11.625 ns  ; Registrador:PC|Saida[3]          ; ULA_O[20]  ; clk        ;
+; N/A                                     ; None                                                ; 11.622 ns  ; Registrador:PC|Saida[17]         ; ULA_O[30]  ; clk        ;
+; N/A                                     ; None                                                ; 11.573 ns  ; Registrador:PC|Saida[4]          ; ULA_O[20]  ; clk        ;
+; N/A                                     ; None                                                ; 11.562 ns  ; Registrador:PC|Saida[3]          ; ULA_O[25]  ; clk        ;
+; N/A                                     ; None                                                ; 11.553 ns  ; Registrador:PC|Saida[16]         ; ULA_O[29]  ; clk        ;
+; N/A                                     ; None                                                ; 11.544 ns  ; Registrador:PC|Saida[13]         ; ULA_O[23]  ; clk        ;
+; N/A                                     ; None                                                ; 11.534 ns  ; Registrador:PC|Saida[2]          ; ULA_O[22]  ; clk        ;
+; N/A                                     ; None                                                ; 11.528 ns  ; Registrador:PC|Saida[9]          ; ULA_O[28]  ; clk        ;
+; N/A                                     ; None                                                ; 11.518 ns  ; Registrador:PC|Saida[14]         ; ULA_O[21]  ; clk        ;
+; N/A                                     ; None                                                ; 11.515 ns  ; Registrador:PC|Saida[11]         ; ULA_O[22]  ; clk        ;
+; N/A                                     ; None                                                ; 11.510 ns  ; Registrador:PC|Saida[18]         ; ULA_O[31]  ; clk        ;
+; N/A                                     ; None                                                ; 11.510 ns  ; Registrador:PC|Saida[4]          ; ULA_O[25]  ; clk        ;
+; N/A                                     ; None                                                ; 11.507 ns  ; Registrador:PC|Saida[16]         ; ULA_O[30]  ; clk        ;
+; N/A                                     ; None                                                ; 11.506 ns  ; Registrador:PC|Saida[15]         ; ULA_O[21]  ; clk        ;
+; N/A                                     ; None                                                ; 11.497 ns  ; Registrador:PC|Saida[7]          ; ULA_O[13]  ; clk        ;
+; N/A                                     ; None                                                ; 11.474 ns  ; Registrador:PC|Saida[7]          ; ULA_O[18]  ; clk        ;
+; N/A                                     ; None                                                ; 11.473 ns  ; Registrador:PC|Saida[6]          ; ULA_O[22]  ; clk        ;
+; N/A                                     ; None                                                ; 11.466 ns  ; Registrador:PC|Saida[20]         ; ULA_O[31]  ; clk        ;
+; N/A                                     ; None                                                ; 11.457 ns  ; Registrador:PC|Saida[23]         ; ULA_O[31]  ; clk        ;
+; N/A                                     ; None                                                ; 11.452 ns  ; Registrador:PC|Saida[10]         ; ULA_O[22]  ; clk        ;
+; N/A                                     ; None                                                ; 11.434 ns  ; Registrador:PC|Saida[2]          ; ULA_O[10]  ; clk        ;
+; N/A                                     ; None                                                ; 11.426 ns  ; Registrador:PC|Saida[9]          ; ULA_O[20]  ; clk        ;
+; N/A                                     ; None                                                ; 11.423 ns  ; Registrador:PC|Saida[14]         ; ULA_O[23]  ; clk        ;
+; N/A                                     ; None                                                ; 11.411 ns  ; Registrador:PC|Saida[18]         ; ULA_O[27]  ; clk        ;
+; N/A                                     ; None                                                ; 11.411 ns  ; Registrador:PC|Saida[15]         ; ULA_O[23]  ; clk        ;
+; N/A                                     ; None                                                ; 11.402 ns  ; Registrador:PC|Saida[7]          ; ULA_O[16]  ; clk        ;
+; N/A                                     ; None                                                ; 11.396 ns  ; Registrador:PC|Saida[2]          ; ULA_O[13]  ; clk        ;
+; N/A                                     ; None                                                ; 11.391 ns  ; Registrador:PC|Saida[8]          ; ULA_O[22]  ; clk        ;
+; N/A                                     ; None                                                ; 11.389 ns  ; Registrador:PC|Saida[5]          ; ULA_O[22]  ; clk        ;
+; N/A                                     ; None                                                ; 11.378 ns  ; Registrador:PC|Saida[12]         ; ULA_O[21]  ; clk        ;
+; N/A                                     ; None                                                ; 11.377 ns  ; Registrador:PC|Saida[11]         ; ULA_O[13]  ; clk        ;
+; N/A                                     ; None                                                ; 11.374 ns  ; Registrador:PC|Saida[7]          ; ULA_O[26]  ; clk        ;
+; N/A                                     ; None                                                ; 11.373 ns  ; Registrador:PC|Saida[2]          ; ULA_O[18]  ; clk        ;
+; N/A                                     ; None                                                ; 11.369 ns  ; Registrador:PC|Saida[13]         ; ULA_O[28]  ; clk        ;
+; N/A                                     ; None                                                ; 11.367 ns  ; Registrador:PC|Saida[20]         ; ULA_O[27]  ; clk        ;
+; N/A                                     ; None                                                ; 11.363 ns  ; Registrador:PC|Saida[9]          ; ULA_O[25]  ; clk        ;
+; N/A                                     ; None                                                ; 11.358 ns  ; Instr_Reg:REG_INST|Instr20_16[4] ; JUMP_O[22] ; clk        ;
+; N/A                                     ; None                                                ; 11.358 ns  ; Instr_Reg:REG_INST|Instr20_16[4] ; IR_O[20]   ; clk        ;
+; N/A                                     ; None                                                ; 11.358 ns  ; Registrador:PC|Saida[23]         ; ULA_O[27]  ; clk        ;
+; N/A                                     ; None                                                ; 11.354 ns  ; Registrador:PC|Saida[11]         ; ULA_O[18]  ; clk        ;
+; N/A                                     ; None                                                ; 11.346 ns  ; Registrador:PC|Saida[19]         ; ULA_O[31]  ; clk        ;
+; N/A                                     ; None                                                ; 11.335 ns  ; Registrador:PC|Saida[6]          ; ULA_O[13]  ; clk        ;
+; N/A                                     ; None                                                ; 11.321 ns  ; Registrador:PC|Saida[7]          ; ULA_O[24]  ; clk        ;
+; N/A                                     ; None                                                ; 11.315 ns  ; Registrador:PC|Saida[3]          ; ULA_O[22]  ; clk        ;
+; N/A                                     ; None                                                ; 11.314 ns  ; Registrador:PC|Saida[10]         ; ULA_O[13]  ; clk        ;
+; N/A                                     ; None                                                ; 11.312 ns  ; Registrador:PC|Saida[6]          ; ULA_O[18]  ; clk        ;
+; N/A                                     ; None                                                ; 11.301 ns  ; Registrador:PC|Saida[2]          ; ULA_O[16]  ; clk        ;
+; N/A                                     ; None                                                ; 11.291 ns  ; Registrador:PC|Saida[10]         ; ULA_O[18]  ; clk        ;
+; N/A                                     ; None                                                ; 11.290 ns  ; Registrador:PC|Saida[18]         ; ULA_O[29]  ; clk        ;
+; N/A                                     ; None                                                ; 11.289 ns  ; Registrador:PC|Saida[5]          ; ULA_O[10]  ; clk        ;
+; N/A                                     ; None                                                ; 11.283 ns  ; Registrador:PC|Saida[12]         ; ULA_O[23]  ; clk        ;
+; N/A                                     ; None                                                ; 11.282 ns  ; Registrador:PC|Saida[11]         ; ULA_O[16]  ; clk        ;
+; N/A                                     ; None                                                ; 11.273 ns  ; Registrador:PC|Saida[2]          ; ULA_O[26]  ; clk        ;
+; N/A                                     ; None                                                ; 11.267 ns  ; Registrador:PC|Saida[13]         ; ULA_O[20]  ; clk        ;
+; N/A                                     ; None                                                ; 11.263 ns  ; Registrador:PC|Saida[4]          ; ULA_O[22]  ; clk        ;
+; N/A                                     ; None                                                ; 11.254 ns  ; Registrador:PC|Saida[11]         ; ULA_O[26]  ; clk        ;
+; N/A                                     ; None                                                ; 11.253 ns  ; Registrador:PC|Saida[8]          ; ULA_O[13]  ; clk        ;
+; N/A                                     ; None                                                ; 11.251 ns  ; Registrador:PC|Saida[5]          ; ULA_O[13]  ; clk        ;
+; N/A                                     ; None                                                ; 11.248 ns  ; Registrador:PC|Saida[14]         ; ULA_O[28]  ; clk        ;
+; N/A                                     ; None                                                ; 11.247 ns  ; Registrador:PC|Saida[19]         ; ULA_O[27]  ; clk        ;
+; N/A                                     ; None                                                ; 11.246 ns  ; Registrador:PC|Saida[20]         ; ULA_O[29]  ; clk        ;
+; N/A                                     ; None                                                ; 11.244 ns  ; Registrador:PC|Saida[18]         ; ULA_O[30]  ; clk        ;
+; N/A                                     ; None                                                ; 11.240 ns  ; Registrador:PC|Saida[6]          ; ULA_O[16]  ; clk        ;
+; N/A                                     ; None                                                ; 11.237 ns  ; Registrador:PC|Saida[23]         ; ULA_O[29]  ; clk        ;
+; N/A                                     ; None                                                ; 11.236 ns  ; Registrador:PC|Saida[15]         ; ULA_O[28]  ; clk        ;
+; N/A                                     ; None                                                ; 11.230 ns  ; Registrador:PC|Saida[8]          ; ULA_O[18]  ; clk        ;
+; N/A                                     ; None                                                ; 11.228 ns  ; Registrador:PC|Saida[5]          ; ULA_O[18]  ; clk        ;
+; N/A                                     ; None                                                ; 11.220 ns  ; Registrador:PC|Saida[2]          ; ULA_O[24]  ; clk        ;
+; N/A                                     ; None                                                ; 11.219 ns  ; Registrador:PC|Saida[10]         ; ULA_O[16]  ; clk        ;
+; N/A                                     ; None                                                ; 11.217 ns  ; Registrador:PC|Saida[7]          ; ULA_O[19]  ; clk        ;
+; N/A                                     ; None                                                ; 11.215 ns  ; Registrador:PC|Saida[3]          ; ULA_O[10]  ; clk        ;
+; N/A                                     ; None                                                ; 11.212 ns  ; Registrador:PC|Saida[6]          ; ULA_O[26]  ; clk        ;
+; N/A                                     ; None                                                ; 11.204 ns  ; Registrador:PC|Saida[13]         ; ULA_O[25]  ; clk        ;
+; N/A                                     ; None                                                ; 11.203 ns  ; Registrador:PC|Saida[17]         ; ULA_O[21]  ; clk        ;
+; N/A                                     ; None                                                ; 11.201 ns  ; Registrador:PC|Saida[11]         ; ULA_O[24]  ; clk        ;
+; N/A                                     ; None                                                ; 11.200 ns  ; Registrador:PC|Saida[20]         ; ULA_O[30]  ; clk        ;
+; N/A                                     ; None                                                ; 11.192 ns  ; Instr_Reg:REG_INST|Instr15_0[0]  ; JUMP_O[2]  ; clk        ;
+; N/A                                     ; None                                                ; 11.192 ns  ; Instr_Reg:REG_INST|Instr15_0[0]  ; IR_O[0]    ; clk        ;
+; N/A                                     ; None                                                ; 11.191 ns  ; Registrador:PC|Saida[23]         ; ULA_O[30]  ; clk        ;
+; N/A                                     ; None                                                ; 11.191 ns  ; Registrador:PC|Saida[10]         ; ULA_O[26]  ; clk        ;
+; N/A                                     ; None                                                ; 11.177 ns  ; Registrador:PC|Saida[3]          ; ULA_O[13]  ; clk        ;
+; N/A                                     ; None                                                ; 11.163 ns  ; Registrador:PC|Saida[4]          ; ULA_O[10]  ; clk        ;
+; N/A                                     ; None                                                ; 11.159 ns  ; Registrador:PC|Saida[6]          ; ULA_O[24]  ; clk        ;
+; N/A                                     ; None                                                ; 11.158 ns  ; Registrador:PC|Saida[8]          ; ULA_O[16]  ; clk        ;
+; N/A                                     ; None                                                ; 11.156 ns  ; Registrador:PC|Saida[5]          ; ULA_O[16]  ; clk        ;
+; N/A                                     ; None                                                ; 11.154 ns  ; Registrador:PC|Saida[3]          ; ULA_O[18]  ; clk        ;
+; N/A                                     ; None                                                ; 11.146 ns  ; Registrador:PC|Saida[14]         ; ULA_O[20]  ; clk        ;
+; N/A                                     ; None                                                ; 11.138 ns  ; Registrador:PC|Saida[10]         ; ULA_O[24]  ; clk        ;
+; N/A                                     ; None                                                ; 11.134 ns  ; Registrador:PC|Saida[15]         ; ULA_O[20]  ; clk        ;
+; N/A                                     ; None                                                ; 11.130 ns  ; Registrador:PC|Saida[8]          ; ULA_O[26]  ; clk        ;
+; N/A                                     ; None                                                ; 11.128 ns  ; Registrador:PC|Saida[5]          ; ULA_O[26]  ; clk        ;
+; N/A                                     ; None                                                ; 11.126 ns  ; Registrador:PC|Saida[19]         ; ULA_O[29]  ; clk        ;
+; N/A                                     ; None                                                ; 11.125 ns  ; Registrador:PC|Saida[4]          ; ULA_O[13]  ; clk        ;
+; N/A                                     ; None                                                ; 11.116 ns  ; Registrador:PC|Saida[9]          ; ULA_O[22]  ; clk        ;
+; Timing analysis restricted to 200 rows. ; To change the limit use Settings (Assignments menu) ;            ;                                  ;            ;            ;
++-----------------------------------------+-----------------------------------------------------+------------+----------------------------------+------------+------------+
 
 
 +--------------------------------------------------------------------------------------------+
@@ -546,10 +546,10 @@ applicable agreement for further details.
 +---------------+-------------+-----------+-------+-------------------------------+----------+
 ; Minimum Slack ; Required th ; Actual th ; From  ; To                            ; To Clock ;
 +---------------+-------------+-----------+-------+-------------------------------+----------+
-; N/A           ; None        ; 0.518 ns  ; reset ; Controle:CONTROLE|PCSource[1] ; clk      ;
-; N/A           ; None        ; 0.518 ns  ; reset ; Controle:CONTROLE|PCWrite     ; clk      ;
-; N/A           ; None        ; 0.518 ns  ; reset ; Controle:CONTROLE|RESET       ; clk      ;
-; N/A           ; None        ; 0.518 ns  ; reset ; Controle:CONTROLE|IRWrite     ; clk      ;
+; N/A           ; None        ; -0.281 ns ; reset ; Controle:CONTROLE|PCSource[1] ; clk      ;
+; N/A           ; None        ; -0.281 ns ; reset ; Controle:CONTROLE|PCWrite     ; clk      ;
+; N/A           ; None        ; -0.281 ns ; reset ; Controle:CONTROLE|RESET       ; clk      ;
+; N/A           ; None        ; -0.281 ns ; reset ; Controle:CONTROLE|IRWrite     ; clk      ;
 +---------------+-------------+-----------+-------+-------------------------------+----------+
 
 
@@ -559,7 +559,7 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II Classic Timing Analyzer
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Thu Apr 26 09:54:36 2018
+    Info: Processing started: Thu Apr 26 11:41:58 2018
 Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off Mips -c Mips --timing_analysis_only
 Info: Parallel compilation is enabled and will use 4 of the 4 processors detected
 Warning: Found pins functioning as undefined clocks and/or memory enables
@@ -567,76 +567,76 @@ Warning: Found pins functioning as undefined clocks and/or memory enables
 Info: Clock "clk" Internal fmax is restricted to 200.0 MHz between source memory "Memoria:MEMORIA|lpm_ram_dq:MEM_plus_Three|altram:sram|altsyncram:ram_block|altsyncram_e1a1:auto_generated|ram_block1a0~porta_address_reg7" and destination memory "Memoria:MEMORIA|lpm_ram_dq:MEM_plus_Three|altram:sram|altsyncram:ram_block|altsyncram_e1a1:auto_generated|q_a[3]"
     Info: fmax restricted to Clock High delay (2.5 ns) plus Clock Low delay (2.5 ns) : restricted to 5.0 ns. Expand message to see actual delay path.
         Info: + Longest memory to memory delay is 2.894 ns
-            Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = M4K_X17_Y35; Fanout = 8; MEM Node = 'Memoria:MEMORIA|lpm_ram_dq:MEM_plus_Three|altram:sram|altsyncram:ram_block|altsyncram_e1a1:auto_generated|ram_block1a0~porta_address_reg7'
-            Info: 2: + IC(0.000 ns) + CELL(2.894 ns) = 2.894 ns; Loc. = M4K_X17_Y35; Fanout = 2; MEM Node = 'Memoria:MEMORIA|lpm_ram_dq:MEM_plus_Three|altram:sram|altsyncram:ram_block|altsyncram_e1a1:auto_generated|q_a[3]'
+            Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = M4K_X37_Y30; Fanout = 8; MEM Node = 'Memoria:MEMORIA|lpm_ram_dq:MEM_plus_Three|altram:sram|altsyncram:ram_block|altsyncram_e1a1:auto_generated|ram_block1a0~porta_address_reg7'
+            Info: 2: + IC(0.000 ns) + CELL(2.894 ns) = 2.894 ns; Loc. = M4K_X37_Y30; Fanout = 2; MEM Node = 'Memoria:MEMORIA|lpm_ram_dq:MEM_plus_Three|altram:sram|altsyncram:ram_block|altsyncram_e1a1:auto_generated|q_a[3]'
             Info: Total cell delay = 2.894 ns ( 100.00 % )
         Info: - Smallest clock skew is -0.026 ns
-            Info: + Shortest clock path from clock "clk" to destination memory is 2.882 ns
+            Info: + Shortest clock path from clock "clk" to destination memory is 2.913 ns
                 Info: 1: + IC(0.000 ns) + CELL(0.989 ns) = 0.989 ns; Loc. = PIN_P2; Fanout = 1; CLK Node = 'clk'
-                Info: 2: + IC(0.114 ns) + CELL(0.000 ns) = 1.103 ns; Loc. = CLKCTRL_G3; Fanout = 194; COMB Node = 'clk~clkctrl'
-                Info: 3: + IC(1.144 ns) + CELL(0.635 ns) = 2.882 ns; Loc. = M4K_X17_Y35; Fanout = 2; MEM Node = 'Memoria:MEMORIA|lpm_ram_dq:MEM_plus_Three|altram:sram|altsyncram:ram_block|altsyncram_e1a1:auto_generated|q_a[3]'
-                Info: Total cell delay = 1.624 ns ( 56.35 % )
-                Info: Total interconnect delay = 1.258 ns ( 43.65 % )
-            Info: - Longest clock path from clock "clk" to source memory is 2.908 ns
+                Info: 2: + IC(0.114 ns) + CELL(0.000 ns) = 1.103 ns; Loc. = CLKCTRL_G3; Fanout = 196; COMB Node = 'clk~clkctrl'
+                Info: 3: + IC(1.175 ns) + CELL(0.635 ns) = 2.913 ns; Loc. = M4K_X37_Y30; Fanout = 2; MEM Node = 'Memoria:MEMORIA|lpm_ram_dq:MEM_plus_Three|altram:sram|altsyncram:ram_block|altsyncram_e1a1:auto_generated|q_a[3]'
+                Info: Total cell delay = 1.624 ns ( 55.75 % )
+                Info: Total interconnect delay = 1.289 ns ( 44.25 % )
+            Info: - Longest clock path from clock "clk" to source memory is 2.939 ns
                 Info: 1: + IC(0.000 ns) + CELL(0.989 ns) = 0.989 ns; Loc. = PIN_P2; Fanout = 1; CLK Node = 'clk'
-                Info: 2: + IC(0.114 ns) + CELL(0.000 ns) = 1.103 ns; Loc. = CLKCTRL_G3; Fanout = 194; COMB Node = 'clk~clkctrl'
-                Info: 3: + IC(1.144 ns) + CELL(0.661 ns) = 2.908 ns; Loc. = M4K_X17_Y35; Fanout = 8; MEM Node = 'Memoria:MEMORIA|lpm_ram_dq:MEM_plus_Three|altram:sram|altsyncram:ram_block|altsyncram_e1a1:auto_generated|ram_block1a0~porta_address_reg7'
-                Info: Total cell delay = 1.650 ns ( 56.74 % )
-                Info: Total interconnect delay = 1.258 ns ( 43.26 % )
+                Info: 2: + IC(0.114 ns) + CELL(0.000 ns) = 1.103 ns; Loc. = CLKCTRL_G3; Fanout = 196; COMB Node = 'clk~clkctrl'
+                Info: 3: + IC(1.175 ns) + CELL(0.661 ns) = 2.939 ns; Loc. = M4K_X37_Y30; Fanout = 8; MEM Node = 'Memoria:MEMORIA|lpm_ram_dq:MEM_plus_Three|altram:sram|altsyncram:ram_block|altsyncram_e1a1:auto_generated|ram_block1a0~porta_address_reg7'
+                Info: Total cell delay = 1.650 ns ( 56.14 % )
+                Info: Total interconnect delay = 1.289 ns ( 43.86 % )
         Info: + Micro clock to output delay of source is 0.209 ns
         Info: + Micro setup delay of destination is 0.035 ns
-Info: tsu for register "Controle:CONTROLE|PCSource[1]" (data pin = "reset", clock pin = "clk") is -0.288 ns
-    Info: + Longest pin to register delay is 2.591 ns
+Info: tsu for register "Controle:CONTROLE|PCSource[1]" (data pin = "reset", clock pin = "clk") is 0.511 ns
+    Info: + Longest pin to register delay is 3.420 ns
         Info: 1: + IC(0.000 ns) + CELL(0.989 ns) = 0.989 ns; Loc. = PIN_P1; Fanout = 5; PIN Node = 'reset'
-        Info: 2: + IC(0.942 ns) + CELL(0.660 ns) = 2.591 ns; Loc. = LCFF_X1_Y33_N5; Fanout = 28; REG Node = 'Controle:CONTROLE|PCSource[1]'
-        Info: Total cell delay = 1.649 ns ( 63.64 % )
-        Info: Total interconnect delay = 0.942 ns ( 36.36 % )
+        Info: 2: + IC(1.771 ns) + CELL(0.660 ns) = 3.420 ns; Loc. = LCFF_X35_Y31_N3; Fanout = 29; REG Node = 'Controle:CONTROLE|PCSource[1]'
+        Info: Total cell delay = 1.649 ns ( 48.22 % )
+        Info: Total interconnect delay = 1.771 ns ( 51.78 % )
     Info: + Micro setup delay of destination is -0.036 ns
-    Info: - Shortest clock path from clock "clk" to destination register is 2.843 ns
+    Info: - Shortest clock path from clock "clk" to destination register is 2.873 ns
         Info: 1: + IC(0.000 ns) + CELL(0.989 ns) = 0.989 ns; Loc. = PIN_P2; Fanout = 1; CLK Node = 'clk'
-        Info: 2: + IC(0.114 ns) + CELL(0.000 ns) = 1.103 ns; Loc. = CLKCTRL_G3; Fanout = 194; COMB Node = 'clk~clkctrl'
-        Info: 3: + IC(1.203 ns) + CELL(0.537 ns) = 2.843 ns; Loc. = LCFF_X1_Y33_N5; Fanout = 28; REG Node = 'Controle:CONTROLE|PCSource[1]'
-        Info: Total cell delay = 1.526 ns ( 53.68 % )
-        Info: Total interconnect delay = 1.317 ns ( 46.32 % )
-Info: tco from clock "clk" to destination pin "ULA_O[30]" through register "Registrador:PC|Saida[6]" is 12.263 ns
-    Info: + Longest clock path from clock "clk" to source register is 2.841 ns
+        Info: 2: + IC(0.114 ns) + CELL(0.000 ns) = 1.103 ns; Loc. = CLKCTRL_G3; Fanout = 196; COMB Node = 'clk~clkctrl'
+        Info: 3: + IC(1.233 ns) + CELL(0.537 ns) = 2.873 ns; Loc. = LCFF_X35_Y31_N3; Fanout = 29; REG Node = 'Controle:CONTROLE|PCSource[1]'
+        Info: Total cell delay = 1.526 ns ( 53.12 % )
+        Info: Total interconnect delay = 1.347 ns ( 46.88 % )
+Info: tco from clock "clk" to destination pin "ULA_O[31]" through register "Registrador:PC|Saida[7]" is 13.002 ns
+    Info: + Longest clock path from clock "clk" to source register is 2.906 ns
         Info: 1: + IC(0.000 ns) + CELL(0.989 ns) = 0.989 ns; Loc. = PIN_P2; Fanout = 1; CLK Node = 'clk'
-        Info: 2: + IC(0.114 ns) + CELL(0.000 ns) = 1.103 ns; Loc. = CLKCTRL_G3; Fanout = 194; COMB Node = 'clk~clkctrl'
-        Info: 3: + IC(1.201 ns) + CELL(0.537 ns) = 2.841 ns; Loc. = LCFF_X4_Y34_N27; Fanout = 11; REG Node = 'Registrador:PC|Saida[6]'
-        Info: Total cell delay = 1.526 ns ( 53.71 % )
-        Info: Total interconnect delay = 1.315 ns ( 46.29 % )
+        Info: 2: + IC(0.114 ns) + CELL(0.000 ns) = 1.103 ns; Loc. = CLKCTRL_G3; Fanout = 196; COMB Node = 'clk~clkctrl'
+        Info: 3: + IC(1.266 ns) + CELL(0.537 ns) = 2.906 ns; Loc. = LCFF_X23_Y22_N25; Fanout = 9; REG Node = 'Registrador:PC|Saida[7]'
+        Info: Total cell delay = 1.526 ns ( 52.51 % )
+        Info: Total interconnect delay = 1.380 ns ( 47.49 % )
     Info: + Micro clock to output delay of source is 0.250 ns
-    Info: + Longest register to pin delay is 9.172 ns
-        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LCFF_X4_Y34_N27; Fanout = 11; REG Node = 'Registrador:PC|Saida[6]'
-        Info: 2: + IC(0.527 ns) + CELL(0.410 ns) = 0.937 ns; Loc. = LCCOMB_X4_Y34_N20; Fanout = 1; COMB Node = 'Ula32:ULA|carry_temp[11]~2'
-        Info: 3: + IC(0.247 ns) + CELL(0.275 ns) = 1.459 ns; Loc. = LCCOMB_X4_Y34_N22; Fanout = 5; COMB Node = 'Ula32:ULA|carry_temp[11]~3'
-        Info: 4: + IC(0.256 ns) + CELL(0.150 ns) = 1.865 ns; Loc. = LCCOMB_X4_Y34_N0; Fanout = 5; COMB Node = 'Ula32:ULA|carry_temp[14]~4'
-        Info: 5: + IC(0.263 ns) + CELL(0.150 ns) = 2.278 ns; Loc. = LCCOMB_X4_Y34_N10; Fanout = 5; COMB Node = 'Ula32:ULA|carry_temp[17]~5'
-        Info: 6: + IC(0.257 ns) + CELL(0.150 ns) = 2.685 ns; Loc. = LCCOMB_X4_Y34_N12; Fanout = 5; COMB Node = 'Ula32:ULA|carry_temp[20]~6'
-        Info: 7: + IC(0.265 ns) + CELL(0.150 ns) = 3.100 ns; Loc. = LCCOMB_X4_Y34_N30; Fanout = 5; COMB Node = 'Ula32:ULA|carry_temp[23]~7'
-        Info: 8: + IC(0.267 ns) + CELL(0.150 ns) = 3.517 ns; Loc. = LCCOMB_X4_Y34_N28; Fanout = 5; COMB Node = 'Ula32:ULA|carry_temp[26]~8'
-        Info: 9: + IC(0.274 ns) + CELL(0.150 ns) = 3.941 ns; Loc. = LCCOMB_X4_Y34_N6; Fanout = 2; COMB Node = 'Ula32:ULA|carry_temp[29]~9'
-        Info: 10: + IC(0.254 ns) + CELL(0.150 ns) = 4.345 ns; Loc. = LCCOMB_X4_Y34_N14; Fanout = 2; COMB Node = 'Ula32:ULA|soma_temp[30]'
-        Info: 11: + IC(2.175 ns) + CELL(2.652 ns) = 9.172 ns; Loc. = PIN_AC1; Fanout = 0; PIN Node = 'ULA_O[30]'
-        Info: Total cell delay = 4.387 ns ( 47.83 % )
-        Info: Total interconnect delay = 4.785 ns ( 52.17 % )
-Info: th for register "Controle:CONTROLE|PCSource[1]" (data pin = "reset", clock pin = "clk") is 0.518 ns
-    Info: + Longest clock path from clock "clk" to destination register is 2.843 ns
+    Info: + Longest register to pin delay is 9.846 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LCFF_X23_Y22_N25; Fanout = 9; REG Node = 'Registrador:PC|Saida[7]'
+        Info: 2: + IC(0.518 ns) + CELL(0.393 ns) = 0.911 ns; Loc. = LCCOMB_X22_Y22_N20; Fanout = 1; COMB Node = 'Ula32:ULA|carry_temp[11]~2'
+        Info: 3: + IC(0.247 ns) + CELL(0.275 ns) = 1.433 ns; Loc. = LCCOMB_X22_Y22_N22; Fanout = 5; COMB Node = 'Ula32:ULA|carry_temp[11]~3'
+        Info: 4: + IC(0.252 ns) + CELL(0.150 ns) = 1.835 ns; Loc. = LCCOMB_X22_Y22_N0; Fanout = 5; COMB Node = 'Ula32:ULA|carry_temp[14]~4'
+        Info: 5: + IC(0.260 ns) + CELL(0.150 ns) = 2.245 ns; Loc. = LCCOMB_X22_Y22_N26; Fanout = 5; COMB Node = 'Ula32:ULA|carry_temp[17]~5'
+        Info: 6: + IC(0.266 ns) + CELL(0.150 ns) = 2.661 ns; Loc. = LCCOMB_X22_Y22_N12; Fanout = 5; COMB Node = 'Ula32:ULA|carry_temp[20]~6'
+        Info: 7: + IC(0.266 ns) + CELL(0.150 ns) = 3.077 ns; Loc. = LCCOMB_X22_Y22_N30; Fanout = 5; COMB Node = 'Ula32:ULA|carry_temp[23]~7'
+        Info: 8: + IC(0.271 ns) + CELL(0.150 ns) = 3.498 ns; Loc. = LCCOMB_X22_Y22_N28; Fanout = 5; COMB Node = 'Ula32:ULA|carry_temp[26]~8'
+        Info: 9: + IC(0.278 ns) + CELL(0.150 ns) = 3.926 ns; Loc. = LCCOMB_X22_Y22_N6; Fanout = 2; COMB Node = 'Ula32:ULA|carry_temp[29]~9'
+        Info: 10: + IC(0.257 ns) + CELL(0.150 ns) = 4.333 ns; Loc. = LCCOMB_X22_Y22_N24; Fanout = 2; COMB Node = 'Ula32:ULA|soma_temp[31]'
+        Info: 11: + IC(2.735 ns) + CELL(2.778 ns) = 9.846 ns; Loc. = PIN_D9; Fanout = 0; PIN Node = 'ULA_O[31]'
+        Info: Total cell delay = 4.496 ns ( 45.66 % )
+        Info: Total interconnect delay = 5.350 ns ( 54.34 % )
+Info: th for register "Controle:CONTROLE|PCSource[1]" (data pin = "reset", clock pin = "clk") is -0.281 ns
+    Info: + Longest clock path from clock "clk" to destination register is 2.873 ns
         Info: 1: + IC(0.000 ns) + CELL(0.989 ns) = 0.989 ns; Loc. = PIN_P2; Fanout = 1; CLK Node = 'clk'
-        Info: 2: + IC(0.114 ns) + CELL(0.000 ns) = 1.103 ns; Loc. = CLKCTRL_G3; Fanout = 194; COMB Node = 'clk~clkctrl'
-        Info: 3: + IC(1.203 ns) + CELL(0.537 ns) = 2.843 ns; Loc. = LCFF_X1_Y33_N5; Fanout = 28; REG Node = 'Controle:CONTROLE|PCSource[1]'
-        Info: Total cell delay = 1.526 ns ( 53.68 % )
-        Info: Total interconnect delay = 1.317 ns ( 46.32 % )
+        Info: 2: + IC(0.114 ns) + CELL(0.000 ns) = 1.103 ns; Loc. = CLKCTRL_G3; Fanout = 196; COMB Node = 'clk~clkctrl'
+        Info: 3: + IC(1.233 ns) + CELL(0.537 ns) = 2.873 ns; Loc. = LCFF_X35_Y31_N3; Fanout = 29; REG Node = 'Controle:CONTROLE|PCSource[1]'
+        Info: Total cell delay = 1.526 ns ( 53.12 % )
+        Info: Total interconnect delay = 1.347 ns ( 46.88 % )
     Info: + Micro hold delay of destination is 0.266 ns
-    Info: - Shortest pin to register delay is 2.591 ns
+    Info: - Shortest pin to register delay is 3.420 ns
         Info: 1: + IC(0.000 ns) + CELL(0.989 ns) = 0.989 ns; Loc. = PIN_P1; Fanout = 5; PIN Node = 'reset'
-        Info: 2: + IC(0.942 ns) + CELL(0.660 ns) = 2.591 ns; Loc. = LCFF_X1_Y33_N5; Fanout = 28; REG Node = 'Controle:CONTROLE|PCSource[1]'
-        Info: Total cell delay = 1.649 ns ( 63.64 % )
-        Info: Total interconnect delay = 0.942 ns ( 36.36 % )
+        Info: 2: + IC(1.771 ns) + CELL(0.660 ns) = 3.420 ns; Loc. = LCFF_X35_Y31_N3; Fanout = 29; REG Node = 'Controle:CONTROLE|PCSource[1]'
+        Info: Total cell delay = 1.649 ns ( 48.22 % )
+        Info: Total interconnect delay = 1.771 ns ( 51.78 % )
 Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 183 megabytes
-    Info: Processing ended: Thu Apr 26 09:54:36 2018
+    Info: Processing ended: Thu Apr 26 11:41:58 2018
     Info: Elapsed time: 00:00:00
-    Info: Total CPU time (on all processors): 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
 
 

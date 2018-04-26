@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Mips
-Thu Apr 26 09:54:20 2018
+Thu Apr 26 11:41:42 2018
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -32,14 +32,11 @@ Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
  24. Port Connectivity Checks: "Mux_4_1_32Bits:MUX_ULA_B"
  25. Port Connectivity Checks: "Registrador:REG_B"
  26. Port Connectivity Checks: "Registrador:REG_A"
- 27. Port Connectivity Checks: "Banco_reg:BANCO_REG"
- 28. Port Connectivity Checks: "Mux_2_1_32Bits:MUX_ESCRITA"
- 29. Port Connectivity Checks: "Mux_2_1_5Bits:MUX_SEL_REG"
- 30. Port Connectivity Checks: "Registrador:MDR"
- 31. Port Connectivity Checks: "Mux_2_1_32Bits:MUX_MEMORIA"
- 32. Port Connectivity Checks: "Controle:CONTROLE"
- 33. Analysis & Synthesis Messages
- 34. Analysis & Synthesis Suppressed Messages
+ 27. Port Connectivity Checks: "Registrador:MDR"
+ 28. Port Connectivity Checks: "Mux_2_1_32Bits:MUX_MEMORIA"
+ 29. Port Connectivity Checks: "Controle:CONTROLE"
+ 30. Analysis & Synthesis Messages
+ 31. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -65,16 +62,16 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +------------------------------------+----------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Apr 26 09:54:20 2018        ;
+; Analysis & Synthesis Status        ; Successful - Thu Apr 26 11:41:42 2018        ;
 ; Quartus II Version                 ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                      ; Mips                                         ;
 ; Top-level Entity Name              ; Mips                                         ;
 ; Family                             ; Cyclone II                                   ;
-; Total logic elements               ; 112                                          ;
-;     Total combinational functions  ; 77                                           ;
-;     Dedicated logic registers      ; 70                                           ;
-; Total registers                    ; 70                                           ;
-; Total pins                         ; 175                                          ;
+; Total logic elements               ; 115                                          ;
+;     Total combinational functions  ; 79                                           ;
+;     Dedicated logic registers      ; 72                                           ;
+; Total registers                    ; 72                                           ;
+; Total pins                         ; 176                                          ;
 ; Total virtual pins                 ; 0                                            ;
 ; Total memory bits                  ; 8,192                                        ;
 ; Embedded Multiplier 9-bit elements ; 0                                            ;
@@ -208,27 +205,27 @@ applicable agreement for further details.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 112   ;
+; Estimated Total logic elements              ; 115   ;
 ;                                             ;       ;
-; Total combinational functions               ; 77    ;
+; Total combinational functions               ; 79    ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 35    ;
-;     -- 3 input functions                    ; 27    ;
-;     -- <=2 input functions                  ; 15    ;
+;     -- 4 input functions                    ; 33    ;
+;     -- 3 input functions                    ; 29    ;
+;     -- <=2 input functions                  ; 17    ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 77    ;
+;     -- normal mode                          ; 79    ;
 ;     -- arithmetic mode                      ; 0     ;
 ;                                             ;       ;
-; Total registers                             ; 70    ;
-;     -- Dedicated logic registers            ; 70    ;
+; Total registers                             ; 72    ;
+;     -- Dedicated logic registers            ; 72    ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
-; I/O pins                                    ; 175   ;
+; I/O pins                                    ; 176   ;
 ; Total memory bits                           ; 8192  ;
 ; Maximum fan-out node                        ; clk   ;
-; Maximum fan-out                             ; 102   ;
-; Total fan-out                               ; 939   ;
+; Maximum fan-out                             ; 104   ;
+; Total fan-out                               ; 950   ;
 ; Average fan-out                             ; 2.65  ;
 +---------------------------------------------+-------+
 
@@ -238,8 +235,8 @@ applicable agreement for further details.
 +-------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                      ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                             ; Library Name ;
 +-------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------+--------------+
-; |Mips                                           ; 77 (1)            ; 70 (0)       ; 8192        ; 0            ; 0       ; 0         ; 175  ; 0            ; |Mips                                                                                                           ; work         ;
-;    |Controle:CONTROLE|                          ; 10 (10)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mips|Controle:CONTROLE                                                                                         ;              ;
+; |Mips                                           ; 79 (1)            ; 72 (0)       ; 8192        ; 0            ; 0       ; 0         ; 176  ; 0            ; |Mips                                                                                                           ; work         ;
+;    |Controle:CONTROLE|                          ; 12 (12)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mips|Controle:CONTROLE                                                                                         ;              ;
 ;    |Instr_Reg:REG_INST|                         ; 0 (0)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mips|Instr_Reg:REG_INST                                                                                        ; work         ;
 ;    |Memoria:MEMORIA|                            ; 0 (0)             ; 0 (0)        ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mips|Memoria:MEMORIA                                                                                           ; work         ;
 ;       |lpm_ram_dq:MEM_plus_One|                 ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mips|Memoria:MEMORIA|lpm_ram_dq:MEM_plus_One                                                                   ; work         ;
@@ -259,7 +256,7 @@ applicable agreement for further details.
 ;             |altsyncram:ram_block|              ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mips|Memoria:MEMORIA|lpm_ram_dq:MEM|altram:sram|altsyncram:ram_block                                           ; work         ;
 ;                |altsyncram_e1a1:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mips|Memoria:MEMORIA|lpm_ram_dq:MEM|altram:sram|altsyncram:ram_block|altsyncram_e1a1:auto_generated            ; work         ;
 ;    |Mux_4_1_32Bits:MUX_PC|                      ; 25 (25)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mips|Mux_4_1_32Bits:MUX_PC                                                                                     ; work         ;
-;    |Registrador:PC|                             ; 2 (2)             ; 30 (30)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mips|Registrador:PC                                                                                            ;              ;
+;    |Registrador:PC|                             ; 2 (2)             ; 30 (30)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mips|Registrador:PC                                                                                            ; work         ;
 ;    |Ula32:ULA|                                  ; 39 (39)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mips|Ula32:ULA                                                                                                 ; work         ;
 +-------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -278,16 +275,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 Encoding Type:  One-Hot
-+----------------------------------------------------------------------------------------------------------+
-; State Machine - |Mips|Controle:CONTROLE|estadoAtual                                                      ;
-+------------------------+------------------+------------------------+-------------------+-----------------+
-; Name                   ; estadoAtual.Jump ; estadoAtual.Decodifica ; estadoAtual.Busca ; estadoAtual.RST ;
-+------------------------+------------------+------------------------+-------------------+-----------------+
-; estadoAtual.RST        ; 0                ; 0                      ; 0                 ; 0               ;
-; estadoAtual.Busca      ; 0                ; 0                      ; 1                 ; 1               ;
-; estadoAtual.Decodifica ; 0                ; 1                      ; 0                 ; 1               ;
-; estadoAtual.Jump       ; 1                ; 0                      ; 0                 ; 1               ;
-+------------------------+------------------+------------------------+-------------------+-----------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |Mips|Controle:CONTROLE|estadoAtual                                                                                                ;
++------------------------+--------------------+------------------+------------------------+--------------------+-------------------+-----------------+
+; Name                   ; estadoAtual.Parado ; estadoAtual.Jump ; estadoAtual.Decodifica ; estadoAtual.Espera ; estadoAtual.Busca ; estadoAtual.RST ;
++------------------------+--------------------+------------------+------------------------+--------------------+-------------------+-----------------+
+; estadoAtual.RST        ; 0                  ; 0                ; 0                      ; 0                  ; 0                 ; 0               ;
+; estadoAtual.Busca      ; 0                  ; 0                ; 0                      ; 0                  ; 1                 ; 1               ;
+; estadoAtual.Espera     ; 0                  ; 0                ; 0                      ; 1                  ; 0                 ; 1               ;
+; estadoAtual.Decodifica ; 0                  ; 0                ; 1                      ; 0                  ; 0                 ; 1               ;
+; estadoAtual.Jump       ; 0                  ; 1                ; 0                      ; 0                  ; 0                 ; 1               ;
+; estadoAtual.Parado     ; 1                  ; 0                ; 0                      ; 0                  ; 0                 ; 1               ;
++------------------------+--------------------+------------------+------------------------+--------------------+-------------------+-----------------+
 
 
 +----------------------------------------------------------------------------------------+
@@ -410,80 +409,550 @@ Encoding Type:  One-Hot
 +------------------------------------------+---------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                            ;
-+------------------------------+--------------------------------+----------------------------------------+
-; Register name                ; Reason for Removal             ; Registers Removed due to This Register ;
-+------------------------------+--------------------------------+----------------------------------------+
-; Registrador:REG_B|Saida[1]   ; Stuck at GND                   ; Registrador:PC|Saida[1]                ;
-;                              ; due to stuck port clock_enable ;                                        ;
-; Registrador:REG_B|Saida[0]   ; Stuck at GND                   ; Registrador:PC|Saida[0]                ;
-;                              ; due to stuck port clock_enable ;                                        ;
-; Banco_reg:BANCO_REG|Reg0[31] ; Stuck at GND                   ; Registrador:MDR|Saida[31]              ;
-;                              ; due to stuck port clock_enable ;                                        ;
-; Banco_reg:BANCO_REG|Reg0[30] ; Stuck at GND                   ; Registrador:MDR|Saida[30]              ;
-;                              ; due to stuck port clock_enable ;                                        ;
-; Banco_reg:BANCO_REG|Reg0[29] ; Stuck at GND                   ; Registrador:MDR|Saida[29]              ;
-;                              ; due to stuck port clock_enable ;                                        ;
-; Banco_reg:BANCO_REG|Reg0[28] ; Stuck at GND                   ; Registrador:MDR|Saida[28]              ;
-;                              ; due to stuck port clock_enable ;                                        ;
-; Banco_reg:BANCO_REG|Reg0[27] ; Stuck at GND                   ; Registrador:MDR|Saida[27]              ;
-;                              ; due to stuck port clock_enable ;                                        ;
-; Banco_reg:BANCO_REG|Reg0[26] ; Stuck at GND                   ; Registrador:MDR|Saida[26]              ;
-;                              ; due to stuck port clock_enable ;                                        ;
-; Banco_reg:BANCO_REG|Reg0[25] ; Stuck at GND                   ; Registrador:MDR|Saida[25]              ;
-;                              ; due to stuck port clock_enable ;                                        ;
-; Banco_reg:BANCO_REG|Reg0[24] ; Stuck at GND                   ; Registrador:MDR|Saida[24]              ;
-;                              ; due to stuck port clock_enable ;                                        ;
-; Banco_reg:BANCO_REG|Reg0[23] ; Stuck at GND                   ; Registrador:MDR|Saida[23]              ;
-;                              ; due to stuck port clock_enable ;                                        ;
-; Banco_reg:BANCO_REG|Reg0[22] ; Stuck at GND                   ; Registrador:MDR|Saida[22]              ;
-;                              ; due to stuck port clock_enable ;                                        ;
-; Banco_reg:BANCO_REG|Reg0[21] ; Stuck at GND                   ; Registrador:MDR|Saida[21]              ;
-;                              ; due to stuck port clock_enable ;                                        ;
-; Banco_reg:BANCO_REG|Reg0[20] ; Stuck at GND                   ; Registrador:MDR|Saida[20]              ;
-;                              ; due to stuck port clock_enable ;                                        ;
-; Banco_reg:BANCO_REG|Reg0[19] ; Stuck at GND                   ; Registrador:MDR|Saida[19]              ;
-;                              ; due to stuck port clock_enable ;                                        ;
-; Banco_reg:BANCO_REG|Reg0[18] ; Stuck at GND                   ; Registrador:MDR|Saida[18]              ;
-;                              ; due to stuck port clock_enable ;                                        ;
-; Banco_reg:BANCO_REG|Reg0[17] ; Stuck at GND                   ; Registrador:MDR|Saida[17]              ;
-;                              ; due to stuck port clock_enable ;                                        ;
-; Banco_reg:BANCO_REG|Reg0[16] ; Stuck at GND                   ; Registrador:MDR|Saida[16]              ;
-;                              ; due to stuck port clock_enable ;                                        ;
-; Banco_reg:BANCO_REG|Reg0[15] ; Stuck at GND                   ; Registrador:MDR|Saida[15]              ;
-;                              ; due to stuck port clock_enable ;                                        ;
-; Banco_reg:BANCO_REG|Reg0[14] ; Stuck at GND                   ; Registrador:MDR|Saida[14]              ;
-;                              ; due to stuck port clock_enable ;                                        ;
-; Banco_reg:BANCO_REG|Reg0[13] ; Stuck at GND                   ; Registrador:MDR|Saida[13]              ;
-;                              ; due to stuck port clock_enable ;                                        ;
-; Banco_reg:BANCO_REG|Reg0[12] ; Stuck at GND                   ; Registrador:MDR|Saida[12]              ;
-;                              ; due to stuck port clock_enable ;                                        ;
-; Banco_reg:BANCO_REG|Reg0[11] ; Stuck at GND                   ; Registrador:MDR|Saida[11]              ;
-;                              ; due to stuck port clock_enable ;                                        ;
-; Banco_reg:BANCO_REG|Reg0[10] ; Stuck at GND                   ; Registrador:MDR|Saida[10]              ;
-;                              ; due to stuck port clock_enable ;                                        ;
-; Banco_reg:BANCO_REG|Reg0[9]  ; Stuck at GND                   ; Registrador:MDR|Saida[9]               ;
-;                              ; due to stuck port clock_enable ;                                        ;
-; Banco_reg:BANCO_REG|Reg0[8]  ; Stuck at GND                   ; Registrador:MDR|Saida[8]               ;
-;                              ; due to stuck port clock_enable ;                                        ;
-; Banco_reg:BANCO_REG|Reg0[7]  ; Stuck at GND                   ; Registrador:MDR|Saida[7]               ;
-;                              ; due to stuck port clock_enable ;                                        ;
-; Banco_reg:BANCO_REG|Reg0[6]  ; Stuck at GND                   ; Registrador:MDR|Saida[6]               ;
-;                              ; due to stuck port clock_enable ;                                        ;
-; Banco_reg:BANCO_REG|Reg0[5]  ; Stuck at GND                   ; Registrador:MDR|Saida[5]               ;
-;                              ; due to stuck port clock_enable ;                                        ;
-; Banco_reg:BANCO_REG|Reg0[4]  ; Stuck at GND                   ; Registrador:MDR|Saida[4]               ;
-;                              ; due to stuck port clock_enable ;                                        ;
-; Banco_reg:BANCO_REG|Reg0[3]  ; Stuck at GND                   ; Registrador:MDR|Saida[3]               ;
-;                              ; due to stuck port clock_enable ;                                        ;
-; Banco_reg:BANCO_REG|Reg0[2]  ; Stuck at GND                   ; Registrador:MDR|Saida[2]               ;
-;                              ; due to stuck port clock_enable ;                                        ;
-; Banco_reg:BANCO_REG|Reg0[1]  ; Stuck at GND                   ; Registrador:MDR|Saida[1]               ;
-;                              ; due to stuck port clock_enable ;                                        ;
-; Banco_reg:BANCO_REG|Reg0[0]  ; Stuck at GND                   ; Registrador:MDR|Saida[0]               ;
-;                              ; due to stuck port clock_enable ;                                        ;
-+------------------------------+--------------------------------+----------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                           ;
++-------------------------------+--------------------------------+--------------------------------------------------------------------------------------+
+; Register name                 ; Reason for Removal             ; Registers Removed due to This Register                                               ;
++-------------------------------+--------------------------------+--------------------------------------------------------------------------------------+
+; Registrador:REG_ALU|Saida[31] ; Stuck at GND                   ; Banco_reg:BANCO_REG|Reg0[31], Banco_reg:BANCO_REG|Reg1[31],                          ;
+;                               ; due to stuck port clock_enable ; Banco_reg:BANCO_REG|Reg2[31], Banco_reg:BANCO_REG|Reg3[31],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg4[31], Banco_reg:BANCO_REG|Reg5[31],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg6[31], Banco_reg:BANCO_REG|Reg7[31],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg8[31], Banco_reg:BANCO_REG|Reg9[31],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg10[31], Banco_reg:BANCO_REG|Reg11[31],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg12[31], Banco_reg:BANCO_REG|Reg13[31],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg14[31], Banco_reg:BANCO_REG|Reg15[31],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg16[31], Banco_reg:BANCO_REG|Reg17[31],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg18[31], Banco_reg:BANCO_REG|Reg19[31],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg20[31], Banco_reg:BANCO_REG|Reg21[31],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg22[31], Banco_reg:BANCO_REG|Reg23[31],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg24[31], Banco_reg:BANCO_REG|Reg25[31],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg26[31], Banco_reg:BANCO_REG|Reg27[31],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg28[31], Banco_reg:BANCO_REG|Reg29[31],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg30[31], Banco_reg:BANCO_REG|Reg31[31],                        ;
+;                               ;                                ; Registrador:MDR|Saida[31]                                                            ;
+; Registrador:REG_ALU|Saida[30] ; Stuck at GND                   ; Banco_reg:BANCO_REG|Reg0[30], Banco_reg:BANCO_REG|Reg1[30],                          ;
+;                               ; due to stuck port clock_enable ; Banco_reg:BANCO_REG|Reg2[30], Banco_reg:BANCO_REG|Reg3[30],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg4[30], Banco_reg:BANCO_REG|Reg5[30],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg6[30], Banco_reg:BANCO_REG|Reg7[30],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg8[30], Banco_reg:BANCO_REG|Reg9[30],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg10[30], Banco_reg:BANCO_REG|Reg11[30],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg12[30], Banco_reg:BANCO_REG|Reg13[30],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg14[30], Banco_reg:BANCO_REG|Reg15[30],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg16[30], Banco_reg:BANCO_REG|Reg17[30],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg18[30], Banco_reg:BANCO_REG|Reg19[30],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg20[30], Banco_reg:BANCO_REG|Reg21[30],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg22[30], Banco_reg:BANCO_REG|Reg23[30],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg24[30], Banco_reg:BANCO_REG|Reg25[30],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg26[30], Banco_reg:BANCO_REG|Reg27[30],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg28[30], Banco_reg:BANCO_REG|Reg29[30],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg30[30], Banco_reg:BANCO_REG|Reg31[30],                        ;
+;                               ;                                ; Registrador:MDR|Saida[30]                                                            ;
+; Registrador:REG_ALU|Saida[29] ; Stuck at GND                   ; Banco_reg:BANCO_REG|Reg0[29], Banco_reg:BANCO_REG|Reg1[29],                          ;
+;                               ; due to stuck port clock_enable ; Banco_reg:BANCO_REG|Reg2[29], Banco_reg:BANCO_REG|Reg3[29],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg4[29], Banco_reg:BANCO_REG|Reg5[29],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg6[29], Banco_reg:BANCO_REG|Reg7[29],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg8[29], Banco_reg:BANCO_REG|Reg9[29],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg10[29], Banco_reg:BANCO_REG|Reg11[29],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg12[29], Banco_reg:BANCO_REG|Reg13[29],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg14[29], Banco_reg:BANCO_REG|Reg15[29],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg16[29], Banco_reg:BANCO_REG|Reg17[29],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg18[29], Banco_reg:BANCO_REG|Reg19[29],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg20[29], Banco_reg:BANCO_REG|Reg21[29],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg22[29], Banco_reg:BANCO_REG|Reg23[29],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg24[29], Banco_reg:BANCO_REG|Reg25[29],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg26[29], Banco_reg:BANCO_REG|Reg27[29],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg28[29], Banco_reg:BANCO_REG|Reg29[29],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg30[29], Banco_reg:BANCO_REG|Reg31[29],                        ;
+;                               ;                                ; Registrador:MDR|Saida[29]                                                            ;
+; Registrador:REG_ALU|Saida[28] ; Stuck at GND                   ; Banco_reg:BANCO_REG|Reg0[28], Banco_reg:BANCO_REG|Reg1[28],                          ;
+;                               ; due to stuck port clock_enable ; Banco_reg:BANCO_REG|Reg2[28], Banco_reg:BANCO_REG|Reg3[28],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg4[28], Banco_reg:BANCO_REG|Reg5[28],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg6[28], Banco_reg:BANCO_REG|Reg7[28],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg8[28], Banco_reg:BANCO_REG|Reg9[28],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg10[28], Banco_reg:BANCO_REG|Reg11[28],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg12[28], Banco_reg:BANCO_REG|Reg13[28],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg14[28], Banco_reg:BANCO_REG|Reg15[28],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg16[28], Banco_reg:BANCO_REG|Reg17[28],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg18[28], Banco_reg:BANCO_REG|Reg19[28],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg20[28], Banco_reg:BANCO_REG|Reg21[28],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg22[28], Banco_reg:BANCO_REG|Reg23[28],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg24[28], Banco_reg:BANCO_REG|Reg25[28],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg26[28], Banco_reg:BANCO_REG|Reg27[28],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg28[28], Banco_reg:BANCO_REG|Reg29[28],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg30[28], Banco_reg:BANCO_REG|Reg31[28],                        ;
+;                               ;                                ; Registrador:MDR|Saida[28]                                                            ;
+; Registrador:REG_ALU|Saida[27] ; Stuck at GND                   ; Banco_reg:BANCO_REG|Reg0[27], Banco_reg:BANCO_REG|Reg1[27],                          ;
+;                               ; due to stuck port clock_enable ; Banco_reg:BANCO_REG|Reg2[27], Banco_reg:BANCO_REG|Reg3[27],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg4[27], Banco_reg:BANCO_REG|Reg5[27],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg6[27], Banco_reg:BANCO_REG|Reg7[27],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg8[27], Banco_reg:BANCO_REG|Reg9[27],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg10[27], Banco_reg:BANCO_REG|Reg11[27],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg12[27], Banco_reg:BANCO_REG|Reg13[27],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg14[27], Banco_reg:BANCO_REG|Reg15[27],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg16[27], Banco_reg:BANCO_REG|Reg17[27],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg18[27], Banco_reg:BANCO_REG|Reg19[27],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg20[27], Banco_reg:BANCO_REG|Reg21[27],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg22[27], Banco_reg:BANCO_REG|Reg23[27],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg24[27], Banco_reg:BANCO_REG|Reg25[27],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg26[27], Banco_reg:BANCO_REG|Reg27[27],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg28[27], Banco_reg:BANCO_REG|Reg29[27],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg30[27], Banco_reg:BANCO_REG|Reg31[27],                        ;
+;                               ;                                ; Registrador:MDR|Saida[27]                                                            ;
+; Registrador:REG_ALU|Saida[26] ; Stuck at GND                   ; Banco_reg:BANCO_REG|Reg0[26], Banco_reg:BANCO_REG|Reg1[26],                          ;
+;                               ; due to stuck port clock_enable ; Banco_reg:BANCO_REG|Reg2[26], Banco_reg:BANCO_REG|Reg3[26],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg4[26], Banco_reg:BANCO_REG|Reg5[26],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg6[26], Banco_reg:BANCO_REG|Reg7[26],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg8[26], Banco_reg:BANCO_REG|Reg9[26],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg10[26], Banco_reg:BANCO_REG|Reg11[26],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg12[26], Banco_reg:BANCO_REG|Reg13[26],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg14[26], Banco_reg:BANCO_REG|Reg15[26],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg16[26], Banco_reg:BANCO_REG|Reg17[26],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg18[26], Banco_reg:BANCO_REG|Reg19[26],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg20[26], Banco_reg:BANCO_REG|Reg21[26],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg22[26], Banco_reg:BANCO_REG|Reg23[26],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg24[26], Banco_reg:BANCO_REG|Reg25[26],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg26[26], Banco_reg:BANCO_REG|Reg27[26],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg28[26], Banco_reg:BANCO_REG|Reg29[26],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg30[26], Banco_reg:BANCO_REG|Reg31[26],                        ;
+;                               ;                                ; Registrador:MDR|Saida[26]                                                            ;
+; Registrador:REG_ALU|Saida[25] ; Stuck at GND                   ; Banco_reg:BANCO_REG|Reg0[25], Banco_reg:BANCO_REG|Reg1[25],                          ;
+;                               ; due to stuck port clock_enable ; Banco_reg:BANCO_REG|Reg2[25], Banco_reg:BANCO_REG|Reg3[25],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg4[25], Banco_reg:BANCO_REG|Reg5[25],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg6[25], Banco_reg:BANCO_REG|Reg7[25],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg8[25], Banco_reg:BANCO_REG|Reg9[25],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg10[25], Banco_reg:BANCO_REG|Reg11[25],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg12[25], Banco_reg:BANCO_REG|Reg13[25],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg14[25], Banco_reg:BANCO_REG|Reg15[25],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg16[25], Banco_reg:BANCO_REG|Reg17[25],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg18[25], Banco_reg:BANCO_REG|Reg19[25],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg20[25], Banco_reg:BANCO_REG|Reg21[25],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg22[25], Banco_reg:BANCO_REG|Reg23[25],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg24[25], Banco_reg:BANCO_REG|Reg25[25],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg26[25], Banco_reg:BANCO_REG|Reg27[25],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg28[25], Banco_reg:BANCO_REG|Reg29[25],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg30[25], Banco_reg:BANCO_REG|Reg31[25],                        ;
+;                               ;                                ; Registrador:MDR|Saida[25]                                                            ;
+; Registrador:REG_ALU|Saida[24] ; Stuck at GND                   ; Banco_reg:BANCO_REG|Reg0[24], Banco_reg:BANCO_REG|Reg1[24],                          ;
+;                               ; due to stuck port clock_enable ; Banco_reg:BANCO_REG|Reg2[24], Banco_reg:BANCO_REG|Reg3[24],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg4[24], Banco_reg:BANCO_REG|Reg5[24],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg6[24], Banco_reg:BANCO_REG|Reg7[24],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg8[24], Banco_reg:BANCO_REG|Reg9[24],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg10[24], Banco_reg:BANCO_REG|Reg11[24],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg12[24], Banco_reg:BANCO_REG|Reg13[24],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg14[24], Banco_reg:BANCO_REG|Reg15[24],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg16[24], Banco_reg:BANCO_REG|Reg17[24],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg18[24], Banco_reg:BANCO_REG|Reg19[24],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg20[24], Banco_reg:BANCO_REG|Reg21[24],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg22[24], Banco_reg:BANCO_REG|Reg23[24],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg24[24], Banco_reg:BANCO_REG|Reg25[24],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg26[24], Banco_reg:BANCO_REG|Reg27[24],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg28[24], Banco_reg:BANCO_REG|Reg29[24],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg30[24], Banco_reg:BANCO_REG|Reg31[24],                        ;
+;                               ;                                ; Registrador:MDR|Saida[24]                                                            ;
+; Registrador:REG_ALU|Saida[23] ; Stuck at GND                   ; Banco_reg:BANCO_REG|Reg0[23], Banco_reg:BANCO_REG|Reg1[23],                          ;
+;                               ; due to stuck port clock_enable ; Banco_reg:BANCO_REG|Reg2[23], Banco_reg:BANCO_REG|Reg3[23],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg4[23], Banco_reg:BANCO_REG|Reg5[23],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg6[23], Banco_reg:BANCO_REG|Reg7[23],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg8[23], Banco_reg:BANCO_REG|Reg9[23],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg10[23], Banco_reg:BANCO_REG|Reg11[23],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg12[23], Banco_reg:BANCO_REG|Reg13[23],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg14[23], Banco_reg:BANCO_REG|Reg15[23],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg16[23], Banco_reg:BANCO_REG|Reg17[23],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg18[23], Banco_reg:BANCO_REG|Reg19[23],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg20[23], Banco_reg:BANCO_REG|Reg21[23],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg22[23], Banco_reg:BANCO_REG|Reg23[23],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg24[23], Banco_reg:BANCO_REG|Reg25[23],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg26[23], Banco_reg:BANCO_REG|Reg27[23],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg28[23], Banco_reg:BANCO_REG|Reg29[23],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg30[23], Banco_reg:BANCO_REG|Reg31[23],                        ;
+;                               ;                                ; Registrador:MDR|Saida[23]                                                            ;
+; Registrador:REG_ALU|Saida[22] ; Stuck at GND                   ; Banco_reg:BANCO_REG|Reg0[22], Banco_reg:BANCO_REG|Reg1[22],                          ;
+;                               ; due to stuck port clock_enable ; Banco_reg:BANCO_REG|Reg2[22], Banco_reg:BANCO_REG|Reg3[22],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg4[22], Banco_reg:BANCO_REG|Reg5[22],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg6[22], Banco_reg:BANCO_REG|Reg7[22],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg8[22], Banco_reg:BANCO_REG|Reg9[22],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg10[22], Banco_reg:BANCO_REG|Reg11[22],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg12[22], Banco_reg:BANCO_REG|Reg13[22],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg14[22], Banco_reg:BANCO_REG|Reg15[22],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg16[22], Banco_reg:BANCO_REG|Reg17[22],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg18[22], Banco_reg:BANCO_REG|Reg19[22],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg20[22], Banco_reg:BANCO_REG|Reg21[22],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg22[22], Banco_reg:BANCO_REG|Reg23[22],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg24[22], Banco_reg:BANCO_REG|Reg25[22],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg26[22], Banco_reg:BANCO_REG|Reg27[22],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg28[22], Banco_reg:BANCO_REG|Reg29[22],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg30[22], Banco_reg:BANCO_REG|Reg31[22],                        ;
+;                               ;                                ; Registrador:MDR|Saida[22]                                                            ;
+; Registrador:REG_ALU|Saida[21] ; Stuck at GND                   ; Banco_reg:BANCO_REG|Reg0[21], Banco_reg:BANCO_REG|Reg1[21],                          ;
+;                               ; due to stuck port clock_enable ; Banco_reg:BANCO_REG|Reg2[21], Banco_reg:BANCO_REG|Reg3[21],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg4[21], Banco_reg:BANCO_REG|Reg5[21],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg6[21], Banco_reg:BANCO_REG|Reg7[21],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg8[21], Banco_reg:BANCO_REG|Reg9[21],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg10[21], Banco_reg:BANCO_REG|Reg11[21],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg12[21], Banco_reg:BANCO_REG|Reg13[21],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg14[21], Banco_reg:BANCO_REG|Reg15[21],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg16[21], Banco_reg:BANCO_REG|Reg17[21],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg18[21], Banco_reg:BANCO_REG|Reg19[21],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg20[21], Banco_reg:BANCO_REG|Reg21[21],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg22[21], Banco_reg:BANCO_REG|Reg23[21],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg24[21], Banco_reg:BANCO_REG|Reg25[21],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg26[21], Banco_reg:BANCO_REG|Reg27[21],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg28[21], Banco_reg:BANCO_REG|Reg29[21],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg30[21], Banco_reg:BANCO_REG|Reg31[21],                        ;
+;                               ;                                ; Registrador:MDR|Saida[21]                                                            ;
+; Registrador:REG_ALU|Saida[20] ; Stuck at GND                   ; Banco_reg:BANCO_REG|Reg0[20], Banco_reg:BANCO_REG|Reg1[20],                          ;
+;                               ; due to stuck port clock_enable ; Banco_reg:BANCO_REG|Reg2[20], Banco_reg:BANCO_REG|Reg3[20],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg4[20], Banco_reg:BANCO_REG|Reg5[20],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg6[20], Banco_reg:BANCO_REG|Reg7[20],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg8[20], Banco_reg:BANCO_REG|Reg9[20],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg10[20], Banco_reg:BANCO_REG|Reg11[20],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg12[20], Banco_reg:BANCO_REG|Reg13[20],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg14[20], Banco_reg:BANCO_REG|Reg15[20],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg16[20], Banco_reg:BANCO_REG|Reg17[20],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg18[20], Banco_reg:BANCO_REG|Reg19[20],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg20[20], Banco_reg:BANCO_REG|Reg21[20],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg22[20], Banco_reg:BANCO_REG|Reg23[20],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg24[20], Banco_reg:BANCO_REG|Reg25[20],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg26[20], Banco_reg:BANCO_REG|Reg27[20],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg28[20], Banco_reg:BANCO_REG|Reg29[20],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg30[20], Banco_reg:BANCO_REG|Reg31[20],                        ;
+;                               ;                                ; Registrador:MDR|Saida[20]                                                            ;
+; Registrador:REG_ALU|Saida[19] ; Stuck at GND                   ; Banco_reg:BANCO_REG|Reg0[19], Banco_reg:BANCO_REG|Reg1[19],                          ;
+;                               ; due to stuck port clock_enable ; Banco_reg:BANCO_REG|Reg2[19], Banco_reg:BANCO_REG|Reg3[19],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg4[19], Banco_reg:BANCO_REG|Reg5[19],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg6[19], Banco_reg:BANCO_REG|Reg7[19],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg8[19], Banco_reg:BANCO_REG|Reg9[19],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg10[19], Banco_reg:BANCO_REG|Reg11[19],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg12[19], Banco_reg:BANCO_REG|Reg13[19],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg14[19], Banco_reg:BANCO_REG|Reg15[19],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg16[19], Banco_reg:BANCO_REG|Reg17[19],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg18[19], Banco_reg:BANCO_REG|Reg19[19],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg20[19], Banco_reg:BANCO_REG|Reg21[19],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg22[19], Banco_reg:BANCO_REG|Reg23[19],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg24[19], Banco_reg:BANCO_REG|Reg25[19],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg26[19], Banco_reg:BANCO_REG|Reg27[19],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg28[19], Banco_reg:BANCO_REG|Reg29[19],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg30[19], Banco_reg:BANCO_REG|Reg31[19],                        ;
+;                               ;                                ; Registrador:MDR|Saida[19]                                                            ;
+; Registrador:REG_ALU|Saida[18] ; Stuck at GND                   ; Banco_reg:BANCO_REG|Reg0[18], Banco_reg:BANCO_REG|Reg1[18],                          ;
+;                               ; due to stuck port clock_enable ; Banco_reg:BANCO_REG|Reg2[18], Banco_reg:BANCO_REG|Reg3[18],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg4[18], Banco_reg:BANCO_REG|Reg5[18],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg6[18], Banco_reg:BANCO_REG|Reg7[18],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg8[18], Banco_reg:BANCO_REG|Reg9[18],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg10[18], Banco_reg:BANCO_REG|Reg11[18],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg12[18], Banco_reg:BANCO_REG|Reg13[18],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg14[18], Banco_reg:BANCO_REG|Reg15[18],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg16[18], Banco_reg:BANCO_REG|Reg17[18],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg18[18], Banco_reg:BANCO_REG|Reg19[18],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg20[18], Banco_reg:BANCO_REG|Reg21[18],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg22[18], Banco_reg:BANCO_REG|Reg23[18],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg24[18], Banco_reg:BANCO_REG|Reg25[18],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg26[18], Banco_reg:BANCO_REG|Reg27[18],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg28[18], Banco_reg:BANCO_REG|Reg29[18],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg30[18], Banco_reg:BANCO_REG|Reg31[18],                        ;
+;                               ;                                ; Registrador:MDR|Saida[18]                                                            ;
+; Registrador:REG_ALU|Saida[17] ; Stuck at GND                   ; Banco_reg:BANCO_REG|Reg0[17], Banco_reg:BANCO_REG|Reg1[17],                          ;
+;                               ; due to stuck port clock_enable ; Banco_reg:BANCO_REG|Reg2[17], Banco_reg:BANCO_REG|Reg3[17],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg4[17], Banco_reg:BANCO_REG|Reg5[17],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg6[17], Banco_reg:BANCO_REG|Reg7[17],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg8[17], Banco_reg:BANCO_REG|Reg9[17],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg10[17], Banco_reg:BANCO_REG|Reg11[17],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg12[17], Banco_reg:BANCO_REG|Reg13[17],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg14[17], Banco_reg:BANCO_REG|Reg15[17],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg16[17], Banco_reg:BANCO_REG|Reg17[17],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg18[17], Banco_reg:BANCO_REG|Reg19[17],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg20[17], Banco_reg:BANCO_REG|Reg21[17],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg22[17], Banco_reg:BANCO_REG|Reg23[17],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg24[17], Banco_reg:BANCO_REG|Reg25[17],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg26[17], Banco_reg:BANCO_REG|Reg27[17],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg28[17], Banco_reg:BANCO_REG|Reg29[17],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg30[17], Banco_reg:BANCO_REG|Reg31[17],                        ;
+;                               ;                                ; Registrador:MDR|Saida[17]                                                            ;
+; Registrador:REG_ALU|Saida[16] ; Stuck at GND                   ; Banco_reg:BANCO_REG|Reg0[16], Banco_reg:BANCO_REG|Reg1[16],                          ;
+;                               ; due to stuck port clock_enable ; Banco_reg:BANCO_REG|Reg2[16], Banco_reg:BANCO_REG|Reg3[16],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg4[16], Banco_reg:BANCO_REG|Reg5[16],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg6[16], Banco_reg:BANCO_REG|Reg7[16],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg8[16], Banco_reg:BANCO_REG|Reg9[16],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg10[16], Banco_reg:BANCO_REG|Reg11[16],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg12[16], Banco_reg:BANCO_REG|Reg13[16],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg14[16], Banco_reg:BANCO_REG|Reg15[16],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg16[16], Banco_reg:BANCO_REG|Reg17[16],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg18[16], Banco_reg:BANCO_REG|Reg19[16],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg20[16], Banco_reg:BANCO_REG|Reg21[16],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg22[16], Banco_reg:BANCO_REG|Reg23[16],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg24[16], Banco_reg:BANCO_REG|Reg25[16],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg26[16], Banco_reg:BANCO_REG|Reg27[16],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg28[16], Banco_reg:BANCO_REG|Reg29[16],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg30[16], Banco_reg:BANCO_REG|Reg31[16],                        ;
+;                               ;                                ; Registrador:MDR|Saida[16]                                                            ;
+; Registrador:REG_ALU|Saida[15] ; Stuck at GND                   ; Banco_reg:BANCO_REG|Reg0[15], Banco_reg:BANCO_REG|Reg1[15],                          ;
+;                               ; due to stuck port clock_enable ; Banco_reg:BANCO_REG|Reg2[15], Banco_reg:BANCO_REG|Reg3[15],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg4[15], Banco_reg:BANCO_REG|Reg5[15],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg6[15], Banco_reg:BANCO_REG|Reg7[15],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg8[15], Banco_reg:BANCO_REG|Reg9[15],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg10[15], Banco_reg:BANCO_REG|Reg11[15],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg12[15], Banco_reg:BANCO_REG|Reg13[15],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg14[15], Banco_reg:BANCO_REG|Reg15[15],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg16[15], Banco_reg:BANCO_REG|Reg17[15],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg18[15], Banco_reg:BANCO_REG|Reg19[15],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg20[15], Banco_reg:BANCO_REG|Reg21[15],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg22[15], Banco_reg:BANCO_REG|Reg23[15],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg24[15], Banco_reg:BANCO_REG|Reg25[15],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg26[15], Banco_reg:BANCO_REG|Reg27[15],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg28[15], Banco_reg:BANCO_REG|Reg29[15],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg30[15], Banco_reg:BANCO_REG|Reg31[15],                        ;
+;                               ;                                ; Registrador:MDR|Saida[15]                                                            ;
+; Registrador:REG_ALU|Saida[14] ; Stuck at GND                   ; Banco_reg:BANCO_REG|Reg0[14], Banco_reg:BANCO_REG|Reg1[14],                          ;
+;                               ; due to stuck port clock_enable ; Banco_reg:BANCO_REG|Reg2[14], Banco_reg:BANCO_REG|Reg3[14],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg4[14], Banco_reg:BANCO_REG|Reg5[14],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg6[14], Banco_reg:BANCO_REG|Reg7[14],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg8[14], Banco_reg:BANCO_REG|Reg9[14],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg10[14], Banco_reg:BANCO_REG|Reg11[14],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg12[14], Banco_reg:BANCO_REG|Reg13[14],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg14[14], Banco_reg:BANCO_REG|Reg15[14],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg16[14], Banco_reg:BANCO_REG|Reg17[14],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg18[14], Banco_reg:BANCO_REG|Reg19[14],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg20[14], Banco_reg:BANCO_REG|Reg21[14],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg22[14], Banco_reg:BANCO_REG|Reg23[14],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg24[14], Banco_reg:BANCO_REG|Reg25[14],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg26[14], Banco_reg:BANCO_REG|Reg27[14],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg28[14], Banco_reg:BANCO_REG|Reg29[14],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg30[14], Banco_reg:BANCO_REG|Reg31[14],                        ;
+;                               ;                                ; Registrador:MDR|Saida[14]                                                            ;
+; Registrador:REG_ALU|Saida[13] ; Stuck at GND                   ; Banco_reg:BANCO_REG|Reg0[13], Banco_reg:BANCO_REG|Reg1[13],                          ;
+;                               ; due to stuck port clock_enable ; Banco_reg:BANCO_REG|Reg2[13], Banco_reg:BANCO_REG|Reg3[13],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg4[13], Banco_reg:BANCO_REG|Reg5[13],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg6[13], Banco_reg:BANCO_REG|Reg7[13],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg8[13], Banco_reg:BANCO_REG|Reg9[13],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg10[13], Banco_reg:BANCO_REG|Reg11[13],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg12[13], Banco_reg:BANCO_REG|Reg13[13],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg14[13], Banco_reg:BANCO_REG|Reg15[13],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg16[13], Banco_reg:BANCO_REG|Reg17[13],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg18[13], Banco_reg:BANCO_REG|Reg19[13],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg20[13], Banco_reg:BANCO_REG|Reg21[13],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg22[13], Banco_reg:BANCO_REG|Reg23[13],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg24[13], Banco_reg:BANCO_REG|Reg25[13],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg26[13], Banco_reg:BANCO_REG|Reg27[13],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg28[13], Banco_reg:BANCO_REG|Reg29[13],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg30[13], Banco_reg:BANCO_REG|Reg31[13],                        ;
+;                               ;                                ; Registrador:MDR|Saida[13]                                                            ;
+; Registrador:REG_ALU|Saida[12] ; Stuck at GND                   ; Banco_reg:BANCO_REG|Reg0[12], Banco_reg:BANCO_REG|Reg1[12],                          ;
+;                               ; due to stuck port clock_enable ; Banco_reg:BANCO_REG|Reg2[12], Banco_reg:BANCO_REG|Reg3[12],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg4[12], Banco_reg:BANCO_REG|Reg5[12],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg6[12], Banco_reg:BANCO_REG|Reg7[12],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg8[12], Banco_reg:BANCO_REG|Reg9[12],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg10[12], Banco_reg:BANCO_REG|Reg11[12],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg12[12], Banco_reg:BANCO_REG|Reg13[12],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg14[12], Banco_reg:BANCO_REG|Reg15[12],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg16[12], Banco_reg:BANCO_REG|Reg17[12],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg18[12], Banco_reg:BANCO_REG|Reg19[12],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg20[12], Banco_reg:BANCO_REG|Reg21[12],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg22[12], Banco_reg:BANCO_REG|Reg23[12],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg24[12], Banco_reg:BANCO_REG|Reg25[12],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg26[12], Banco_reg:BANCO_REG|Reg27[12],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg28[12], Banco_reg:BANCO_REG|Reg29[12],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg30[12], Banco_reg:BANCO_REG|Reg31[12],                        ;
+;                               ;                                ; Registrador:MDR|Saida[12]                                                            ;
+; Registrador:REG_ALU|Saida[11] ; Stuck at GND                   ; Banco_reg:BANCO_REG|Reg0[11], Banco_reg:BANCO_REG|Reg1[11],                          ;
+;                               ; due to stuck port clock_enable ; Banco_reg:BANCO_REG|Reg2[11], Banco_reg:BANCO_REG|Reg3[11],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg4[11], Banco_reg:BANCO_REG|Reg5[11],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg6[11], Banco_reg:BANCO_REG|Reg7[11],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg8[11], Banco_reg:BANCO_REG|Reg9[11],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg10[11], Banco_reg:BANCO_REG|Reg11[11],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg12[11], Banco_reg:BANCO_REG|Reg13[11],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg14[11], Banco_reg:BANCO_REG|Reg15[11],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg16[11], Banco_reg:BANCO_REG|Reg17[11],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg18[11], Banco_reg:BANCO_REG|Reg19[11],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg20[11], Banco_reg:BANCO_REG|Reg21[11],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg22[11], Banco_reg:BANCO_REG|Reg23[11],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg24[11], Banco_reg:BANCO_REG|Reg25[11],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg26[11], Banco_reg:BANCO_REG|Reg27[11],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg28[11], Banco_reg:BANCO_REG|Reg29[11],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg30[11], Banco_reg:BANCO_REG|Reg31[11],                        ;
+;                               ;                                ; Registrador:MDR|Saida[11]                                                            ;
+; Registrador:REG_ALU|Saida[10] ; Stuck at GND                   ; Banco_reg:BANCO_REG|Reg0[10], Banco_reg:BANCO_REG|Reg1[10],                          ;
+;                               ; due to stuck port clock_enable ; Banco_reg:BANCO_REG|Reg2[10], Banco_reg:BANCO_REG|Reg3[10],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg4[10], Banco_reg:BANCO_REG|Reg5[10],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg6[10], Banco_reg:BANCO_REG|Reg7[10],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg8[10], Banco_reg:BANCO_REG|Reg9[10],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg10[10], Banco_reg:BANCO_REG|Reg11[10],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg12[10], Banco_reg:BANCO_REG|Reg13[10],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg14[10], Banco_reg:BANCO_REG|Reg15[10],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg16[10], Banco_reg:BANCO_REG|Reg17[10],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg18[10], Banco_reg:BANCO_REG|Reg19[10],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg20[10], Banco_reg:BANCO_REG|Reg21[10],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg22[10], Banco_reg:BANCO_REG|Reg23[10],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg24[10], Banco_reg:BANCO_REG|Reg25[10],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg26[10], Banco_reg:BANCO_REG|Reg27[10],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg28[10], Banco_reg:BANCO_REG|Reg29[10],                        ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg30[10], Banco_reg:BANCO_REG|Reg31[10],                        ;
+;                               ;                                ; Registrador:MDR|Saida[10]                                                            ;
+; Registrador:REG_ALU|Saida[9]  ; Stuck at GND                   ; Banco_reg:BANCO_REG|Reg0[9], Banco_reg:BANCO_REG|Reg1[9],                            ;
+;                               ; due to stuck port clock_enable ; Banco_reg:BANCO_REG|Reg2[9], Banco_reg:BANCO_REG|Reg3[9],                            ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg4[9], Banco_reg:BANCO_REG|Reg5[9],                            ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg6[9], Banco_reg:BANCO_REG|Reg7[9],                            ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg8[9], Banco_reg:BANCO_REG|Reg9[9],                            ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg10[9], Banco_reg:BANCO_REG|Reg11[9],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg12[9], Banco_reg:BANCO_REG|Reg13[9],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg14[9], Banco_reg:BANCO_REG|Reg15[9],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg16[9], Banco_reg:BANCO_REG|Reg17[9],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg18[9], Banco_reg:BANCO_REG|Reg19[9],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg20[9], Banco_reg:BANCO_REG|Reg21[9],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg22[9], Banco_reg:BANCO_REG|Reg23[9],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg24[9], Banco_reg:BANCO_REG|Reg25[9],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg26[9], Banco_reg:BANCO_REG|Reg27[9],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg28[9], Banco_reg:BANCO_REG|Reg29[9],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg30[9], Banco_reg:BANCO_REG|Reg31[9], Registrador:MDR|Saida[9] ;
+; Registrador:REG_ALU|Saida[8]  ; Stuck at GND                   ; Banco_reg:BANCO_REG|Reg0[8], Banco_reg:BANCO_REG|Reg1[8],                            ;
+;                               ; due to stuck port clock_enable ; Banco_reg:BANCO_REG|Reg2[8], Banco_reg:BANCO_REG|Reg3[8],                            ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg4[8], Banco_reg:BANCO_REG|Reg5[8],                            ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg6[8], Banco_reg:BANCO_REG|Reg7[8],                            ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg8[8], Banco_reg:BANCO_REG|Reg9[8],                            ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg10[8], Banco_reg:BANCO_REG|Reg11[8],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg12[8], Banco_reg:BANCO_REG|Reg13[8],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg14[8], Banco_reg:BANCO_REG|Reg15[8],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg16[8], Banco_reg:BANCO_REG|Reg17[8],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg18[8], Banco_reg:BANCO_REG|Reg19[8],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg20[8], Banco_reg:BANCO_REG|Reg21[8],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg22[8], Banco_reg:BANCO_REG|Reg23[8],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg24[8], Banco_reg:BANCO_REG|Reg25[8],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg26[8], Banco_reg:BANCO_REG|Reg27[8],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg28[8], Banco_reg:BANCO_REG|Reg29[8],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg30[8], Banco_reg:BANCO_REG|Reg31[8], Registrador:MDR|Saida[8] ;
+; Registrador:REG_ALU|Saida[7]  ; Stuck at GND                   ; Banco_reg:BANCO_REG|Reg0[7], Banco_reg:BANCO_REG|Reg1[7],                            ;
+;                               ; due to stuck port clock_enable ; Banco_reg:BANCO_REG|Reg2[7], Banco_reg:BANCO_REG|Reg3[7],                            ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg4[7], Banco_reg:BANCO_REG|Reg5[7],                            ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg6[7], Banco_reg:BANCO_REG|Reg7[7],                            ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg8[7], Banco_reg:BANCO_REG|Reg9[7],                            ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg10[7], Banco_reg:BANCO_REG|Reg11[7],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg12[7], Banco_reg:BANCO_REG|Reg13[7],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg14[7], Banco_reg:BANCO_REG|Reg15[7],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg16[7], Banco_reg:BANCO_REG|Reg17[7],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg18[7], Banco_reg:BANCO_REG|Reg19[7],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg20[7], Banco_reg:BANCO_REG|Reg21[7],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg22[7], Banco_reg:BANCO_REG|Reg23[7],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg24[7], Banco_reg:BANCO_REG|Reg25[7],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg26[7], Banco_reg:BANCO_REG|Reg27[7],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg28[7], Banco_reg:BANCO_REG|Reg29[7],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg30[7], Banco_reg:BANCO_REG|Reg31[7], Registrador:MDR|Saida[7] ;
+; Registrador:REG_ALU|Saida[6]  ; Stuck at GND                   ; Banco_reg:BANCO_REG|Reg0[6], Banco_reg:BANCO_REG|Reg1[6],                            ;
+;                               ; due to stuck port clock_enable ; Banco_reg:BANCO_REG|Reg2[6], Banco_reg:BANCO_REG|Reg3[6],                            ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg4[6], Banco_reg:BANCO_REG|Reg5[6],                            ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg6[6], Banco_reg:BANCO_REG|Reg7[6],                            ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg8[6], Banco_reg:BANCO_REG|Reg9[6],                            ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg10[6], Banco_reg:BANCO_REG|Reg11[6],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg12[6], Banco_reg:BANCO_REG|Reg13[6],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg14[6], Banco_reg:BANCO_REG|Reg15[6],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg16[6], Banco_reg:BANCO_REG|Reg17[6],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg18[6], Banco_reg:BANCO_REG|Reg19[6],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg20[6], Banco_reg:BANCO_REG|Reg21[6],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg22[6], Banco_reg:BANCO_REG|Reg23[6],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg24[6], Banco_reg:BANCO_REG|Reg25[6],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg26[6], Banco_reg:BANCO_REG|Reg27[6],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg28[6], Banco_reg:BANCO_REG|Reg29[6],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg30[6], Banco_reg:BANCO_REG|Reg31[6], Registrador:MDR|Saida[6] ;
+; Registrador:REG_ALU|Saida[5]  ; Stuck at GND                   ; Banco_reg:BANCO_REG|Reg0[5], Banco_reg:BANCO_REG|Reg1[5],                            ;
+;                               ; due to stuck port clock_enable ; Banco_reg:BANCO_REG|Reg2[5], Banco_reg:BANCO_REG|Reg3[5],                            ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg4[5], Banco_reg:BANCO_REG|Reg5[5],                            ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg6[5], Banco_reg:BANCO_REG|Reg7[5],                            ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg8[5], Banco_reg:BANCO_REG|Reg9[5],                            ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg10[5], Banco_reg:BANCO_REG|Reg11[5],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg12[5], Banco_reg:BANCO_REG|Reg13[5],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg14[5], Banco_reg:BANCO_REG|Reg15[5],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg16[5], Banco_reg:BANCO_REG|Reg17[5],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg18[5], Banco_reg:BANCO_REG|Reg19[5],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg20[5], Banco_reg:BANCO_REG|Reg21[5],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg22[5], Banco_reg:BANCO_REG|Reg23[5],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg24[5], Banco_reg:BANCO_REG|Reg25[5],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg26[5], Banco_reg:BANCO_REG|Reg27[5],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg28[5], Banco_reg:BANCO_REG|Reg29[5],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg30[5], Banco_reg:BANCO_REG|Reg31[5], Registrador:MDR|Saida[5] ;
+; Registrador:REG_ALU|Saida[4]  ; Stuck at GND                   ; Banco_reg:BANCO_REG|Reg0[4], Banco_reg:BANCO_REG|Reg1[4],                            ;
+;                               ; due to stuck port clock_enable ; Banco_reg:BANCO_REG|Reg2[4], Banco_reg:BANCO_REG|Reg3[4],                            ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg4[4], Banco_reg:BANCO_REG|Reg5[4],                            ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg6[4], Banco_reg:BANCO_REG|Reg7[4],                            ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg8[4], Banco_reg:BANCO_REG|Reg9[4],                            ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg10[4], Banco_reg:BANCO_REG|Reg11[4],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg12[4], Banco_reg:BANCO_REG|Reg13[4],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg14[4], Banco_reg:BANCO_REG|Reg15[4],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg16[4], Banco_reg:BANCO_REG|Reg17[4],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg18[4], Banco_reg:BANCO_REG|Reg19[4],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg20[4], Banco_reg:BANCO_REG|Reg21[4],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg22[4], Banco_reg:BANCO_REG|Reg23[4],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg24[4], Banco_reg:BANCO_REG|Reg25[4],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg26[4], Banco_reg:BANCO_REG|Reg27[4],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg28[4], Banco_reg:BANCO_REG|Reg29[4],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg30[4], Banco_reg:BANCO_REG|Reg31[4], Registrador:MDR|Saida[4] ;
+; Registrador:REG_ALU|Saida[3]  ; Stuck at GND                   ; Banco_reg:BANCO_REG|Reg0[3], Banco_reg:BANCO_REG|Reg1[3],                            ;
+;                               ; due to stuck port clock_enable ; Banco_reg:BANCO_REG|Reg2[3], Banco_reg:BANCO_REG|Reg3[3],                            ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg4[3], Banco_reg:BANCO_REG|Reg5[3],                            ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg6[3], Banco_reg:BANCO_REG|Reg7[3],                            ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg8[3], Banco_reg:BANCO_REG|Reg9[3],                            ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg10[3], Banco_reg:BANCO_REG|Reg11[3],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg12[3], Banco_reg:BANCO_REG|Reg13[3],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg14[3], Banco_reg:BANCO_REG|Reg15[3],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg16[3], Banco_reg:BANCO_REG|Reg17[3],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg18[3], Banco_reg:BANCO_REG|Reg19[3],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg20[3], Banco_reg:BANCO_REG|Reg21[3],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg22[3], Banco_reg:BANCO_REG|Reg23[3],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg24[3], Banco_reg:BANCO_REG|Reg25[3],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg26[3], Banco_reg:BANCO_REG|Reg27[3],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg28[3], Banco_reg:BANCO_REG|Reg29[3],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg30[3], Banco_reg:BANCO_REG|Reg31[3], Registrador:MDR|Saida[3] ;
+; Registrador:REG_ALU|Saida[2]  ; Stuck at GND                   ; Banco_reg:BANCO_REG|Reg0[2], Banco_reg:BANCO_REG|Reg1[2],                            ;
+;                               ; due to stuck port clock_enable ; Banco_reg:BANCO_REG|Reg2[2], Banco_reg:BANCO_REG|Reg3[2],                            ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg4[2], Banco_reg:BANCO_REG|Reg5[2],                            ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg6[2], Banco_reg:BANCO_REG|Reg7[2],                            ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg8[2], Banco_reg:BANCO_REG|Reg9[2],                            ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg10[2], Banco_reg:BANCO_REG|Reg11[2],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg12[2], Banco_reg:BANCO_REG|Reg13[2],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg14[2], Banco_reg:BANCO_REG|Reg15[2],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg16[2], Banco_reg:BANCO_REG|Reg17[2],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg18[2], Banco_reg:BANCO_REG|Reg19[2],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg20[2], Banco_reg:BANCO_REG|Reg21[2],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg22[2], Banco_reg:BANCO_REG|Reg23[2],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg24[2], Banco_reg:BANCO_REG|Reg25[2],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg26[2], Banco_reg:BANCO_REG|Reg27[2],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg28[2], Banco_reg:BANCO_REG|Reg29[2],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg30[2], Banco_reg:BANCO_REG|Reg31[2], Registrador:MDR|Saida[2] ;
+; Registrador:REG_ALU|Saida[1]  ; Stuck at GND                   ; Banco_reg:BANCO_REG|Reg0[1], Banco_reg:BANCO_REG|Reg1[1],                            ;
+;                               ; due to stuck port clock_enable ; Banco_reg:BANCO_REG|Reg2[1], Banco_reg:BANCO_REG|Reg3[1],                            ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg4[1], Banco_reg:BANCO_REG|Reg5[1],                            ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg6[1], Banco_reg:BANCO_REG|Reg7[1],                            ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg8[1], Banco_reg:BANCO_REG|Reg9[1],                            ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg10[1], Banco_reg:BANCO_REG|Reg11[1],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg12[1], Banco_reg:BANCO_REG|Reg13[1],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg14[1], Banco_reg:BANCO_REG|Reg15[1],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg16[1], Banco_reg:BANCO_REG|Reg17[1],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg18[1], Banco_reg:BANCO_REG|Reg19[1],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg20[1], Banco_reg:BANCO_REG|Reg21[1],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg22[1], Banco_reg:BANCO_REG|Reg23[1],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg24[1], Banco_reg:BANCO_REG|Reg25[1],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg26[1], Banco_reg:BANCO_REG|Reg27[1],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg28[1], Banco_reg:BANCO_REG|Reg29[1],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg30[1], Banco_reg:BANCO_REG|Reg31[1], Registrador:MDR|Saida[1] ;
+; Registrador:REG_ALU|Saida[0]  ; Stuck at GND                   ; Banco_reg:BANCO_REG|Reg0[0], Banco_reg:BANCO_REG|Reg1[0],                            ;
+;                               ; due to stuck port clock_enable ; Banco_reg:BANCO_REG|Reg2[0], Banco_reg:BANCO_REG|Reg3[0],                            ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg4[0], Banco_reg:BANCO_REG|Reg5[0],                            ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg6[0], Banco_reg:BANCO_REG|Reg7[0],                            ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg8[0], Banco_reg:BANCO_REG|Reg9[0],                            ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg10[0], Banco_reg:BANCO_REG|Reg11[0],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg12[0], Banco_reg:BANCO_REG|Reg13[0],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg14[0], Banco_reg:BANCO_REG|Reg15[0],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg16[0], Banco_reg:BANCO_REG|Reg17[0],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg18[0], Banco_reg:BANCO_REG|Reg19[0],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg20[0], Banco_reg:BANCO_REG|Reg21[0],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg22[0], Banco_reg:BANCO_REG|Reg23[0],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg24[0], Banco_reg:BANCO_REG|Reg25[0],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg26[0], Banco_reg:BANCO_REG|Reg27[0],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg28[0], Banco_reg:BANCO_REG|Reg29[0],                          ;
+;                               ;                                ; Banco_reg:BANCO_REG|Reg30[0], Banco_reg:BANCO_REG|Reg31[0], Registrador:MDR|Saida[0] ;
+; Registrador:REG_B|Saida[1]    ; Stuck at GND                   ; Registrador:PC|Saida[1]                                                              ;
+;                               ; due to stuck port clock_enable ;                                                                                      ;
+; Registrador:REG_B|Saida[0]    ; Stuck at GND                   ; Registrador:PC|Saida[0]                                                              ;
+;                               ; due to stuck port clock_enable ;                                                                                      ;
++-------------------------------+--------------------------------+--------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -491,10 +960,10 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 70    ;
+; Total registers                              ; 72    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 1     ;
-; Number of registers using Asynchronous Clear ; 66    ;
+; Number of registers using Asynchronous Clear ; 68    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 66    ;
 ; Number of registers using Preset             ; 0     ;
@@ -689,34 +1158,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+-------+----------+------------------------+
 
 
-+------------------------------------------------------+
-; Port Connectivity Checks: "Banco_reg:BANCO_REG"      ;
-+----------+-------+----------+------------------------+
-; Port     ; Type  ; Severity ; Details                ;
-+----------+-------+----------+------------------------+
-; regwrite ; Input ; Info     ; Explicitly unconnected ;
-+----------+-------+----------+------------------------+
-
-
-+--------------------------------------------------------+
-; Port Connectivity Checks: "Mux_2_1_32Bits:MUX_ESCRITA" ;
-+---------+-------+----------+---------------------------+
-; Port    ; Type  ; Severity ; Details                   ;
-+---------+-------+----------+---------------------------+
-; zero    ; Input ; Info     ; Explicitly unconnected    ;
-; seletor ; Input ; Info     ; Explicitly unconnected    ;
-+---------+-------+----------+---------------------------+
-
-
-+-------------------------------------------------------+
-; Port Connectivity Checks: "Mux_2_1_5Bits:MUX_SEL_REG" ;
-+---------+-------+----------+--------------------------+
-; Port    ; Type  ; Severity ; Details                  ;
-+---------+-------+----------+--------------------------+
-; seletor ; Input ; Info     ; Explicitly unconnected   ;
-+---------+-------+----------+--------------------------+
-
-
 +--------------------------------------------------+
 ; Port Connectivity Checks: "Registrador:MDR"      ;
 +------+-------+----------+------------------------+
@@ -742,9 +1183,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------+--------+----------+----------------------------------------------------------------------------------------------------------+
 ; MemRead  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
 ; MemWrite ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-; MemtoReg ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-; RegWrite ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-; RegDst   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
 +----------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
@@ -754,7 +1192,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Thu Apr 26 09:54:17 2018
+    Info: Processing started: Thu Apr 26 11:41:40 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Mips -c Mips
 Info: Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info: Found 1 design units, including 1 entities, in source file mips.sv
@@ -835,11 +1273,9 @@ Warning: Output pins are stuck at VCC or GND
     Warning (13410): Pin "ULA_O[1]" is stuck at GND
     Warning (13410): Pin "JUMP_O[0]" is stuck at GND
     Warning (13410): Pin "JUMP_O[1]" is stuck at GND
-    Warning (13410): Pin "Estado_Controle_O[2]" is stuck at GND
     Warning (13410): Pin "Estado_Controle_O[3]" is stuck at GND
     Warning (13410): Pin "Estado_Controle_O[4]" is stuck at GND
-    Warning (13410): Pin "PCSouce_O[0]" is stuck at GND
-    Warning (13410): Pin "PCSouce_O[1]" is stuck at GND
+    Warning (13410): Pin "PCSource_O[0]" is stuck at GND
 Info: 37 registers lost all their fanouts during netlist optimizations. The first 37 are displayed below.
     Info: Register "Registrador:MDR|Saida[31]" lost all its fanouts during netlist optimizations.
     Info: Register "Registrador:MDR|Saida[30]" lost all its fanouts during netlist optimizations.
@@ -879,16 +1315,16 @@ Info: 37 registers lost all their fanouts during netlist optimizations. The firs
     Info: Register "Controle:CONTROLE|estadoAtual~7" lost all its fanouts during netlist optimizations.
     Info: Register "Controle:CONTROLE|estadoAtual~8" lost all its fanouts during netlist optimizations.
 Info: Generated suppressed messages file C:/Users/gaqp/Documents/Projeto/Mips.map.smsg
-Info: Implemented 323 device resources after synthesis - the final resource count might be different
+Info: Implemented 328 device resources after synthesis - the final resource count might be different
     Info: Implemented 2 input pins
-    Info: Implemented 173 output pins
-    Info: Implemented 116 logic cells
+    Info: Implemented 174 output pins
+    Info: Implemented 120 logic cells
     Info: Implemented 32 RAM segments
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 14 warnings
-    Info: Peak virtual memory: 253 megabytes
-    Info: Processing ended: Thu Apr 26 09:54:20 2018
-    Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:02
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 12 warnings
+    Info: Peak virtual memory: 257 megabytes
+    Info: Processing ended: Thu Apr 26 11:41:42 2018
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:03
 
 
 +------------------------------------------+

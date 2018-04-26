@@ -5,7 +5,7 @@ Timing Analyzer Summary
 Type           : Worst-case tsu
 Slack          : N/A
 Required Time  : None
-Actual Time    : -0.288 ns
+Actual Time    : 0.511 ns
 From           : reset
 To             : Controle:CONTROLE|IRWrite
 From Clock     : --
@@ -15,9 +15,9 @@ Failed Paths   : 0
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 12.263 ns
-From           : Registrador:PC|Saida[6]
-To             : ULA_O[30]
+Actual Time    : 13.002 ns
+From           : Registrador:PC|Saida[7]
+To             : ULA_O[31]
 From Clock     : clk
 To Clock       : --
 Failed Paths   : 0
@@ -25,7 +25,7 @@ Failed Paths   : 0
 Type           : Worst-case th
 Slack          : N/A
 Required Time  : None
-Actual Time    : 0.518 ns
+Actual Time    : -0.281 ns
 From           : reset
 To             : Controle:CONTROLE|IRWrite
 From Clock     : --

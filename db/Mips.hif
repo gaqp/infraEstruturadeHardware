@@ -1146,42 +1146,6 @@ a36c8ec425c8a2589af98b2d4daabc3
 
 # end
 # entity
-Controle
-# storage
-db|Mips.(1).cnf
-db|Mips.(1).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-componentes do projeto|controle.sv
-9f3a4b5adc93d2bb6b1415df3c17730
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# hierarchies {
-Controle:CONTROLE
-}
-# macro_sequence
-
-# end
-# entity
 Mips
 # storage
 db|Mips.(0).cnf
@@ -1193,7 +1157,7 @@ ON
 # case_sensitive
 # source_file
 mips.sv
-5262c02c6515c39c6ada17f7371275
+408147888fd39a8bd459eada6a9a5425
 9
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -1213,6 +1177,42 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 }
 # hierarchies {
 |
+}
+# macro_sequence
+
+# end
+# entity
+Controle
+# storage
+db|Mips.(1).cnf
+db|Mips.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+componentes do projeto|controle.sv
+66906794ee57fa31b0f26e8f5d45f3fb
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+Controle:CONTROLE
 }
 # macro_sequence
 

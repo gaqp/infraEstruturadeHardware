@@ -1,4 +1,4 @@
-module Mips(clk,reset,PC_O,ULA_O,IR_O,MEM_O,JUMP_O,Estado_Controle_O,OpCode_O,PCSouce_O);
+module Mips(clk,reset,PC_O,ULA_O,IR_O,MEM_O,JUMP_O,Estado_Controle_O,OpCode_O,PCSource_O,PCWrite_O);
 //INPUTS
 input clk;
 input reset;
@@ -15,8 +15,10 @@ assign JUMP_O = SL_Jump_PC_S;
 output [4:0] Estado_Controle_O; 
 output [5:0] OpCode_O;
 assign OpCode_O = Instr31_26_S;
-output [1:0] PCSouce_O;
+output [1:0] PCSource_O;
 assign PCSource_O = PCSource;
+output PCWrite_O;
+assign PCWrite_O = OR_S;
 //FIM DOS INPUTS
 and AND (AND_S,ULA_Zero_S,PCWriteCond);
 or OR   (OR_S,PCWrite,AND_S);
@@ -32,8 +34,12 @@ logic [1:0] PCSource;
 logic IorD;
 logic IRWrite;
 logic RESET;
+logic RegDst;
+logic RegWrite;
+logic MemtoReg;
 Controle CONTROLE(.clk(clk),.Opcode(Instr31_26_S),.Funct(Instr5_0_S),.MemRW(MemRW),.ULASrcA(ULASrcA),.ULASrcB(ULASrcB),.ULAOp(ULAOp),.PCWrite(PCWrite),
-				  .PCWriteCond(PCWriteCond),.PCSource(PCSource),.IorD(IorD),.IRWrite(IRWrite),.RESET(RESET),.reset(reset),.estadoControle(Estado_Controle_O));
+				  .PCWriteCond(PCWriteCond),.PCSource(PCSource),.IorD(IorD),.IRWrite(IRWrite),.RESET(RESET),.reset(reset),.estadoControle(Estado_Controle_O),
+				  .RegDst(RegDst),.MemtoReg(MemtoReg),.RegWrite(RegWrite));
 //Fim da Unidade de controle
 //Registrador PC
 logic [31:0] PC_Saida_S;
@@ -69,11 +75,11 @@ assign Instr5_0_S = {Instr15_0_S[5:0]};
 //Fim do registrador de instruções
 //Multiplexador seletor de escrita  no registrador
 logic [4:0] Mux_SEL_REG_S;
-Mux_2_1_5Bits MUX_SEL_REG(.zero(Instr20_16_S),.um(Instr15_11_S),.seletor(),.saida(Mux_SEL_REG_S));
+Mux_2_1_5Bits MUX_SEL_REG(.zero(Instr20_16_S),.um(Instr15_11_S),.seletor(RegDst),.saida(Mux_SEL_REG_S));
 //Fim do Multiplexador seletor de escrita  no registrador
 //Multiplexador seletor de dado a ser escrito na memória
 logic [31:0] Mux_Escrita_S;
-Mux_2_1_32Bits MUX_ESCRITA(.zero(),.um(MDR_Saida_S),.seletor(),.saida(Mux_Escrita_S));
+Mux_2_1_32Bits MUX_ESCRITA(.zero(Reg_ALU_S),.um(MDR_Saida_S),.seletor(MemtoReg),.saida(Mux_Escrita_S));
 // Fim do Multiplexador seletor de dado a ser escrito na memória
 //Extensor de sinal
 logic [31:0] Extensor_Sinal_S;
@@ -86,7 +92,7 @@ Shift_Left_32_32 SL_EXTENSOR(.entrada(Extensor_Sinal_S),.saida(SL_Extensor_S));
 //Banco de registradores
 logic [31:0] Banco_Reg_Data_1_S;
 logic [31:0] Banco_Reg_Data_2_S;
-Banco_reg BANCO_REG(.Clk(clk),.Reset(RESET),.RegWrite(),.ReadReg1(Instr25_21_S),.ReadReg2(Instr20_16_S),
+Banco_reg BANCO_REG(.Clk(clk),.Reset(RESET),.RegWrite(RegWrite),.ReadReg1(Instr25_21_S),.ReadReg2(Instr20_16_S),
 					.WriteReg(Mux_SEL_REG_S),.WriteData(Mux_Escrita_S),.ReadData1(Banco_Reg_Data_1_S),
 					.ReadData2(Banco_Reg_Data_2_S));
 //Fim do banco de registradores

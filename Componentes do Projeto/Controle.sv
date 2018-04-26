@@ -2,7 +2,7 @@ module Controle(input clk,input reset,input [5:0] Opcode,input [5:0] Funct,outpu
 				output IorD,output MemRead,output MemWrite,output MemRW,output MemtoReg,output IRWrite,output [1:0] PCSource,
 				output [2:0] ULAOp,output ULASrcA,output [1:0] ULASrcB,output RegWrite,output RegDst,output RESET,output [4:0] estadoControle);
 assign estadoControle = estadoAtual;
-typedef enum logic [4:0] {RST,Busca,Decodifica,Jump} Estados;
+typedef enum logic [4:0] {RST,Busca,Espera,Decodifica,Jump,Parado} Estados;
 Estados estadoAtual;
 initial
 begin
@@ -32,21 +32,37 @@ begin
 			ULASrcB = 1'b1;
 			ULAOp = 1'b1;
 			PCWrite = 1'b1;
-			PCSource = 1'b0;
+			PCSource = 2'b00;
+			estadoAtual = Espera;
+			end
+			Espera:
+			begin
+			PCWrite = 1'b0;
+			IRWrite = 1'b1;
 			estadoAtual = Decodifica;
 			end
 			Decodifica:
 			begin
-			PCWrite = 1'b0;
-			IRWrite = 1'b1;
-			if(Opcode == 2'b10) estadoAtual = Jump;
-			else estadoAtual = Busca;
+			IRWrite = 1'b0;
+			if(Opcode == 2'b10)
+			begin
+				estadoAtual = Jump;
+			end
+			else 
+			begin
+				estadoAtual = Busca;
+			end
 			end
 			Jump:
 			begin
 			PCSource = 2'b10;
 			PCWrite = 1'b1;
-			estadoAtual = Busca;
+			estadoAtual = Parado;
+			end
+			Parado:
+			begin
+			PCWrite = 1'b0;
+			IRWrite = 1'b0;
 			end
 		endcase
 		end
