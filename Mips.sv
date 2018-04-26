@@ -1,4 +1,4 @@
-module Mips(clk,reset,PC_O,ULA_O,IR_O,MEM_O,JUMP_O);
+module Mips(clk,reset,PC_O,ULA_O,IR_O,MEM_O,JUMP_O,Estado_Controle_O,OpCode_O,PCSouce_O);
 //INPUTS
 input clk;
 input reset;
@@ -12,6 +12,11 @@ output [31:0] MEM_O;
 assign MEM_O = Memoria_Saida_S;
 output [31:0] JUMP_O;
 assign JUMP_O = SL_Jump_PC_S;
+output [4:0] Estado_Controle_O; 
+output [5:0] OpCode_O;
+assign OpCode_O = Instr31_26_S;
+output [1:0] PCSouce_O;
+assign PCSource_O = PCSource;
 //FIM DOS INPUTS
 and AND (AND_S,ULA_Zero_S,PCWriteCond);
 or OR   (OR_S,PCWrite,AND_S);
@@ -23,18 +28,18 @@ logic [1:0] ULASrcB;
 logic [2:0] ULAOp;
 logic PCWrite;
 logic PCWriteCond;
-logic PCSource;
+logic [1:0] PCSource;
 logic IorD;
 logic IRWrite;
-Controle CONTROLE(.clk(clk),.Opcode(Instr31_26_S),.Funct(Instr5_0_S),.reset(reeset),
-				  .MemRW(MemRW),.ULASrcA(ULASrcA),.ULASrcB(ULASrcB),.ULAOp(ULAOp),.PCWrite(PCWrite),
-				  .PCWriteCond(PCWriteCond),.PCSource(PCSource),.IorD(IorD),.IRWrite(IRWrite));
+logic RESET;
+Controle CONTROLE(.clk(clk),.Opcode(Instr31_26_S),.Funct(Instr5_0_S),.MemRW(MemRW),.ULASrcA(ULASrcA),.ULASrcB(ULASrcB),.ULAOp(ULAOp),.PCWrite(PCWrite),
+				  .PCWriteCond(PCWriteCond),.PCSource(PCSource),.IorD(IorD),.IRWrite(IRWrite),.RESET(RESET),.reset(reset),.estadoControle(Estado_Controle_O));
 //Fim da Unidade de controle
 //Registrador PC
 logic [31:0] PC_Saida_S;
 logic PC_Escreve_C;
 logic PC_Reset_C;
-Registrador PC(.Clk(clk),.Reset(reset),.Load(OR_S),.Entrada(MUX_PC_S),.Saida(PC_Saida_S));
+Registrador PC(.Clk(clk),.Reset(RESET),.Load(OR_S),.Entrada(MUX_PC_S),.Saida(PC_Saida_S));
 //Fim do registrador PC
 //Multiplexador da memória
 logic [31:0] Mux_Memoria_S;
@@ -46,14 +51,14 @@ Memoria MEMORIA(.Clock(clk),.Wr(MemRW),.Address(PC_Saida_S),.Datain(Reg_B_S),.Da
 //Fim da Memória
 //MDR
 logic [31:0] MDR_Saida_S;
-Registrador MDR(.Clk(clk),.Reset(reset),.Load(),.Entrada(Memoria_Saida_S),.Saida(MDR_Saida_S));
+Registrador MDR(.Clk(clk),.Reset(RESET),.Load(),.Entrada(Memoria_Saida_S),.Saida(MDR_Saida_S));
 //Fim do MDR
 //Registrador de instruções
 logic [5:0] Instr31_26_S;
 logic [4:0] Instr25_21_S;
 logic [4:0] Instr20_16_S;
 logic [15:0] Instr15_0_S;
-Instr_Reg REG_INST(.Clk(clk),.Reset(reset),.Load_ir(IRWrite),.Entrada(Memoria_Saida_S),.Instr15_0(Instr15_0_S),
+Instr_Reg REG_INST(.Clk(clk),.Reset(RESET),.Load_ir(IRWrite),.Entrada(Memoria_Saida_S),.Instr15_0(Instr15_0_S),
 				   .Instr20_16(Instr20_16_S),.Instr25_21(Instr25_21_S),.Instr31_26(Instr31_26_S));
 logic [25:0] Instr25_0_S;
 assign Instr25_0_S = {Instr25_21_S,Instr20_16_S,Instr15_0_S};
@@ -81,17 +86,17 @@ Shift_Left_32_32 SL_EXTENSOR(.entrada(Extensor_Sinal_S),.saida(SL_Extensor_S));
 //Banco de registradores
 logic [31:0] Banco_Reg_Data_1_S;
 logic [31:0] Banco_Reg_Data_2_S;
-Banco_reg BANCO_REG(.Clk(clk),.Reset(reset),.RegWrite(),.ReadReg1(Instr25_21_S),.ReadReg2(Instr20_16_S),
+Banco_reg BANCO_REG(.Clk(clk),.Reset(RESET),.RegWrite(),.ReadReg1(Instr25_21_S),.ReadReg2(Instr20_16_S),
 					.WriteReg(Mux_SEL_REG_S),.WriteData(Mux_Escrita_S),.ReadData1(Banco_Reg_Data_1_S),
 					.ReadData2(Banco_Reg_Data_2_S));
 //Fim do banco de registradores
 //Registrador A
 logic [31:0] Reg_A_S;
-Registrador REG_A(.Clk(clk),.Reset(reset),.Load(),.Entrada(Banco_Reg_Data_1_S),.Saida(Reg_A_S));
+Registrador REG_A(.Clk(clk),.Reset(RESET),.Load(),.Entrada(Banco_Reg_Data_1_S),.Saida(Reg_A_S));
 //Fim do registrador A
 //Registrador B
 logic [31:0] Reg_B_S;
-Registrador REG_B(.Clk(clk),.Reset(reset),.Load(),.Entrada(Banco_Reg_Data_2_S),.Saida(Reg_B_S));
+Registrador REG_B(.Clk(clk),.Reset(RESET),.Load(),.Entrada(Banco_Reg_Data_2_S),.Saida(Reg_B_S));
 //Fim do registrador B
 //Mux ULA A
 logic [31:0] Mux_ULA_A_S;
@@ -127,6 +132,6 @@ Mux_4_1_32Bits MUX_PC(.zero(ULA_Resultado_S),.um(Reg_ALU_S),.dois(SL_Jump_PC_S),
 //Fim do Mux PC
 //Registrador ALU
 logic [31:0] Reg_ALU_S;
-Registrador REG_ALU(.Clk(clk),.Reset(reset),.Load(),.Entrada(ULA_Resultado_S),.Saida(Reg_ALU_S));
+Registrador REG_ALU(.Clk(clk),.Reset(RESET),.Load(),.Entrada(ULA_Resultado_S),.Saida(Reg_ALU_S));
 //Fim do registrador ALU
 endmodule 
